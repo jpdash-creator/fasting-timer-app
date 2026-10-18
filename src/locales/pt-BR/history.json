@@ -1,0 +1,77 @@
+{
+  "history": {
+    "title": "Histórico",
+    "add": "Adicionar jejum anterior",
+    "addShort": "Adicionar jejum anterior",
+    "empty": {
+      "title": "Seus jejuns vão aparecer aqui",
+      "body": "Conclua um jejum, ou adicione um que você já fez, e ele aparece no seu calendário.",
+      "cta": "Começar um jejum"
+    },
+    "search": "Buscar notas",
+    "clearSearch": "Limpar busca",
+    "allProtocols": "Todos",
+    "week": {
+      "one": "Semana de %{date} · %{hours} h · %{count} jejum",
+      "other": "Semana de %{date} · %{hours} h · %{count} jejuns"
+    },
+    "goalMet": "Meta cumprida",
+    "endedEarly": "Encerrado antes",
+    "deleteFast": "Excluir jejum",
+    "deleted": "Jejum excluído",
+    "noMatch": "Nenhum jejum corresponde aos seus filtros.",
+    "row": {
+      "range": "%{start} → %{end}",
+      "a11y": "Jejum %{protocol}, %{duration}, terminou %{day}. %{result}",
+      "hint": "Abre o editor. Deslize para a esquerda para excluir."
+    },
+    "cal": {
+      "planned": "Dia de jejum planejado", "legendPlanned": "Dia de jejum planejado (5:2)",
+      "goalMet": "Jejum concluído, meta cumprida",
+      "fasted": "Jejum concluído, meta não cumprida",
+      "freeze": "Congelamento de sequência usado",
+      "legendA11y": "Legenda do calendário. Ponto vazado: jejum concluído. Ponto preenchido: meta cumprida. Floco de neve: congelamento de sequência.",
+      "legendFast": "Jejum",
+      "legendGoal": "Meta cumprida",
+      "legendFreeze": "Congelamento",
+      "prevMonth": "Mês anterior",
+      "nextMonth": "Próximo mês",
+      "filterHint": "Mostra apenas os jejuns deste dia"
+    },
+    "locked": {
+      "title": {
+        "one": "%{count} jejum anterior oculto",
+        "other": "%{count} jejuns anteriores ocultos"
+      },
+      "body": "O plano gratuito inclui os últimos 7 dias. O Pro guarda todo o seu histórico.",
+      "cta": "Desbloquear histórico"
+    },
+    "editor": {
+      "titleNew": "Adicionar jejum anterior",
+      "titleEdit": "Editar jejum",
+      "titleRunning": "Editar horário de início",
+      "start": "Início",
+      "end": "Fim",
+      "duration": "Duração",
+      "safetyNote": "Esse é um jejum muito longo. Pare e coma se sentir mal-estar, tontura ou fraqueza, e converse com um profissional de saúde antes de jejuar por tanto tempo.",
+      "protocol": "Protocolo",
+      "mood": "Como foi?",
+      "moods": {
+        "1": "Péssimo",
+        "2": "Difícil",
+        "3": "Ok",
+        "4": "Bom",
+        "5": "Ótimo"
+      },
+      "note": "Nota",
+      "notePlaceholder": "Algo que vale lembrar?",
+      "delete": "Excluir este jejum",
+      "deleteTitle": "Excluir este jejum?",
+      "deleteBody": "Isso o remove do seu histórico e das suas estatísticas."
+    },
+    "filter": {
+      "day": "Mostrando %{date}",
+      "clearDay": "Mostrar todos os dias"
+    }
+  }
+}

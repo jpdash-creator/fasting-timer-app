@@ -1,0 +1,181 @@
+{
+  "timer": {
+    "start": "Iniciar jejum",
+    "endFast": "Encerrar jejum",
+    "startEarly": "Começar antes",
+    "protocolChip": "Protocolo %{name}",
+    "changeProtocol": "Mudar protocolo",
+    "ready": "Quando você quiser",
+    "ringGoalShort": "%{h} h",
+    "ringReady": "Pronto",
+    "ringThenEating": "depois %{h} h de refeições",
+    "readyHint": "Seu jejum de %{hours} horas começa quando você tocar no botão.",
+    "fasting": "Em jejum",
+    "elapsed": "decorrido",
+    "remaining": "%{time} restantes",
+    "overGoal": "+%{time} além da meta",
+    "goalReachedTitle": "Meta atingida",
+    "goalReachedBody": "Você pode encerrar agora ou continuar. Ouça seu corpo.",
+    "goalAt": "Meta às %{time}",
+    "goalRow": "Meta",
+    "eatingOpensAt": "A janela de alimentação abre às %{time}",
+    "editStart": "Editar horário de início",
+    "editStartValue": "Começou %{time}",
+    "eatingWindow": "Janela de alimentação",
+    "eatingLeft": "para comer",
+    "nextFastAt": "O próximo jejum começa às %{time}",
+    "eatingDone": "Janela de alimentação concluída",
+    "autoStartNote": "Seu próximo jejum vai começar automaticamente.",
+    "percentDone": "%{pct}% da meta",
+    "skewToast": "Confira a hora do seu dispositivo",
+    "skewDetail": "Seu relógio parece estar adiantado em relação ao início deste jejum.",
+    "ring": {
+      "idle": "Nenhum jejum em andamento. Meta %{target}.",
+      "fasting": "Em jejum, %{elapsed} decorridas, %{remaining} restantes",
+      "over": "Em jejum, %{elapsed} decorridas, meta atingida, %{over} além da meta",
+      "eating": "Janela de alimentação, %{remaining} restantes"
+    },
+    "spoken": {
+      "hours": {
+        "one": "%{count} hora",
+        "other": "%{count} horas"
+      },
+      "minutes": {
+        "one": "%{count} minuto",
+        "other": "%{count} minutos"
+      }
+    },
+    "stageChip": "%{stage}, toque para saber mais",
+    "quick": {
+      "water": "Água",
+      "addWater": "Adicionar %{amount}",
+      "moreWater": "Mais",
+      "moreWaterLabel": "Registrar outra quantidade de água",
+      "waterAdded": "Água registrada",
+      "mood": "Como você está se sentindo?",
+      "moodSet": "Humor %{n} de 5"
+    },
+    "moods": {
+      "1": "Péssimo",
+      "2": "Baixo",
+      "3": "Ok",
+      "4": "Bom",
+      "5": "Ótimo"
+    },
+    "startSheet": {
+      "title": "Comece seu jejum",
+      "now": "Começar agora",
+      "earlier": "Comecei antes…",
+      "pickPrompt": "Quando você começou?",
+      "confirm": "Iniciar jejum",
+      "tooFarBack": "Você pode voltar até 48 horas.",
+      "willBeAt": "O jejum começou %{time}",
+      "alreadyRunning": "Já há um jejum em andamento. Encerre primeiro o jejum atual."
+    },
+    "fiveTwo": { "fastDay": "Hoje é dia de jejum. Sua meta é de %{hours} h.", "eatDay": "Hoje é um dia normal de alimentação. Seu próximo dia de jejum é %{day}." },
+    "endSheet": {
+      "staleNote": "Este jejum está em andamento há mais de 7 dias. Um jejum pode durar no máximo 7 dias, então escolha quando ele realmente terminou.",
+      "title": "Encerrar este jejum?",
+      "body": "Você jejuou por %{elapsed}. Sua meta era %{goal}.",
+      "bodyMet": "Você jejuou por %{elapsed}. Você atingiu sua meta de %{goal}.",
+      "now": "Encerrar agora",
+      "earlier": "Terminei antes…",
+      "pickPrompt": "Quando você terminou?",
+      "confirm": "Encerrar jejum",
+      "keepGoing": "Continuar em jejum",
+      "willBeAt": "O jejum terminou %{time}",
+      "tooEarly": "O horário de término deve ser depois do horário de início."
+    },
+    "time": {
+      "agoShort": "há %{n} h",
+      "agoMin": "há %{n} min",
+      "pickExact": "Escolha um horário",
+      "pickDate": "Escolha uma data",
+      "currentValue": "Selecionado: %{time}",
+      "setTime": "Definir horário",
+      "dateTimeA11y": "Seletor de data e hora"
+    },
+    "safety": {
+      "title24": "24 horas de jejum",
+      "title48": "48 horas de jejum",
+      "title72": "72 horas de jejum",
+      "body24": "Você está em jejum há 24 horas. Pare e coma se sentir mal-estar, tontura ou fraqueza. Jejuns prolongados devem ser conversados com um profissional de saúde.",
+      "body48": "Você está em jejum há 48 horas. Pare e coma se sentir mal-estar, tontura ou fraqueza. Jejuns prolongados devem ser conversados com um profissional de saúde.",
+      "body72": "Você está em jejum há mais de 72 horas. Esse é um jejum muito longo e traz riscos reais à saúde. Continue somente com orientação médica. Você pode encerrar agora a qualquer momento.",
+      "read": "Já li",
+      "understand": "Entendo os riscos",
+      "endInstead": "Encerrar meu jejum"
+    },
+    "picker": {
+      "title": "Protocolo de jejum",
+      "fastEat": "%{fast}h de jejum · %{eat}h de alimentação",
+      "fastOnly": "%{fast}h de jejum",
+      "selected": "Selecionado",
+      "locked": "Pro",
+      "lockedLabel": "%{name}, requer Pro",
+      "customHeader": "Seus protocolos",
+      "createCustom": "Criar protocolo personalizado",
+      "customPro": "Pro",
+      "presets": "Predefinidos",
+      "fiveTwoNote": "Dois jejuns de 24 horas por semana",
+      "close": "Fechar",
+      "delete": "Excluir %{name}",
+      "switchTitle": "Mudar a meta deste jejum?",
+      "switchBody": "Seu jejum em andamento mantém o horário de início. A meta muda de %{from} para %{to}.",
+      "switchConfirm": "Mudar meta",
+      "switchCancel": "Manter atual",
+      "applied": "Protocolo atualizado"
+    },
+    "custom": {
+      "title": "Protocolo personalizado",
+      "name": "Nome",
+      "namePlaceholder": "ex.: Reset de fim de semana",
+      "defaultName": "Personalizado %{h}h",
+      "hours": "Horas de jejum",
+      "hoursValue": "%{h} horas",
+      "decrease": "Diminuir horas de jejum",
+      "increase": "Aumentar horas de jejum",
+      "eatingDerived": "Janela de alimentação: %{h} horas",
+      "colour": "Cor",
+      "colourOption": "Cor %{n}",
+      "save": "Salvar protocolo",
+      "range": "Escolha entre 1 e 72 horas."
+    },
+    "stageInfo": {
+      "title": "Fases do jejum",
+      "current": "Você está aqui",
+      "reached": "Alcançada",
+      "upcoming": "Começa em %{h} h",
+      "fromHour": "a partir de %{h} h",
+      "none": "Inicie um jejum para ver onde você está.",
+      "evidenceTitle": "Sobre as evidências",
+      "evidence": "Os tempos de cada fase são faixas aproximadas e típicas. Não são uma previsão para você, e alguns efeitos são mais estudados que outros.",
+      "elapsedNow": "%{time} de jejum"
+    },
+    "summary": {
+      "title": "Jejum concluído",
+      "duration": "Duração",
+      "goalMet": "Meta atingida",
+      "goalNotMet": "Encerrado antes",
+      "goalNotMetBody": "Todo jejum conta. Seu corpo ainda aproveitou o descanso, e você pode construir a partir daqui.",
+      "goalMetBody": "Muito bem. Você seguiu o seu plano.",
+      "stagesReached": "Fases alcançadas",
+      "mood": "Como foi?",
+      "note": "Nota",
+      "notePlaceholder": "Algo que você queira lembrar (opcional)",
+      "save": "Salvar",
+      "share": "Compartilhar",
+      "streak": "Sequência de %{n} dias",
+      "notFound": "Não foi possível encontrar este jejum.",
+      "protocolLine": "Protocolo %{name}"
+    },
+    "a11y": {
+      "close": "Fechar",
+      "sheetBackdrop": "Dispensar"
+    },
+    "banner": {
+      "notifDenied": "As notificações estão desativadas",
+      "openSettings": "Abra os Ajustes para receber lembretes de jejum"
+    }
+  }
+}

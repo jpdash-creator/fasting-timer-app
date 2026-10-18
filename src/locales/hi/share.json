@@ -1,0 +1,28 @@
+{
+  "share": {
+    "title": "अपना उपवास साझा करें",
+    "headline": "उपवास पूरा हुआ",
+    "headlineInProgress": "उपवास जारी है",
+    "hoursUnit": "घंटे",
+    "protocol": "प्रोटोकॉल",
+    "goalMet": "लक्ष्य पूरा हुआ",
+    "goalNotMet": "लक्ष्य का %{percent}%",
+    "streakCount": {
+      "one": "%{count} दिन की कड़ी",
+      "other": "%{count} दिन की कड़ी"
+    },
+    "streakNone": "अपनी कड़ी शुरू करें",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "सरल इंटरमिटेंट फ़ास्टिंग",
+    "watermark": "Fastline से बनाया गया",
+    "button": "साझा करें",
+    "sharing": "तैयार हो रहा है…",
+    "removeWatermark": "Pro के साथ वॉटरमार्क हटाएँ",
+    "notFound": "हमें वह उपवास नहीं मिला।",
+    "unavailable": "इस डिवाइस पर साझा करना उपलब्ध नहीं है।",
+    "failed": "इमेज नहीं बन सकी। कृपया फिर कोशिश करें।",
+    "cardLabel": "साझा कार्ड: %{duration} का उपवास, %{protocol}, %{streak}",
+    "message": "मैंने अभी Fastline के साथ %{duration} का उपवास पूरा किया।"
+  }
+}

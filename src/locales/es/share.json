@@ -1,0 +1,28 @@
+{
+  "share": {
+    "title": "Comparte tu ayuno",
+    "headline": "Ayuno completado",
+    "headlineInProgress": "En ayuno",
+    "hoursUnit": "horas",
+    "protocol": "Protocolo",
+    "goalMet": "Objetivo alcanzado",
+    "goalNotMet": "%{percent}% del objetivo",
+    "streakCount": {
+      "one": "Racha de %{count} día",
+      "other": "Racha de %{count} días"
+    },
+    "streakNone": "Empieza tu racha",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "Ayuno intermitente sencillo",
+    "watermark": "Hecho con Fastline",
+    "button": "Compartir",
+    "sharing": "Preparando…",
+    "removeWatermark": "Quitar la marca de agua con Pro",
+    "notFound": "No pudimos encontrar ese ayuno.",
+    "unavailable": "Compartir no está disponible en este dispositivo.",
+    "failed": "No se pudo crear la imagen. Inténtalo de nuevo.",
+    "cardLabel": "Tarjeta para compartir: ayuno de %{duration}, %{protocol}, %{streak}",
+    "message": "Acabo de completar un ayuno de %{duration} con Fastline."
+  }
+}

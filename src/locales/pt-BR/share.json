@@ -1,0 +1,28 @@
+{
+  "share": {
+    "title": "Compartilhe seu jejum",
+    "headline": "Jejum concluído",
+    "headlineInProgress": "Em jejum",
+    "hoursUnit": "horas",
+    "protocol": "Protocolo",
+    "goalMet": "Meta atingida",
+    "goalNotMet": "%{percent}% da meta",
+    "streakCount": {
+      "one": "Sequência de %{count} dia",
+      "other": "Sequência de %{count} dias"
+    },
+    "streakNone": "Comece sua sequência",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "Jejum intermitente simples",
+    "watermark": "Feito com Fastline",
+    "button": "Compartilhar",
+    "sharing": "Preparando…",
+    "removeWatermark": "Remover marca d'água com o Pro",
+    "notFound": "Não encontramos esse jejum.",
+    "unavailable": "O compartilhamento não está disponível neste dispositivo.",
+    "failed": "Não foi possível criar a imagem. Tente novamente.",
+    "cardLabel": "Cartão para compartilhar: jejum de %{duration}, %{protocol}, %{streak}",
+    "message": "Acabei de concluir um jejum de %{duration} com o Fastline."
+  }
+}

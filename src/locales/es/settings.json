@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "title": "Ajustes",
+    "pro": {
+      "activeTitle": "Fastline Pro",
+      "activeBadge": "Pro",
+      "activeSubtitle": "Todas las funciones están desbloqueadas.",
+      "renewsOn": "Se renueva el %{date}",
+      "endsOn": "Termina el %{date}",
+      "trialEndsOn": "La prueba termina el %{date}",
+      "lifetime": "De por vida",
+      "upgradeTitle": "Mejorar a Pro",
+      "upgradeSubtitle": "Todos los protocolos, recordatorios, estadísticas y exportación.",
+      "billingIssue": "Hay un problema con tu facturación. Abre los ajustes de suscripción para solucionarlo."
+    },
+    "sections": {
+      "fasting": "Ayuno",
+      "preferences": "Preferencias",
+      "reminders": "Recordatorios",
+      "goals": "Objetivos",
+      "data": "Tus datos",
+      "subscription": "Suscripción",
+      "about": "Acerca de",
+      "danger": "Zona de peligro"
+    },
+    "protocol": {
+      "label": "Protocolo",
+      "hint": "Abre el selector de protocolo"
+    },
+    "autoStart": {
+      "label": "Iniciar automáticamente el siguiente ayuno",
+      "hint": "Inicia tu siguiente ayuno cuando termina la ventana de comida."
+    },
+    "units": {
+      "weight": "Unidad de peso",
+      "volume": "Unidad de agua",
+      "kg": "Kilogramos (kg)",
+      "lb": "Libras (lb)",
+      "ml": "Mililitros (ml)",
+      "oz": "Onzas líquidas (oz)"
+    },
+    "theme": {
+      "label": "Tema",
+      "system": "Sistema",
+      "light": "Claro",
+      "dark": "Oscuro"
+    },
+    "haptics": "Respuesta háptica",
+    "language": {
+      "label": "Idioma",
+      "device": "Idioma del dispositivo",
+      "note": "Algunas pantallas pueden seguir apareciendo en inglés mientras se completan las traducciones.",
+      "rtlNote": "El árabe requiere reiniciar la app para cambiar la dirección del diseño."
+    },
+    "reminders": {
+      "fastStart": "Inicio del ayuno",
+      "fastStartHint": "Cuando termina tu ventana de comida",
+      "fastEnd": "Ayuno completado",
+      "fastEndHint": "Cuando alcanzas tu objetivo",
+      "halfway": "Punto medio",
+      "halfwayHint": "A mitad de tu ayuno",
+      "oneHourLeft": "Queda una hora",
+      "oneHourLeftHint": "Una hora antes de tu objetivo",
+      "windowClosing": "La ventana de comida se cierra",
+      "windowClosingHint": "Antes de que termine tu ventana de comida",
+      "offset": "Tiempo de aviso de la ventana",
+      "offsetValue": "%{minutes} min antes",
+      "offsetDecrease": "Reducir el tiempo de aviso",
+      "offsetIncrease": "Aumentar el tiempo de aviso",
+      "quietHours": "Horas de silencio",
+      "quietHoursHint": "Silencia los recordatorios hasta que terminen las horas de silencio",
+      "quietFrom": "Desde",
+      "quietTo": "Hasta",
+      "timeInvalid": "Usa el formato de 24 horas, como 22:00",
+      "timeLabel": "Hora de %{label}, %{time}"
+    },
+    "water": {
+      "goal": "Objetivo diario de agua",
+      "decrease": "Reducir el objetivo de agua",
+      "increase": "Aumentar el objetivo de agua"
+    },
+    "goalWeight": {
+      "label": "Peso objetivo",
+      "notSet": "Sin definir",
+      "set": "Definir peso objetivo",
+      "clear": "Borrar peso objetivo",
+      "decrease": "Reducir peso objetivo",
+      "increase": "Aumentar peso objetivo"
+    },
+    "export": {
+      "label": "Exportar datos como CSV",
+      "hint": "Comparte tu historial como archivo de hoja de cálculo.",
+      "title": "Exportar CSV",
+      "message": "Elige qué datos exportar. Las fechas usan el formato ISO 8601.",
+      "fasts": "Ayunos",
+      "weight": "Registros de peso",
+      "water": "Registros de agua",
+      "empty": "Todavía no hay nada que exportar.",
+      "done": "Exportación lista.",
+      "saved": "Archivo CSV descargado.",
+      "unavailable": "Compartir no está disponible en este dispositivo.",
+      "failed": "No se pudo exportar. Inténtalo de nuevo."
+    },
+    "restore": {
+      "label": "Restaurar compras",
+      "working": "Restaurando…",
+      "found": "Compras restauradas. Pro está activo.",
+      "none": "No se encontraron compras activas.",
+      "failed": "No se pudo restaurar. Revisa tu conexión e inténtalo de nuevo."
+    },
+    "manage": {
+      "label": "Gestionar suscripción",
+      "failed": "No se pudieron abrir los ajustes de suscripción."
+    },
+    "legal": {
+      "privacy": "Política de privacidad",
+      "terms": "Términos de uso",
+      "support": "Contactar con soporte",
+      "supportSubject": "Soporte de Fastline",
+      "openFailed": "No se pudo abrir el enlace."
+    },
+    "about": {
+      "version": "Versión %{version}",
+      "versionLabel": "Versión de la app",
+      "mockOn": "Pro simulado activado",
+      "mockOff": "Pro simulado desactivado",
+      "accessibility": "Accesibilidad",
+      "accessibilityBody": "Fastline es compatible con VoiceOver y TalkBack, tipografía dinámica de hasta el 130 %, colores de alto contraste y movimiento reducido. Cada control tiene una etiqueta y ninguna información depende solo del color. Cuéntanos cualquier barrera en jpdash.creator@gmail.com y trabajaremos para solucionarla.",
+      "medical": "Aviso médico",
+      "privacyNote": "Tus datos de ayuno, peso y agua se quedan en este dispositivo. No se necesita cuenta."
+    },
+    "delete": {
+      "label": "Eliminar todos los datos",
+      "hint": "Elimina tus ayunos y registros de peso y agua, y restablece los ajustes. Tu compra se conserva.",
+      "title": "¿Eliminar todos los datos?",
+      "message": "Esto elimina de forma permanente todos los ayunos y registros de peso y agua, y restablece tus ajustes. Tu compra de Pro se conserva. Esto no se puede deshacer.",
+      "confirm": "Eliminar todo",
+      "failed": "Algo salió mal al eliminar. Inténtalo de nuevo."
+    },
+    "sheet": {
+      "close": "Cerrar"
+    }
+  }
+}

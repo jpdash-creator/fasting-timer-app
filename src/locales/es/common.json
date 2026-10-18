@@ -1,0 +1,38 @@
+{
+  "common": {
+    "storageErrorTitle": "No se pudieron guardar tus datos", "storageErrorBody": "Tus últimos cambios se conservan mientras la app esté abierta, pero podrían perderse al cerrarla. Libera espacio de almacenamiento e inténtalo de nuevo.",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "done": "Listo",
+    "continue": "Continuar",
+    "back": "Atrás",
+    "close": "Cerrar",
+    "undo": "Deshacer",
+    "retry": "Reintentar",
+    "edit": "Editar",
+    "add": "Añadir",
+    "ok": "OK",
+    "unlock": "Desbloquear",
+    "pro": "Pro",
+    "upgrade": "Mejorar a Pro",
+    "loading": "Cargando…",
+    "hours": "h",
+    "minutes": "min"
+  },
+  "tabs": {
+    "timer": "Temporizador",
+    "history": "Historial",
+    "stats": "Estadísticas",
+    "settings": "Ajustes", "a11yLabel": "Navegación principal" },
+  "validation": {
+    "startFuture": "La hora de inicio no puede estar en el futuro.",
+    "endFuture": "La hora de fin no puede estar en el futuro.",
+    "startBeforeEnd": "El inicio debe ser anterior al fin.",
+    "tooLong": "Un ayuno no puede durar más de 7 días.",
+    "overlap": "Se solapa con tu ayuno del %{date}."
+  },
+  "toast": {
+    "checkDeviceTime": "Revisa la hora de tu dispositivo"
+  }
+}

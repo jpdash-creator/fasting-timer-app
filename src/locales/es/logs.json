@@ -1,0 +1,31 @@
+{
+  "logs": {
+    "when": "Cuándo",
+    "freeLimit": "Mostrando los últimos %{count}. Pro conserva todo.",
+    "weight": {
+      "title": "Registrar peso",
+      "inputLabel": "Peso en %{unit}",
+      "invalid": "Introduce un peso en %{unit}.",
+      "hint": "Un decimal está bien.",
+      "notePlaceholder": "Nota (opcional)",
+      "recent": "Entradas recientes",
+      "deleted": "Entrada eliminada",
+      "deleteA11y": "Eliminar entrada %{value} %{unit}",
+      "note": "Nota"
+    },
+    "water": {
+      "title": "Agua",
+      "custom": "Cantidad personalizada",
+      "inputLabel": "Cantidad en %{unit}",
+      "invalid": "Introduce una cantidad de hasta 5000 ml (unos 169 oz).",
+      "added": "Añadido %{amount} %{unit}",
+      "deleted": "Entrada eliminada",
+      "goal": "Objetivo diario",
+      "goalLower": "Bajar el objetivo diario en 250 ml",
+      "goalRaise": "Subir el objetivo diario en 250 ml",
+      "today": "Hoy",
+      "none": "Aún no has registrado nada hoy.",
+      "deleteA11y": "Eliminar %{amount} %{unit} registrado a las %{time}"
+    }
+  }
+}

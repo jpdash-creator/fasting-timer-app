@@ -1,0 +1,23 @@
+{
+  "notifications": {
+    "title": "Fastline",
+    "fastStart": "Zeit, dein %{protocol}-Fasten zu starten. Tippe, um zu beginnen.",
+    "autoStart": "Ein neues %{protocol}-Fasten beginnt jetzt.",
+    "windowClosing": "Dein Essensfenster schließt in %{minutes} Minuten.",
+    "halfway": "Halbzeit. Noch %{remaining}.",
+    "oneHour": "Noch eine Stunde bis zum Ende deines Fastens.",
+    "goal": "Fasten abgeschlossen. Gut gemacht, %{hours} Std. geschafft.",
+    "longFast": "Du fastest seit %{hours} Std. Achte auf dich und hör auf, wenn du dich unwohl fühlst.",
+    "streakRisk": "Deine Serie von %{n} Tagen ist in Gefahr. Heute Abend ein kurzes Fasten starten?",
+    "channels": {
+      "fasting": "Fasten",
+      "tips": "Tipps"
+    },
+    "banner": {
+      "title": "Benachrichtigungen sind aus",
+      "body": "Schalte sie ein, um Fasten-Erinnerungen zu erhalten.",
+      "open": "Einstellungen öffnen",
+      "enable": "Aktivieren"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "logs": {
+    "when": "When",
+    "freeLimit": "Showing your last %{count}. Pro keeps everything.",
+    "weight": {
+      "title": "Log weight",
+      "inputLabel": "Weight in %{unit}",
+      "invalid": "Enter a weight in %{unit}.",
+      "hint": "One decimal is fine.",
+      "notePlaceholder": "Note (optional)",
+      "recent": "Recent entries",
+      "deleted": "Entry deleted",
+      "deleteA11y": "Delete entry %{value} %{unit}",
+      "note": "Note"
+    },
+    "water": {
+      "title": "Water",
+      "custom": "Custom amount",
+      "inputLabel": "Amount in %{unit}",
+      "invalid": "Enter an amount up to 5000 ml (about 169 oz).",
+      "added": "Added %{amount} %{unit}",
+      "deleted": "Entry deleted",
+      "goal": "Daily goal",
+      "goalLower": "Lower daily goal by 250 ml",
+      "goalRaise": "Raise daily goal by 250 ml",
+      "today": "Today",
+      "none": "Nothing logged today yet.",
+      "deleteA11y": "Delete %{amount} %{unit} logged at %{time}"
+    }
+  }
+}

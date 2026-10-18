@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "title": "Einstellungen",
+    "pro": {
+      "activeTitle": "Fastline Pro",
+      "activeBadge": "Pro",
+      "activeSubtitle": "Alle Funktionen sind freigeschaltet.",
+      "renewsOn": "Verlängert sich am %{date}",
+      "endsOn": "Endet am %{date}",
+      "trialEndsOn": "Testphase endet am %{date}",
+      "lifetime": "Lebenslang",
+      "upgradeTitle": "Auf Pro upgraden",
+      "upgradeSubtitle": "Alle Protokolle, Erinnerungen, Statistiken und Export.",
+      "billingIssue": "Es gibt ein Problem mit deiner Abrechnung. Öffne die Abo-Einstellungen, um es zu beheben."
+    },
+    "sections": {
+      "fasting": "Fasten",
+      "preferences": "Präferenzen",
+      "reminders": "Erinnerungen",
+      "goals": "Ziele",
+      "data": "Deine Daten",
+      "subscription": "Abonnement",
+      "about": "Über",
+      "danger": "Gefahrenbereich"
+    },
+    "protocol": {
+      "label": "Protokoll",
+      "hint": "Öffnet die Protokollauswahl"
+    },
+    "autoStart": {
+      "label": "Nächstes Fasten automatisch starten",
+      "hint": "Startet dein nächstes Fasten, wenn das Essensfenster endet."
+    },
+    "units": {
+      "weight": "Gewichtseinheit",
+      "volume": "Wassereinheit",
+      "kg": "Kilogramm (kg)",
+      "lb": "Pfund (lb)",
+      "ml": "Milliliter (ml)",
+      "oz": "Flüssigunzen (oz)"
+    },
+    "theme": {
+      "label": "Design",
+      "system": "System",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "haptics": "Haptisches Feedback",
+    "language": {
+      "label": "Sprache",
+      "device": "Gerätesprache",
+      "note": "Einige Bildschirme erscheinen möglicherweise noch auf Englisch, solange die Übersetzungen vervollständigt werden.",
+      "rtlNote": "Für Arabisch muss die App neu gestartet werden, damit sich die Layoutrichtung ändert."
+    },
+    "reminders": {
+      "fastStart": "Fastenstart",
+      "fastStartHint": "Wenn dein Essensfenster endet",
+      "fastEnd": "Fasten abgeschlossen",
+      "fastEndHint": "Wenn du dein Ziel erreichst",
+      "halfway": "Halbzeit",
+      "halfwayHint": "Zur Hälfte deines Fastens",
+      "oneHourLeft": "Noch eine Stunde",
+      "oneHourLeftHint": "Eine Stunde vor deinem Ziel",
+      "windowClosing": "Essensfenster schließt",
+      "windowClosingHint": "Bevor dein Essensfenster endet",
+      "offset": "Vorwarnzeit für das Fenster",
+      "offsetValue": "%{minutes} Min. vorher",
+      "offsetDecrease": "Vorwarnzeit verkürzen",
+      "offsetIncrease": "Vorwarnzeit verlängern",
+      "quietHours": "Ruhezeiten",
+      "quietHoursHint": "Stummschaltung der Erinnerungen bis zum Ende der Ruhezeiten",
+      "quietFrom": "Von",
+      "quietTo": "Bis",
+      "timeInvalid": "Verwende das 24-Stunden-Format, z. B. 22:00",
+      "timeLabel": "Zeit für %{label}, %{time}"
+    },
+    "water": {
+      "goal": "Tägliches Wasserziel",
+      "decrease": "Wasserziel senken",
+      "increase": "Wasserziel erhöhen"
+    },
+    "goalWeight": {
+      "label": "Zielgewicht",
+      "notSet": "Nicht festgelegt",
+      "set": "Zielgewicht festlegen",
+      "clear": "Zielgewicht entfernen",
+      "decrease": "Zielgewicht senken",
+      "increase": "Zielgewicht erhöhen"
+    },
+    "export": {
+      "label": "Daten als CSV exportieren",
+      "hint": "Teile deinen Verlauf als Tabellendatei.",
+      "title": "CSV exportieren",
+      "message": "Wähle, welche Daten exportiert werden sollen. Datumsangaben verwenden das ISO-8601-Format.",
+      "fasts": "Fastenzeiten",
+      "weight": "Gewichtseinträge",
+      "water": "Wassereinträge",
+      "empty": "Es gibt noch nichts zu exportieren.",
+      "done": "Export bereit.",
+      "saved": "CSV-Datei heruntergeladen.",
+      "unavailable": "Teilen ist auf diesem Gerät nicht verfügbar.",
+      "failed": "Export fehlgeschlagen. Bitte versuche es erneut."
+    },
+    "restore": {
+      "label": "Käufe wiederherstellen",
+      "working": "Wird wiederhergestellt…",
+      "found": "Käufe wiederhergestellt. Pro ist aktiv.",
+      "none": "Keine aktiven Käufe gefunden.",
+      "failed": "Wiederherstellung fehlgeschlagen. Prüfe deine Verbindung und versuche es erneut."
+    },
+    "manage": {
+      "label": "Abonnement verwalten",
+      "failed": "Die Abo-Einstellungen konnten nicht geöffnet werden."
+    },
+    "legal": {
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "support": "Support kontaktieren",
+      "supportSubject": "Fastline-Support",
+      "openFailed": "Der Link konnte nicht geöffnet werden."
+    },
+    "about": {
+      "version": "Version %{version}",
+      "versionLabel": "App-Version",
+      "mockOn": "Test-Pro eingeschaltet",
+      "mockOff": "Test-Pro ausgeschaltet",
+      "accessibility": "Barrierefreiheit",
+      "accessibilityBody": "Fastline unterstützt VoiceOver und TalkBack, dynamische Schriftgrößen bis 130 %, kontrastreiche Farben und reduzierte Bewegung. Jedes Bedienelement hat eine Beschriftung, und keine Information hängt allein von der Farbe ab. Teile uns Barrieren unter jpdash.creator@gmail.com mit, und wir arbeiten daran, sie zu beheben.",
+      "medical": "Medizinischer Hinweis",
+      "privacyNote": "Deine Fasten-, Gewichts- und Wasserdaten bleiben auf diesem Gerät. Ein Konto ist nicht nötig."
+    },
+    "delete": {
+      "label": "Alle Daten löschen",
+      "hint": "Entfernt deine Fastenzeiten sowie Gewichts- und Wassereinträge und setzt die Einstellungen zurück. Dein Kauf bleibt erhalten.",
+      "title": "Alle Daten löschen?",
+      "message": "Das entfernt dauerhaft alle Fastenzeiten sowie Gewichts- und Wassereinträge und setzt deine Einstellungen zurück. Dein Pro-Kauf bleibt erhalten. Das lässt sich nicht rückgängig machen.",
+      "confirm": "Alles löschen",
+      "failed": "Beim Löschen ist etwas schiefgelaufen. Bitte versuche es erneut."
+    },
+    "sheet": {
+      "close": "Schließen"
+    }
+  }
+}

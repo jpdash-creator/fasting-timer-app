@@ -1,0 +1,23 @@
+{
+  "notifications": {
+    "title": "Fastline",
+    "fastStart": "Hora de começar seu jejum %{protocol}. Toque para iniciar.",
+    "autoStart": "Um novo jejum %{protocol} está começando agora.",
+    "windowClosing": "Sua janela de alimentação fecha em %{minutes} minutos.",
+    "halfway": "Você está na metade. Faltam %{remaining}.",
+    "oneHour": "Falta uma hora para o fim do seu jejum.",
+    "goal": "Jejum concluído. Bom trabalho, %{hours}h completas.",
+    "longFast": "Você está em jejum há %{hours}h. Veja como se sente e pare se sentir mal-estar.",
+    "streakRisk": "Sua sequência de %{n} dias está em risco. Que tal começar um jejum curto hoje à noite?",
+    "channels": {
+      "fasting": "Jejum",
+      "tips": "Dicas"
+    },
+    "banner": {
+      "title": "As notificações estão desativadas",
+      "body": "Ative para receber lembretes de jejum.",
+      "open": "Abrir Ajustes",
+      "enable": "Ativar"
+    }
+  }
+}

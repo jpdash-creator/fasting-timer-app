@@ -1,0 +1,80 @@
+{
+  "paywall": {
+    "close": "Schließen",
+    "headline": "Erreiche deine Fastenziele",
+    "headlineOnboarding": "Dein Plan ist bereit",
+    "subhead": "Schalte alles frei, was Fastline kann.",
+    "benefit1": "Alle Protokolle und eigene Fastenpläne",
+    "benefit2": "Erinnerungen passend zu deinem Essensfenster",
+    "benefit3": "Wochenübersichten, Diagramme und CSV-Export",
+    "socialProof": "Mit %{rating} im Store bewertet",
+    "plan": {
+      "annual": "Jährlich",
+      "monthly": "Monatlich",
+      "weekly": "Wöchentlich",
+      "trialBadge": "%{days} Tage kostenlos testen",
+      "bestValue": "Bestes Angebot",
+      "perMonth": "%{price}/Monat",
+      "per": {
+        "year": "Jahr",
+        "month": "Monat",
+        "week": "Woche",
+        "once": "einmalig"
+      },
+      "billedYearly": "%{price} pro Jahr abgerechnet",
+      "billedMonthly": "%{price} pro Monat abgerechnet",
+      "billedWeekly": "%{price} pro Woche abgerechnet",
+      "selected": "Ausgewählt"
+    },
+    "lifetime": "Oder für immer freischalten, einmalig %{price}",
+    "cta": {
+      "trial": "%{days} Tage kostenlos testen",
+      "annual": "Abonnieren für %{price}/Jahr",
+      "monthly": "Abonnieren für %{price}/Monat",
+      "weekly": "Abonnieren für %{price}/Woche",
+      "lifetime": "Freischalten für %{price}",
+      "purchasing": "Wird verarbeitet…"
+    },
+    "legal": {
+      "trial": "%{days} Tage kostenlos, danach %{price} pro %{period}. Jederzeit in den %{store}-Einstellungen kündbar.",
+      "sub": "%{price} pro %{period}. Jederzeit in den %{store}-Einstellungen kündbar.",
+      "lifetime": "Einmalzahlung von %{price}. Kein Abonnement.",
+      "renew": "Das Abonnement verlängert sich automatisch, sofern es nicht mindestens 24 Stunden vor Ablauf der aktuellen Laufzeit gekündigt wird. Verwalte oder kündige es in den Einstellungen deines %{store}-Kontos.",
+      "trialConverts": "Wenn du eine kostenlose Testphase startest, geht sie zum oben genannten Preis in ein kostenpflichtiges Abonnement über, sofern du nicht vor Ablauf kündigst.",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzerklärung",
+      "restore": "Käufe wiederherstellen",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "store": "Store"
+    },
+    "state": {
+      "loading": "Pläne werden geladen…",
+      "unavailable": "Pläne konnten nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.",
+      "retry": "Erneut versuchen",
+      "pending": "Zahlung ausstehend. Wir schalten Pro automatisch frei.",
+      "success": "Willkommen bei Fastline Pro",
+      "restored": "Käufe wiederhergestellt",
+      "nothingToRestore": "Keine früheren Käufe gefunden.",
+      "error": "Etwas ist schiefgelaufen. Dir wurde nichts berechnet. Bitte versuche es erneut.",
+      "alreadyOwned": "Du hast Pro bereits. Wird wiederhergestellt…",
+      "mockNote": "Testmodus: Käufe werden simuliert."
+    },
+    "hardNote": "Fastline Pro ist erforderlich, um fortzufahren.",
+    "verifyLapsed": { "title": "Dein Abo konnte nicht überprüft werden", "body": "Stelle eine Internetverbindung her, um Pro wiederherzustellen." },
+    "billingIssue": {
+      "title": "Es gibt ein Problem mit deiner Zahlung",
+      "body": "Aktualisiere deine Zahlungsmethode, um Pro zu behalten.",
+      "open": "Store-Abonnements öffnen"
+    },
+    "expired": {
+      "headline": "Willkommen zurück",
+      "sub": "Dein Pro-Zugang ist abgelaufen. Wähle einen Plan, um fortzufahren."
+    },
+    "trigger": {
+      "gate": "Diese Funktion gehört zu Fastline Pro.",
+      "post_fast": "Gut gemacht bei deinem dritten Fasten. Mit Pro kommst du weiter.",
+      "settings": "Hole mehr aus jedem Fasten heraus."
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "timer": {
+    "start": "Fasten starten",
+    "endFast": "Fasten beenden",
+    "startEarly": "Früher starten",
+    "protocolChip": "%{name}-Protokoll",
+    "changeProtocol": "Protokoll ändern",
+    "ready": "Bereit, wenn du es bist",
+    "ringGoalShort": "%{h} Std.",
+    "ringReady": "Bereit",
+    "ringThenEating": "dann %{h} Std. Essen",
+    "readyHint": "Dein %{hours}-Stunden-Fasten beginnt, wenn du auf den Button tippst.",
+    "fasting": "Fasten läuft",
+    "elapsed": "vergangen",
+    "remaining": "noch %{time}",
+    "overGoal": "+%{time} über dem Ziel",
+    "goalReachedTitle": "Ziel erreicht",
+    "goalReachedBody": "Du kannst jetzt beenden oder weitermachen. Hör auf deinen Körper.",
+    "goalAt": "Ziel um %{time}",
+    "goalRow": "Ziel",
+    "eatingOpensAt": "Das Essensfenster öffnet um %{time}",
+    "editStart": "Startzeit bearbeiten",
+    "editStartValue": "Gestartet um %{time}",
+    "eatingWindow": "Essensfenster",
+    "eatingLeft": "zum Essen übrig",
+    "nextFastAt": "Das nächste Fasten beginnt um %{time}",
+    "eatingDone": "Essensfenster beendet",
+    "autoStartNote": "Dein nächstes Fasten startet automatisch.",
+    "percentDone": "%{pct}% des Ziels",
+    "skewToast": "Prüfe die Uhrzeit deines Geräts",
+    "skewDetail": "Deine Uhr scheint vor dem Start dieses Fastens zu liegen.",
+    "ring": {
+      "idle": "Kein Fasten aktiv. Ziel %{target}.",
+      "fasting": "Fasten läuft, %{elapsed} vergangen, noch %{remaining}",
+      "over": "Fasten läuft, %{elapsed} vergangen, Ziel erreicht, %{over} über dem Ziel",
+      "eating": "Essensfenster, noch %{remaining}"
+    },
+    "spoken": {
+      "hours": {
+        "one": "%{count} Stunde",
+        "other": "%{count} Stunden"
+      },
+      "minutes": {
+        "one": "%{count} Minute",
+        "other": "%{count} Minuten"
+      }
+    },
+    "stageChip": "%{stage}, tippen für mehr Infos",
+    "quick": {
+      "water": "Wasser",
+      "addWater": "%{amount} hinzufügen",
+      "moreWater": "Mehr",
+      "moreWaterLabel": "Eine andere Wassermenge eintragen",
+      "waterAdded": "Wasser eingetragen",
+      "mood": "Wie fühlst du dich?",
+      "moodSet": "Stimmung %{n} von 5"
+    },
+    "moods": {
+      "1": "Schwer",
+      "2": "Niedrig",
+      "3": "Okay",
+      "4": "Gut",
+      "5": "Super"
+    },
+    "startSheet": {
+      "title": "Starte dein Fasten",
+      "now": "Jetzt starten",
+      "earlier": "Früher gestartet…",
+      "pickPrompt": "Wann hast du angefangen?",
+      "confirm": "Fasten starten",
+      "tooFarBack": "Du kannst bis zu 48 Stunden zurückgehen.",
+      "willBeAt": "Fasten begann um %{time}",
+      "alreadyRunning": "Es läuft bereits ein Fasten. Beende zuerst das aktuelle Fasten."
+    },
+    "fiveTwo": { "fastDay": "Heute ist ein Fastentag. Dein Ziel sind %{hours} Std.", "eatDay": "Heute ist ein normaler Esstag. Dein nächster Fastentag ist %{day}." },
+    "endSheet": {
+      "staleNote": "Dieses Fasten läuft seit mehr als 7 Tagen. Ein Fasten kann höchstens 7 Tage dauern. Wähle daher, wann es tatsächlich endete.",
+      "title": "Dieses Fasten beenden?",
+      "body": "Du hast %{elapsed} gefastet. Dein Ziel war %{goal}.",
+      "bodyMet": "Du hast %{elapsed} gefastet. Du hast dein Ziel von %{goal} erreicht.",
+      "now": "Jetzt beenden",
+      "earlier": "Früher beendet…",
+      "pickPrompt": "Wann hast du aufgehört?",
+      "confirm": "Fasten beenden",
+      "keepGoing": "Weiter fasten",
+      "willBeAt": "Fasten endete um %{time}",
+      "tooEarly": "Die Endzeit muss nach der Startzeit liegen."
+    },
+    "time": {
+      "agoShort": "vor %{n} Std.",
+      "agoMin": "vor %{n} Min.",
+      "pickExact": "Uhrzeit wählen",
+      "pickDate": "Datum wählen",
+      "currentValue": "Ausgewählt: %{time}",
+      "setTime": "Zeit festlegen",
+      "dateTimeA11y": "Datums- und Zeitauswahl"
+    },
+    "safety": {
+      "title24": "24 Stunden Fasten",
+      "title48": "48 Stunden Fasten",
+      "title72": "72 Stunden Fasten",
+      "body24": "Du fastest seit 24 Stunden. Hör auf und iss etwas, wenn du dich unwohl, schwindelig oder schwach fühlst. Längeres Fasten solltest du mit einer medizinischen Fachperson besprechen.",
+      "body48": "Du fastest seit 48 Stunden. Hör auf und iss etwas, wenn du dich unwohl, schwindelig oder schwach fühlst. Längeres Fasten solltest du mit einer medizinischen Fachperson besprechen.",
+      "body72": "Du fastest seit über 72 Stunden. Das ist ein sehr langes Fasten und birgt echte Gesundheitsrisiken. Mach nur mit ärztlicher Begleitung weiter. Du kannst jederzeit jetzt beenden.",
+      "read": "Habe ich gelesen",
+      "understand": "Ich verstehe die Risiken",
+      "endInstead": "Mein Fasten beenden"
+    },
+    "picker": {
+      "title": "Fastenprotokoll",
+      "fastEat": "%{fast} Std. Fasten · %{eat} Std. Essen",
+      "fastOnly": "%{fast} Std. Fasten",
+      "selected": "Ausgewählt",
+      "locked": "Pro",
+      "lockedLabel": "%{name}, erfordert Pro",
+      "customHeader": "Deine Protokolle",
+      "createCustom": "Eigenes Protokoll erstellen",
+      "customPro": "Pro",
+      "presets": "Voreinstellungen",
+      "fiveTwoNote": "Zwei 24-Stunden-Fastentage pro Woche",
+      "close": "Schließen",
+      "delete": "%{name} löschen",
+      "switchTitle": "Ziel für dieses Fasten ändern?",
+      "switchBody": "Dein laufendes Fasten behält seine Startzeit. Das Ziel ändert sich von %{from} auf %{to}.",
+      "switchConfirm": "Ziel ändern",
+      "switchCancel": "Beibehalten",
+      "applied": "Protokoll aktualisiert"
+    },
+    "custom": {
+      "title": "Eigenes Protokoll",
+      "name": "Name",
+      "namePlaceholder": "z. B. Wochenend-Reset",
+      "defaultName": "Eigenes %{h} Std.",
+      "hours": "Fastenstunden",
+      "hoursValue": "%{h} Stunden",
+      "decrease": "Fastenstunden verringern",
+      "increase": "Fastenstunden erhöhen",
+      "eatingDerived": "Essensfenster: %{h} Stunden",
+      "colour": "Farbe",
+      "colourOption": "Farbe %{n}",
+      "save": "Protokoll speichern",
+      "range": "Wähle zwischen 1 und 72 Stunden."
+    },
+    "stageInfo": {
+      "title": "Fastenphasen",
+      "current": "Du bist hier",
+      "reached": "Erreicht",
+      "upcoming": "Beginnt bei %{h} Std.",
+      "fromHour": "ab %{h} Std.",
+      "none": "Starte ein Fasten, um zu sehen, wo du stehst.",
+      "evidenceTitle": "Zur Studienlage",
+      "evidence": "Die Zeitangaben der Phasen sind grobe, typische Bereiche. Sie sind keine Vorhersage für dich, und manche Effekte sind besser erforscht als andere.",
+      "elapsedNow": "%{time} in deinem Fasten"
+    },
+    "summary": {
+      "title": "Fasten abgeschlossen",
+      "duration": "Dauer",
+      "goalMet": "Ziel erreicht",
+      "goalNotMet": "Früher beendet",
+      "goalNotMetBody": "Jedes Fasten zählt. Dein Körper hatte trotzdem seine Pause, und du kannst von hier aus weitermachen.",
+      "goalMetBody": "Gut gemacht. Du bist bei deinem Plan geblieben.",
+      "stagesReached": "Erreichte Phasen",
+      "mood": "Wie hat es sich angefühlt?",
+      "note": "Notiz",
+      "notePlaceholder": "Etwas, woran du dich erinnern möchtest (optional)",
+      "save": "Speichern",
+      "share": "Teilen",
+      "streak": "%{n} Tage in Folge",
+      "notFound": "Dieses Fasten wurde nicht gefunden.",
+      "protocolLine": "%{name}-Protokoll"
+    },
+    "a11y": {
+      "close": "Schließen",
+      "sheetBackdrop": "Schließen"
+    },
+    "banner": {
+      "notifDenied": "Benachrichtigungen sind aus",
+      "openSettings": "Öffne die Einstellungen, um Fasten-Erinnerungen zu erhalten"
+    }
+  }
+}

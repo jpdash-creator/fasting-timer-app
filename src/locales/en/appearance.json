@@ -1,0 +1,36 @@
+{
+  "appearance": {
+    "title": "Appearance",
+    "accent": {
+      "label": "Accent colour",
+      "footer": "Teal is free. More accent colours and app icons come with Fastline Pro."
+    },
+    "themes": {
+      "teal": "Teal",
+      "ocean": "Ocean",
+      "dusk": "Dusk",
+      "sunrise": "Sunrise"
+    },
+    "selected": "Selected",
+    "preview": {
+      "title": "Preview",
+      "fasting": "Fasting",
+      "elapsed": "14h 20m",
+      "button": "End fast",
+      "chip": "Goal reached"
+    },
+    "icon": {
+      "label": "App icon",
+      "footer": "Changes the icon on your home screen. It works in the installed app, not in Expo Go or on the web.",
+      "changed": "App icon changed to %{name}.",
+      "unsupportedWeb": "App icons can only be changed in the Android and iOS apps.",
+      "unsupportedBuild": "This build can't switch the app icon. Install the full Fastline app to use it.",
+      "failed": "Couldn't change the app icon. Please try again."
+    },
+    "a11y": {
+      "themeOption": "%{name} accent colour",
+      "iconOption": "%{name} app icon",
+      "locked": "Pro feature. Opens the upgrade screen."
+    }
+  }
+}

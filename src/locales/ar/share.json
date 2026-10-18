@@ -1,0 +1,32 @@
+{
+  "share": {
+    "title": "شارك صيامك",
+    "headline": "اكتمل الصيام",
+    "headlineInProgress": "صيام جارٍ",
+    "hoursUnit": "ساعة",
+    "protocol": "البروتوكول",
+    "goalMet": "تحقق الهدف",
+    "goalNotMet": "%{percent}% من الهدف",
+    "streakCount": {
+      "zero": "سلسلة %{count} يوم",
+      "one": "سلسلة يوم واحد",
+      "two": "سلسلة يومين",
+      "few": "سلسلة %{count} أيام",
+      "many": "سلسلة %{count} يومًا",
+      "other": "سلسلة %{count} يوم"
+    },
+    "streakNone": "ابدأ سلسلتك",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "صيام متقطع ببساطة",
+    "watermark": "صُنع بواسطة Fastline",
+    "button": "مشاركة",
+    "sharing": "جارٍ التحضير…",
+    "removeWatermark": "أزل العلامة المائية مع Pro",
+    "notFound": "تعذّر العثور على هذا الصيام.",
+    "unavailable": "المشاركة غير متاحة على هذا الجهاز.",
+    "failed": "تعذّر إنشاء الصورة. يُرجى المحاولة مرة أخرى.",
+    "cardLabel": "بطاقة المشاركة: صيام %{duration}، %{protocol}، %{streak}",
+    "message": "أنهيت للتو صيام %{duration} مع Fastline."
+  }
+}

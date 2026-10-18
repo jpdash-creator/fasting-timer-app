@@ -1,0 +1,80 @@
+{
+  "paywall": {
+    "close": "Cerrar",
+    "headline": "Alcanza tus metas de ayuno",
+    "headlineOnboarding": "Tu plan está listo",
+    "subhead": "Desbloquea todo lo que Fastline puede hacer.",
+    "benefit1": "Todos los protocolos y ayunos diseñados por ti",
+    "benefit2": "Avisos ajustados a tu propia ventana de comida",
+    "benefit3": "Resúmenes semanales, gráficos y exportación CSV",
+    "socialProof": "Valorada con %{rating} en la tienda",
+    "plan": {
+      "annual": "Anual",
+      "monthly": "Mensual",
+      "weekly": "Semanal",
+      "trialBadge": "Prueba gratis de %{days} días",
+      "bestValue": "Mejor valor",
+      "perMonth": "%{price}/mes",
+      "per": {
+        "year": "año",
+        "month": "mes",
+        "week": "semana",
+        "once": "pago único"
+      },
+      "billedYearly": "Se cobra %{price} al año",
+      "billedMonthly": "Se cobra %{price} al mes",
+      "billedWeekly": "Se cobra %{price} a la semana",
+      "selected": "Seleccionado"
+    },
+    "lifetime": "O desbloquéalo para siempre, %{price} pago único",
+    "cta": {
+      "trial": "Empezar prueba gratis de %{days} días",
+      "annual": "Suscribirse por %{price}/año",
+      "monthly": "Suscribirse por %{price}/mes",
+      "weekly": "Suscribirse por %{price}/semana",
+      "lifetime": "Desbloquear por %{price}",
+      "purchasing": "Procesando…"
+    },
+    "legal": {
+      "trial": "%{days} días gratis, luego %{price} por %{period}. Cancela cuando quieras en los ajustes de %{store}.",
+      "sub": "%{price} por %{period}. Cancela cuando quieras en los ajustes de %{store}.",
+      "lifetime": "Pago único de %{price}. Sin suscripción.",
+      "renew": "La suscripción se renueva automáticamente a menos que se cancele al menos 24 horas antes del final del periodo actual. Gestiona o cancela en los ajustes de tu cuenta de %{store}.",
+      "trialConverts": "Si inicias una prueba gratis, se convierte en una suscripción de pago al precio indicado arriba a menos que canceles antes de que termine.",
+      "terms": "Términos de uso",
+      "privacy": "Política de privacidad",
+      "restore": "Restaurar compras",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "store": "la tienda"
+    },
+    "state": {
+      "loading": "Cargando planes…",
+      "unavailable": "No se pudieron cargar los planes. Revisa tu conexión y reintenta.",
+      "retry": "Reintentar",
+      "pending": "Pago pendiente. Desbloquearemos Pro automáticamente.",
+      "success": "Te damos la bienvenida a Fastline Pro",
+      "restored": "Compras restauradas",
+      "nothingToRestore": "No se encontraron compras anteriores.",
+      "error": "Algo salió mal. No se te ha cobrado. Inténtalo de nuevo.",
+      "alreadyOwned": "Ya tienes Pro. Restaurando…",
+      "mockNote": "Modo de prueba: las compras son simuladas."
+    },
+    "hardNote": "Se requiere Fastline Pro para continuar.",
+    "verifyLapsed": { "title": "No pudimos verificar tu suscripción", "body": "Vuelve a conectarte a internet para recuperar Pro." },
+    "billingIssue": {
+      "title": "Hay un problema con tu pago",
+      "body": "Actualiza tu método de pago para conservar Pro.",
+      "open": "Abrir suscripciones de la tienda"
+    },
+    "expired": {
+      "headline": "Te damos la bienvenida de nuevo",
+      "sub": "Tu acceso Pro ha terminado. Elige un plan para continuar."
+    },
+    "trigger": {
+      "gate": "Esta función forma parte de Fastline Pro.",
+      "post_fast": "Buen trabajo con tu tercer ayuno. Ve más allá con Pro.",
+      "settings": "Saca el máximo de cada ayuno."
+    }
+  }
+}

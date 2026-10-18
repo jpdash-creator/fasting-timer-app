@@ -1,0 +1,31 @@
+{
+  "logs": {
+    "when": "متى",
+    "freeLimit": "يظهر آخر %{count}. يحتفظ Pro بكل شيء.",
+    "weight": {
+      "title": "تسجيل الوزن",
+      "inputLabel": "الوزن بوحدة %{unit}",
+      "invalid": "أدخل الوزن بوحدة %{unit}.",
+      "hint": "يكفي منزلة عشرية واحدة.",
+      "notePlaceholder": "ملاحظة (اختياري)",
+      "recent": "الإدخالات الأخيرة",
+      "deleted": "تم حذف الإدخال",
+      "deleteA11y": "حذف الإدخال %{value} %{unit}",
+      "note": "ملاحظة"
+    },
+    "water": {
+      "title": "الماء",
+      "custom": "كمية مخصصة",
+      "inputLabel": "الكمية بوحدة %{unit}",
+      "invalid": "أدخل كمية حتى 5000 ml (نحو 169 oz).",
+      "added": "تمت إضافة %{amount} %{unit}",
+      "deleted": "تم حذف الإدخال",
+      "goal": "الهدف اليومي",
+      "goalLower": "خفض الهدف اليومي بمقدار 250 ml",
+      "goalRaise": "رفع الهدف اليومي بمقدار 250 ml",
+      "today": "اليوم",
+      "none": "لم يُسجَّل شيء اليوم بعد.",
+      "deleteA11y": "حذف %{amount} %{unit} المسجّلة عند %{time}"
+    }
+  }
+}

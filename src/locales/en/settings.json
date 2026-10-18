@@ -1,0 +1,133 @@
+{
+  "settings": {
+    "title": "Settings",
+    "pro": {
+      "activeTitle": "Fastline Pro",
+      "activeBadge": "Pro",
+      "activeSubtitle": "All features are unlocked.",
+      "renewsOn": "Renews on %{date}",
+      "endsOn": "Ends on %{date}",
+      "trialEndsOn": "Trial ends on %{date}",
+      "lifetime": "Lifetime",
+      "upgradeTitle": "Upgrade to Pro",
+      "upgradeSubtitle": "All protocols, reminders, stats and export.",
+      "billingIssue": "There is a problem with your billing. Open subscription settings to fix it."
+    },
+    "sections": {
+      "fasting": "Fasting",
+      "preferences": "Preferences",
+      "reminders": "Reminders",
+      "goals": "Goals",
+      "data": "Your data",
+      "subscription": "Subscription",
+      "about": "About",
+      "danger": "Danger zone"
+    },
+    "protocol": { "label": "Protocol", "hint": "Opens the protocol picker" },
+    "autoStart": { "label": "Auto-start next fast", "hint": "Starts your next fast when the eating window ends." },
+    "units": {
+      "weight": "Weight unit",
+      "volume": "Water unit",
+      "kg": "Kilograms (kg)",
+      "lb": "Pounds (lb)",
+      "ml": "Millilitres (ml)",
+      "oz": "Fluid ounces (oz)"
+    },
+    "theme": {
+      "label": "Theme",
+      "system": "System",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "haptics": "Haptic feedback",
+    "language": {
+      "label": "Language",
+      "device": "Device language",
+      "note": "Some screens may still appear in English while translations are completed.",
+      "rtlNote": "Arabic needs an app restart to change layout direction."
+    },
+    "reminders": {
+      "fastStart": "Fast start",
+      "fastStartHint": "When your eating window ends",
+      "fastEnd": "Fast complete",
+      "fastEndHint": "When you reach your goal",
+      "halfway": "Halfway point",
+      "halfwayHint": "Midway through your fast",
+      "oneHourLeft": "One hour left",
+      "oneHourLeftHint": "An hour before your goal",
+      "windowClosing": "Eating window closing",
+      "windowClosingHint": "Before your eating window ends",
+      "offset": "Window warning time",
+      "offsetValue": "%{minutes} min before",
+      "offsetDecrease": "Decrease warning time",
+      "offsetIncrease": "Increase warning time",
+      "quietHours": "Quiet hours",
+      "quietHoursHint": "Mutes reminders until quiet hours end",
+      "quietFrom": "From",
+      "quietTo": "To",
+      "timeInvalid": "Use 24-hour time like 22:00",
+      "timeLabel": "%{label} time, %{time}"
+    },
+    "water": {
+      "goal": "Daily water goal",
+      "decrease": "Decrease water goal",
+      "increase": "Increase water goal"
+    },
+    "goalWeight": {
+      "label": "Goal weight",
+      "notSet": "Not set",
+      "set": "Set goal weight",
+      "clear": "Clear goal weight",
+      "decrease": "Decrease goal weight",
+      "increase": "Increase goal weight"
+    },
+    "export": {
+      "label": "Export data as CSV",
+      "hint": "Share your history as a spreadsheet file.",
+      "title": "Export CSV",
+      "message": "Choose which data to export. Dates use ISO 8601 format.",
+      "fasts": "Fasts",
+      "weight": "Weight entries",
+      "water": "Water entries",
+      "empty": "There is nothing to export yet.",
+      "done": "Export ready.",
+      "saved": "CSV file downloaded.",
+      "unavailable": "Sharing is not available on this device.",
+      "failed": "Couldn't export. Please try again."
+    },
+    "restore": {
+      "label": "Restore purchases",
+      "working": "Restoring…",
+      "found": "Purchases restored. Pro is active.",
+      "none": "No active purchases found.",
+      "failed": "Couldn't restore. Check your connection and try again."
+    },
+    "manage": { "label": "Manage subscription", "failed": "Couldn't open subscription settings." },
+    "legal": {
+      "privacy": "Privacy policy",
+      "terms": "Terms of use",
+      "support": "Contact support",
+      "supportSubject": "Fastline support",
+      "openFailed": "Couldn't open the link."
+    },
+    "about": {
+      "version": "Version %{version}",
+      "versionLabel": "App version",
+      "mockOn": "Mock Pro turned on",
+      "mockOff": "Mock Pro turned off",
+      "accessibility": "Accessibility",
+      "accessibilityBody": "Fastline supports VoiceOver and TalkBack, dynamic type up to 130%, high-contrast colours and reduced motion. Every control has a label, and no information relies on colour alone. Tell us about any barrier at jpdash.creator@gmail.com and we will work to fix it.",
+      "medical": "Medical disclaimer",
+      "privacyNote": "Your fasting, weight and water data stays on this device. No account is needed."
+    },
+    "delete": {
+      "label": "Delete all data",
+      "hint": "Removes your fasts, weight and water logs and resets settings. Your purchase is kept.",
+      "title": "Delete all data?",
+      "message": "This permanently removes all fasts, weight and water entries and resets your settings. Your Pro purchase is kept. This can't be undone.",
+      "confirm": "Delete everything",
+      "failed": "Something went wrong while deleting. Please try again."
+    },
+    "sheet": { "close": "Close" }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "title": "Estadísticas",
+    "tabs": {
+      "overview": "Resumen",
+      "weight": "Peso",
+      "water": "Agua"
+    },
+    "days": {
+      "one": "%{count} día",
+      "other": "%{count} días"
+    },
+    "streak": {
+      "current": "Racha actual",
+      "longest": "Racha más larga"
+    },
+    "totals": {
+      "fasts": "Ayunos totales",
+      "hours": "Horas totales",
+      "avg": "Duración media",
+      "rate": "Tasa de objetivos cumplidos"
+    },
+    "empty": {
+      "title": "Completa 2 ayunos para desbloquear las estadísticas",
+      "body": "Tus rachas, totales y tendencias aparecerán aquí.",
+      "cta": "Empezar un ayuno"
+    },
+    "locked": {
+      "title": "Mira el panorama completo",
+      "body": "Pro añade la racha más larga, totales, gráficos y un resumen semanal."
+    },
+    "charts": {
+      "weeklyTitle": "Horas de ayuno esta semana (h)",
+      "weeklySummary": "%{total} horas en los últimos 7 días, unas %{avg} por día. Día más largo: %{day}.",
+      "weeklyNone": "Ningún ayuno completado en los últimos 7 días.",
+      "trendTitle": "Tendencia de 30 días (h por día)",
+      "trendSummary": "Horas diarias de ayuno, media de 7 días: de %{from} a %{to} horas.",
+      "weekdayTitle": "Ayunos por día de la semana (número)",
+      "weekdaySummary": "La mayoría de los ayunos terminan el %{day} (%{count}).",
+      "weekdayNone": "Aún no hay ayunos.",
+      "valFirst": "Primero",
+      "valLast": "Último",
+      "valMin": "Más bajo",
+      "valMax": "Más alto"
+    },
+    "insight": {
+      "title": "Tu semana",
+      "bestDay": "Sueles sentirte mejor los %{day}.",
+      "bestProtocol": "%{name} es tu protocolo más fiable, con un %{pct}% de objetivos cumplidos.",
+      "moodLength": "El ánimo promedia %{long} tras ayunos más largos y %{short} tras los más cortos.",
+      "tip": {
+        "keepGoing": "Buen ritmo. Mantén el patrón que te funciona.",
+        "tryLonger": "Los ayunos más largos te han sentado bien últimamente. Podrías probar a añadir una hora en un día que te venga bien.",
+        "tryShorter": "Los objetivos se te han ido escapando. Un protocolo algo más corto puede ser más fácil de mantener.",
+        "logMood": "Añade tu ánimo después de cada ayuno para recibir sugerencias a tu medida aquí.",
+        "moreData": "Completa unos cuantos ayunos más este mes para recibir sugerencias personales."
+      },
+      "disclaimer": "Basado en tus últimos 28 días. Solo por interés general, no es un consejo."
+    },
+    "badges": {
+      "title": "Insignias",
+      "earned": "conseguida",
+      "locked": "bloqueada, %{pct} por ciento",
+      "firstFast": "Primer ayuno",
+      "streak3": "Racha de 3 días",
+      "streak7": "Racha de 7 días",
+      "streak30": "Racha de 30 días",
+      "hours100": "100 horas",
+      "first20h": "Primer ayuno de 20 h"
+    },
+    "weight": {
+      "current": "Peso actual",
+      "currentA11y": "Peso actual %{value} %{unit}",
+      "none": "Aún no hay peso registrado",
+      "empty": "Registra tu peso para empezar tu tendencia.",
+      "lower": "Registrar un peso un poco menor",
+      "higher": "Registrar un peso un poco mayor",
+      "log": "Registrar peso",
+      "down": "Baja %{value} %{unit} desde el último registro",
+      "up": "Sube %{value} %{unit} desde el último registro",
+      "noChange": "Sin cambios desde el último registro",
+      "range": "%{days}d",
+      "chartTitle": "Peso, últimos %{days} días (%{unit})",
+      "chartSummary": "%{count} registros en %{days} días, de %{from} a %{to} %{unit}. La línea verde es la media de 7 días.",
+      "goalLine": "Peso objetivo de %{goal} %{unit} mostrado como línea discontinua.",
+      "goalHint": "Define un peso objetivo en Ajustes para verlo en el gráfico.",
+      "needTwo": "Registra al menos dos entradas en este rango para ver un gráfico.",
+      "lockedTitle": "Las tendencias de peso son una función Pro",
+      "lockedBody": "La versión gratuita conserva tus últimos 7 registros. Pro añade gráficos, una media de 7 días y tu línea de objetivo.",
+      "legendEntries": "Registros",
+      "legendAverage": "Media de 7 días",
+      "legendGoal": "Meta %{goal} %{unit}"
+    },
+    "water": {
+      "ringA11y": "%{total} de %{goal} %{unit} hoy, %{pct} por ciento",
+      "ofGoal": "de %{goal} %{unit}",
+      "reached": "Objetivo alcanzado",
+      "addA11y": "Añadir %{amount} %{unit}",
+      "added": "Añadido %{amount} %{unit}",
+      "custom": "Cantidad personalizada e historial"
+    }
+  }
+}

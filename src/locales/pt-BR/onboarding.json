@@ -1,0 +1,99 @@
+{
+  "onboarding": {
+    "progress": "Etapa %{current} de %{total}",
+    "back": "Voltar",
+    "continue": "Continuar",
+    "welcome": {
+      "title": "Jejum, sem complicação",
+      "subtitle": "Um toque para começar. Um timer tranquilo, lembretes gentis e progresso claro. Sem precisar de conta.",
+      "point1": "Comece um jejum com um toque e acompanhe cada fase",
+      "point2": "Lembretes suaves quando um jejum começa, termina ou sua janela fecha",
+      "point3": "Sequências, peso e água, guardados no seu dispositivo",
+      "cta": "Começar",
+      "tagline": "Fastline"
+    },
+    "goal": {
+      "title": "Qual é o seu objetivo principal?",
+      "subtitle": "Isso orienta as sugestões. Você pode mudar quando quiser.",
+      "lose": "Perder peso",
+      "maintain": "Manter meu peso",
+      "focus": "Melhorar foco e energia",
+      "routine": "Criar uma rotina"
+    },
+    "experience": {
+      "title": "Você já conhece o jejum?",
+      "subtitle": "Vamos escolher um ponto de partida confortável.",
+      "new": "Novo no jejum",
+      "newHint": "Nunca jejuei de propósito",
+      "some": "Alguma experiência",
+      "someHint": "Já tentei algumas vezes",
+      "experienced": "Experiente",
+      "experiencedHint": "Jejuo com regularidade"
+    },
+    "schedule": {
+      "title": "Quando você costuma comer?",
+      "subtitle": "Usamos isso para sugerir sua janela de alimentação.",
+      "firstMeal": "Primeira refeição",
+      "lastMeal": "Última refeição",
+      "pick": "Escolher o horário de %{label}, atualmente %{time}",
+      "window": "Sua janela de alimentação é de cerca de %{hours} horas.",
+      "increase": "15 minutos mais tarde",
+      "decrease": "15 minutos mais cedo"
+    },
+    "safety": {
+      "title": "Uma checagem rápida de segurança",
+      "subtitle": "O jejum não é indicado para todos. Por favor, confirme:",
+      "adult": "Tenho 18 anos ou mais",
+      "pregnant": "Não estou grávida nem amamentando",
+      "medical": "Não tenho condição médica que exija refeições regulares",
+      "warningTitle": "O jejum pode não ser adequado para você",
+      "warning": "O jejum pode não ser adequado para você. Converse com um profissional de saúde antes de usar este app.",
+      "understand": "Entendi",
+      "disclaimer": "O Fastline não é um dispositivo médico e não oferece orientação médica."
+    },
+    "protocol": {
+      "title": "Escolha seu plano",
+      "subtitle": "Sugerimos um com base nas suas respostas. Você pode trocar quando quiser.",
+      "recommended": "Recomendado",
+      "free": "Grátis",
+      "needsPro": "Pro",
+      "proNote": "Os planos marcados como Pro estão incluídos no Fastline Pro. Você pode conhecê-los agora.",
+      "fastEat": "%{fast}h de jejum, %{eat}h de alimentação",
+      "fastOnly": "%{fast}h de jejum",
+      "descriptions": {
+        "12_12": "Um começo suave. Fácil de manter.",
+        "14_10": "Um pequeno passo além do 12:12.",
+        "16_8": "O plano mais popular. Pule o café da manhã ou adiante o jantar.",
+        "18_6": "Um jejum mais longo para quem já tem experiência.",
+        "20_4": "Uma janela de alimentação curta. Avançado.",
+        "OMAD": "Uma refeição por dia. Avançado.",
+        "5_2": "Dois jejuns de 24 horas por semana.",
+        "36H": "Um único jejum prolongado. Avançado."
+      }
+    },
+    "reminders": {
+      "title": "Mantenha o ritmo com lembretes",
+      "subtitle": "Três avisos gentis. Nada além disso.",
+      "r1": "Quando for hora de começar seu jejum",
+      "r2": "Quando seu jejum estiver na metade",
+      "r3": "Quando você atingir sua meta",
+      "enable": "Ativar lembretes",
+      "later": "Talvez depois",
+      "enabledNote": "Os lembretes estão ativados. Mude quando quiser em Ajustes.",
+      "deniedNote": "As notificações estão desativadas. Você pode ativá-las nos ajustes do dispositivo."
+    },
+    "summary": {
+      "title": "Seu plano está pronto",
+      "plan": "Seu plano: %{protocol}",
+      "window": "Janela de alimentação %{from}–%{to}",
+      "first": "Seu primeiro jejum começa hoje à noite às %{time}",
+      "check1": "Plano escolhido",
+      "check2": "Janela de alimentação definida",
+      "check3": "Lembretes prontos",
+      "cta": "Ver meu plano",
+      "ctaHard": "Desbloquear o Fastline",
+      "a11y": "Seu plano: %{protocol}. Janela de alimentação das %{from} às %{to}. Seu primeiro jejum começa hoje à noite às %{time}.",
+      "unlockNote": "Desbloqueie o Fastline para começar seu primeiro jejum."
+    }
+  }
+}

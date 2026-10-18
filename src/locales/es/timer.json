@@ -1,0 +1,181 @@
+{
+  "timer": {
+    "start": "Empezar ayuno",
+    "endFast": "Terminar ayuno",
+    "startEarly": "Empezar antes",
+    "protocolChip": "Protocolo %{name}",
+    "changeProtocol": "Cambiar protocolo",
+    "ready": "Cuando tú quieras",
+    "ringGoalShort": "%{h} h",
+    "ringReady": "Listo",
+    "ringThenEating": "luego %{h} h de comida",
+    "readyHint": "Tu ayuno de %{hours} horas empieza cuando toques el botón.",
+    "fasting": "En ayuno",
+    "elapsed": "transcurrido",
+    "remaining": "%{time} restante",
+    "overGoal": "+%{time} sobre el objetivo",
+    "goalReachedTitle": "Objetivo alcanzado",
+    "goalReachedBody": "Puedes terminar ahora o seguir. Escucha a tu cuerpo.",
+    "goalAt": "Objetivo a las %{time}",
+    "goalRow": "Objetivo",
+    "eatingOpensAt": "La ventana de comida abre a las %{time}",
+    "editStart": "Editar hora de inicio",
+    "editStartValue": "Empezó %{time}",
+    "eatingWindow": "Ventana de comida",
+    "eatingLeft": "para comer",
+    "nextFastAt": "El siguiente ayuno empieza a las %{time}",
+    "eatingDone": "Ventana de comida completada",
+    "autoStartNote": "Tu siguiente ayuno empezará automáticamente.",
+    "percentDone": "%{pct}% del objetivo",
+    "skewToast": "Revisa la hora de tu dispositivo",
+    "skewDetail": "Tu reloj parece ir antes del inicio de este ayuno.",
+    "ring": {
+      "idle": "Ningún ayuno en curso. Objetivo %{target}.",
+      "fasting": "En ayuno, %{elapsed} transcurridas, %{remaining} restantes",
+      "over": "En ayuno, %{elapsed} transcurridas, objetivo alcanzado, %{over} sobre el objetivo",
+      "eating": "Ventana de comida, %{remaining} restantes"
+    },
+    "spoken": {
+      "hours": {
+        "one": "%{count} hora",
+        "other": "%{count} horas"
+      },
+      "minutes": {
+        "one": "%{count} minuto",
+        "other": "%{count} minutos"
+      }
+    },
+    "stageChip": "%{stage}, toca para saber más",
+    "quick": {
+      "water": "Agua",
+      "addWater": "Añadir %{amount}",
+      "moreWater": "Más",
+      "moreWaterLabel": "Registrar otra cantidad de agua",
+      "waterAdded": "Agua registrada",
+      "mood": "¿Cómo te sientes?",
+      "moodSet": "Ánimo %{n} de 5"
+    },
+    "moods": {
+      "1": "Duro",
+      "2": "Bajo",
+      "3": "Normal",
+      "4": "Bien",
+      "5": "Genial"
+    },
+    "startSheet": {
+      "title": "Empieza tu ayuno",
+      "now": "Empezar ahora",
+      "earlier": "Empecé antes…",
+      "pickPrompt": "¿Cuándo empezaste?",
+      "confirm": "Empezar ayuno",
+      "tooFarBack": "Puedes retroceder hasta 48 horas.",
+      "willBeAt": "El ayuno empezó %{time}",
+      "alreadyRunning": "Ya hay un ayuno en curso. Termina primero el ayuno actual."
+    },
+    "fiveTwo": { "fastDay": "Hoy es día de ayuno. Tu objetivo es de %{hours} h.", "eatDay": "Hoy es un día normal de comidas. Tu próximo día de ayuno es %{day}." },
+    "endSheet": {
+      "staleNote": "Este ayuno lleva más de 7 días en curso. Un ayuno puede durar como máximo 7 días, así que elige cuándo terminó realmente.",
+      "title": "¿Terminar este ayuno?",
+      "body": "Has ayunado durante %{elapsed}. Tu objetivo era %{goal}.",
+      "bodyMet": "Has ayunado durante %{elapsed}. Alcanzaste tu objetivo de %{goal}.",
+      "now": "Terminar ahora",
+      "earlier": "Terminé antes…",
+      "pickPrompt": "¿Cuándo terminaste?",
+      "confirm": "Terminar ayuno",
+      "keepGoing": "Seguir ayunando",
+      "willBeAt": "El ayuno terminó %{time}",
+      "tooEarly": "La hora de fin debe ser posterior a la hora de inicio."
+    },
+    "time": {
+      "agoShort": "hace %{n} h",
+      "agoMin": "hace %{n} min",
+      "pickExact": "Elige una hora",
+      "pickDate": "Elige una fecha",
+      "currentValue": "Seleccionado: %{time}",
+      "setTime": "Fijar hora",
+      "dateTimeA11y": "Selector de fecha y hora"
+    },
+    "safety": {
+      "title24": "24 horas de ayuno",
+      "title48": "48 horas de ayuno",
+      "title72": "72 horas de ayuno",
+      "body24": "Llevas 24 horas en ayuno. Para y come si te sientes mal, mareado o a punto de desmayarte. Los ayunos prolongados deben consultarse con un profesional de la salud.",
+      "body48": "Llevas 48 horas en ayuno. Para y come si te sientes mal, mareado o a punto de desmayarte. Los ayunos prolongados deben consultarse con un profesional de la salud.",
+      "body72": "Llevas más de 72 horas en ayuno. Es un ayuno muy largo y conlleva riesgos reales para la salud. Continúa solo con orientación médica. Puedes terminar ahora en cualquier momento.",
+      "read": "Lo he leído",
+      "understand": "Entiendo los riesgos",
+      "endInstead": "Terminar mi ayuno"
+    },
+    "picker": {
+      "title": "Protocolo de ayuno",
+      "fastEat": "%{fast}h de ayuno · %{eat}h de comida",
+      "fastOnly": "%{fast}h de ayuno",
+      "selected": "Seleccionado",
+      "locked": "Pro",
+      "lockedLabel": "%{name}, requiere Pro",
+      "customHeader": "Tus protocolos",
+      "createCustom": "Crear protocolo personalizado",
+      "customPro": "Pro",
+      "presets": "Predefinidos",
+      "fiveTwoNote": "Dos ayunos de 24 horas por semana",
+      "close": "Cerrar",
+      "delete": "Eliminar %{name}",
+      "switchTitle": "¿Cambiar el objetivo de este ayuno?",
+      "switchBody": "Tu ayuno en curso mantiene su hora de inicio. El objetivo cambia de %{from} a %{to}.",
+      "switchConfirm": "Cambiar objetivo",
+      "switchCancel": "Mantener el actual",
+      "applied": "Protocolo actualizado"
+    },
+    "custom": {
+      "title": "Protocolo personalizado",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Reinicio de fin de semana",
+      "defaultName": "Personalizado %{h}h",
+      "hours": "Horas de ayuno",
+      "hoursValue": "%{h} horas",
+      "decrease": "Reducir horas de ayuno",
+      "increase": "Aumentar horas de ayuno",
+      "eatingDerived": "Ventana de comida: %{h} horas",
+      "colour": "Color",
+      "colourOption": "Color %{n}",
+      "save": "Guardar protocolo",
+      "range": "Elige entre 1 y 72 horas."
+    },
+    "stageInfo": {
+      "title": "Fases del ayuno",
+      "current": "Estás aquí",
+      "reached": "Alcanzada",
+      "upcoming": "Empieza a las %{h} h",
+      "fromHour": "desde las %{h} h",
+      "none": "Empieza un ayuno para ver dónde estás.",
+      "evidenceTitle": "Sobre la evidencia",
+      "evidence": "Los tiempos de cada fase son rangos aproximados y típicos. No son una predicción para ti, y algunos efectos están mejor estudiados que otros.",
+      "elapsedNow": "%{time} de ayuno"
+    },
+    "summary": {
+      "title": "Ayuno completado",
+      "duration": "Duración",
+      "goalMet": "Objetivo alcanzado",
+      "goalNotMet": "Terminado antes",
+      "goalNotMetBody": "Cada ayuno cuenta. Tu cuerpo igualmente descansó, y puedes seguir construyendo desde aquí.",
+      "goalMetBody": "Muy bien. Te mantuviste fiel a tu plan.",
+      "stagesReached": "Fases alcanzadas",
+      "mood": "¿Cómo te sentiste?",
+      "note": "Nota",
+      "notePlaceholder": "Algo que quieras recordar (opcional)",
+      "save": "Guardar",
+      "share": "Compartir",
+      "streak": "Racha de %{n} días",
+      "notFound": "No se pudo encontrar este ayuno.",
+      "protocolLine": "Protocolo %{name}"
+    },
+    "a11y": {
+      "close": "Cerrar",
+      "sheetBackdrop": "Descartar"
+    },
+    "banner": {
+      "notifDenied": "Las notificaciones están desactivadas",
+      "openSettings": "Abre Ajustes para recibir recordatorios de ayuno"
+    }
+  }
+}

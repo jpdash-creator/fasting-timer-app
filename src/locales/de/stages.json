@@ -1,0 +1,25 @@
+{
+  "stages": {
+    "fed": {
+      "label": "Verdauungsphase",
+      "description": "Dein Körper verdaut und nutzt die Energie deiner letzten Mahlzeit. Der Blutzucker steigt und pendelt sich dann ein."
+    },
+    "early": {
+      "label": "Frühes Fasten",
+      "description": "Die Verdauung klingt ab. Dein Körper greift zunehmend auf gespeichertes Glykogen als Energiequelle zurück."
+    },
+    "fatburn": {
+      "label": "Fettverbrennung",
+      "description": "Die Glykogenspeicher werden kleiner, und der Körper nutzt mehr gespeichertes Fett als Brennstoff. Viele Menschen bemerken ab diesem Punkt weniger Hungerwellen."
+    },
+    "ketosis": {
+      "label": "Ketose kann beginnen",
+      "description": "Die Ketonbildung steigt tendenziell, je länger das Fasten dauert. Der Zeitpunkt unterscheidet sich stark von Mensch zu Mensch und hängt von deiner letzten Mahlzeit und deiner Aktivität ab."
+    },
+    "deep": {
+      "label": "Tiefes Fasten",
+      "description": "Längeres Fasten wird im Hinblick auf die Zellerneuerung (Autophagie) untersucht, doch die Belege beim Menschen sind noch begrenzt. Hör auf deinen Körper und brich ab, wenn du dich unwohl fühlst."
+    }
+  },
+  "disclaimer": "Nur allgemeine Informationen, keine medizinische Beratung. Individuelle Reaktionen unterscheiden sich. Sprich vor dem Fasten mit einer medizinischen Fachperson, wenn du eine Erkrankung hast, Medikamente nimmst, schwanger bist, stillst, unter 18 bist oder eine Essstörung in der Vorgeschichte hast."
+}

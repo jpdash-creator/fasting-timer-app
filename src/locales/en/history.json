@@ -1,0 +1,77 @@
+{
+  "history": {
+    "title": "History",
+    "add": "Add past fast",
+    "addShort": "Add past fast",
+    "empty": {
+      "title": "Your fasts will appear here",
+      "body": "Finish a fast, or add one you already did, and it lands on your calendar.",
+      "cta": "Start a fast"
+    },
+    "search": "Search notes",
+    "clearSearch": "Clear search",
+    "allProtocols": "All",
+    "week": {
+      "one": "Week of %{date} · %{hours} h · %{count} fast",
+      "other": "Week of %{date} · %{hours} h · %{count} fasts"
+    },
+    "goalMet": "Goal met",
+    "endedEarly": "Ended early",
+    "deleteFast": "Delete fast",
+    "deleted": "Fast deleted",
+    "noMatch": "No fasts match your filters.",
+    "row": {
+      "range": "%{start} → %{end}",
+      "a11y": "%{protocol} fast, %{duration}, ended %{day}. %{result}",
+      "hint": "Opens the editor. Swipe left to delete."
+    },
+    "cal": {
+      "planned": "Planned fasting day", "legendPlanned": "Planned fasting day (5:2)",
+      "goalMet": "Fast completed, goal met",
+      "fasted": "Fast completed, goal not met",
+      "freeze": "Streak freeze used",
+      "legendA11y": "Calendar key. Outlined dot: fast completed. Filled dot: goal met. Snowflake: streak freeze.",
+      "legendFast": "Fast",
+      "legendGoal": "Goal met",
+      "legendFreeze": "Freeze",
+      "prevMonth": "Previous month",
+      "nextMonth": "Next month",
+      "filterHint": "Shows only fasts from this day"
+    },
+    "locked": {
+      "title": {
+        "one": "%{count} older fast hidden",
+        "other": "%{count} older fasts hidden"
+      },
+      "body": "Free includes the last 7 days. Pro keeps your full history.",
+      "cta": "Unlock history"
+    },
+    "editor": {
+      "titleNew": "Add past fast",
+      "titleEdit": "Edit fast",
+      "titleRunning": "Edit start time",
+      "start": "Start",
+      "end": "End",
+      "duration": "Duration",
+      "safetyNote": "That is a very long fast. Stop and eat if you feel unwell, dizzy or faint, and talk to a healthcare professional before fasting this long.",
+      "protocol": "Protocol",
+      "mood": "How did it feel?",
+      "moods": {
+        "1": "Rough",
+        "2": "Tough",
+        "3": "Okay",
+        "4": "Good",
+        "5": "Great"
+      },
+      "note": "Note",
+      "notePlaceholder": "Anything worth remembering?",
+      "delete": "Delete this fast",
+      "deleteTitle": "Delete this fast?",
+      "deleteBody": "This removes it from your history and stats."
+    },
+    "filter": {
+      "day": "Showing %{date}",
+      "clearDay": "Show all days"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "onboarding": {
+    "progress": "Paso %{current} de %{total}",
+    "back": "Atrás",
+    "continue": "Continuar",
+    "welcome": {
+      "title": "Ayunar, de forma sencilla",
+      "subtitle": "Un toque para empezar. Un temporizador tranquilo, recordatorios suaves y un progreso claro. Sin cuenta.",
+      "point1": "Inicia un ayuno con un toque y sigue cada etapa",
+      "point2": "Avisos suaves cuando un ayuno empieza, termina o se cierra tu ventana",
+      "point3": "Rachas, peso y agua, guardados en tu dispositivo",
+      "cta": "Empezar",
+      "tagline": "Fastline"
+    },
+    "goal": {
+      "title": "¿Cuál es tu objetivo principal?",
+      "subtitle": "Esto da forma a tus sugerencias. Puedes cambiarlo cuando quieras.",
+      "lose": "Perder peso",
+      "maintain": "Mantener mi peso",
+      "focus": "Mejorar la concentración y la energía",
+      "routine": "Crear una rutina"
+    },
+    "experience": {
+      "title": "¿Qué tan familiar te es el ayuno?",
+      "subtitle": "Elegiremos un punto de partida cómodo.",
+      "new": "Nuevo en el ayuno",
+      "newHint": "Nunca he ayunado a propósito",
+      "some": "Algo de experiencia",
+      "someHint": "Lo he probado algunas veces",
+      "experienced": "Con experiencia",
+      "experiencedHint": "Ayuno con regularidad"
+    },
+    "schedule": {
+      "title": "¿Cuándo sueles comer?",
+      "subtitle": "Lo usamos para sugerir tu ventana de comida.",
+      "firstMeal": "Primera comida",
+      "lastMeal": "Última comida",
+      "pick": "Elegir la hora de %{label}, actualmente %{time}",
+      "window": "Tu ventana de comida es de unas %{hours} horas.",
+      "increase": "15 minutos más tarde",
+      "decrease": "15 minutos antes"
+    },
+    "safety": {
+      "title": "Una comprobación rápida de seguridad",
+      "subtitle": "El ayuno no es adecuado para todos. Por favor, confirma:",
+      "adult": "Tengo 18 años o más",
+      "pregnant": "No estoy embarazada ni en periodo de lactancia",
+      "medical": "No tengo una condición médica que requiera comidas regulares",
+      "warningTitle": "Puede que el ayuno no sea adecuado para ti",
+      "warning": "Puede que el ayuno no sea adecuado para ti. Habla con un profesional de la salud antes de usar esta app.",
+      "understand": "Entendido",
+      "disclaimer": "Fastline no es un dispositivo médico y no ofrece consejos médicos."
+    },
+    "protocol": {
+      "title": "Elige tu plan",
+      "subtitle": "Te sugerimos uno según tus respuestas. Puedes cambiarlo cuando quieras.",
+      "recommended": "Recomendado",
+      "free": "Gratis",
+      "needsPro": "Pro",
+      "proNote": "Los planes marcados como Pro están incluidos en Fastline Pro. Puedes verlos ahora.",
+      "fastEat": "%{fast}h de ayuno, %{eat}h de comida",
+      "fastOnly": "%{fast}h de ayuno",
+      "descriptions": {
+        "12_12": "Un comienzo suave. Fácil de mantener.",
+        "14_10": "Un pequeño paso más que 12:12.",
+        "16_8": "El plan más popular. Salta el desayuno o adelanta la cena.",
+        "18_6": "Un ayuno más largo para quienes ya tienen experiencia.",
+        "20_4": "Una ventana de comida corta. Avanzado.",
+        "OMAD": "Una comida al día. Avanzado.",
+        "5_2": "Dos ayunos de 24 horas por semana.",
+        "36H": "Un único ayuno prolongado. Avanzado."
+      }
+    },
+    "reminders": {
+      "title": "Mantén el rumbo con recordatorios",
+      "subtitle": "Tres avisos suaves. Nada más.",
+      "r1": "Cuando sea hora de empezar tu ayuno",
+      "r2": "Cuando tu ayuno vaya por la mitad",
+      "r3": "Cuando alcances tu objetivo",
+      "enable": "Activar recordatorios",
+      "later": "Quizás más tarde",
+      "enabledNote": "Los recordatorios están activados. Cámbialos cuando quieras en Ajustes.",
+      "deniedNote": "Las notificaciones están desactivadas. Puedes activarlas en los ajustes de tu dispositivo."
+    },
+    "summary": {
+      "title": "Tu plan está listo",
+      "plan": "Tu plan: %{protocol}",
+      "window": "Ventana de comida %{from}–%{to}",
+      "first": "Tu primer ayuno empieza esta noche a las %{time}",
+      "check1": "Plan elegido",
+      "check2": "Ventana de comida definida",
+      "check3": "Recordatorios listos",
+      "cta": "Ver mi plan",
+      "ctaHard": "Desbloquear Fastline",
+      "a11y": "Tu plan: %{protocol}. Ventana de comida de %{from} a %{to}. Tu primer ayuno empieza esta noche a las %{time}.",
+      "unlockNote": "Desbloquea Fastline para empezar tu primer ayuno."
+    }
+  }
+}

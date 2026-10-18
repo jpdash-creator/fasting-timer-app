@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "title": "Stats",
+    "tabs": {
+      "overview": "Overview",
+      "weight": "Weight",
+      "water": "Water"
+    },
+    "days": {
+      "one": "%{count} day",
+      "other": "%{count} days"
+    },
+    "streak": {
+      "current": "Current streak",
+      "longest": "Longest streak"
+    },
+    "totals": {
+      "fasts": "Total fasts",
+      "hours": "Total hours",
+      "avg": "Average length",
+      "rate": "Goal-met rate"
+    },
+    "empty": {
+      "title": "Complete 2 fasts to unlock stats",
+      "body": "Your streaks, totals and trends will show up here.",
+      "cta": "Start a fast"
+    },
+    "locked": {
+      "title": "See the full picture",
+      "body": "Pro adds longest streak, totals, charts and a weekly insight."
+    },
+    "charts": {
+      "weeklyTitle": "Hours fasted this week (h)",
+      "weeklySummary": "%{total} hours in the last 7 days, about %{avg} per day. Longest day: %{day}.",
+      "weeklyNone": "No completed fasts in the last 7 days.",
+      "trendTitle": "30-day trend (h per day)",
+      "trendSummary": "Daily fasting hours, 7-day average: from %{from} to %{to} hours.",
+      "weekdayTitle": "Fasts by weekday (count)",
+      "weekdaySummary": "Most fasts end on %{day} (%{count}).",
+      "weekdayNone": "No fasts yet.",
+      "valFirst": "First",
+      "valLast": "Latest",
+      "valMin": "Lowest",
+      "valMax": "Highest"
+    },
+    "insight": {
+      "title": "Your week",
+      "bestDay": "You tend to feel best on %{day}.",
+      "bestProtocol": "%{name} is your most reliable protocol, with %{pct}% of goals met.",
+      "moodLength": "Mood averages %{long} after longer fasts and %{short} after shorter ones.",
+      "tip": {
+        "keepGoing": "Nice rhythm. Keep the pattern that is working for you.",
+        "tryLonger": "Longer fasts have felt good lately. You could try adding an hour on a day that suits you.",
+        "tryShorter": "Goals have been slipping away. A slightly shorter protocol may be easier to keep up.",
+        "logMood": "Add a mood after each fast to get tailored suggestions here.",
+        "moreData": "Complete a few more fasts this month for personal suggestions."
+      },
+      "disclaimer": "Based on your last 28 days. For general interest, not advice."
+    },
+    "badges": {
+      "title": "Badges",
+      "earned": "earned",
+      "locked": "locked, %{pct} percent",
+      "firstFast": "First fast",
+      "streak3": "3-day streak",
+      "streak7": "7-day streak",
+      "streak30": "30-day streak",
+      "hours100": "100 hours",
+      "first20h": "First 20 h fast"
+    },
+    "weight": {
+      "current": "Current weight",
+      "currentA11y": "Current weight %{value} %{unit}",
+      "none": "No weight logged yet",
+      "empty": "Log your weight to start your trend.",
+      "lower": "Log a slightly lower weight",
+      "higher": "Log a slightly higher weight",
+      "log": "Log weight",
+      "down": "Down %{value} %{unit} since last entry",
+      "up": "Up %{value} %{unit} since last entry",
+      "noChange": "No change since last entry",
+      "range": "%{days}d",
+      "chartTitle": "Weight, last %{days} days (%{unit})",
+      "chartSummary": "%{count} entries over %{days} days, from %{from} to %{to} %{unit}. The green line is the 7-day average.",
+      "goalLine": "Goal weight %{goal} %{unit} shown as a dashed line.",
+      "goalHint": "Set a goal weight in Settings to see it on the chart.",
+      "needTwo": "Log at least two entries in this range to see a chart.",
+      "lockedTitle": "Weight trends are a Pro feature",
+      "lockedBody": "Free keeps your last 7 entries. Pro adds charts, a 7-day average and your goal line.",
+      "legendEntries": "Entries",
+      "legendAverage": "7-day average",
+      "legendGoal": "Goal %{goal} %{unit}"
+    },
+    "water": {
+      "ringA11y": "%{total} of %{goal} %{unit} today, %{pct} percent",
+      "ofGoal": "of %{goal} %{unit}",
+      "reached": "Goal reached",
+      "addA11y": "Add %{amount} %{unit}",
+      "added": "Added %{amount} %{unit}",
+      "custom": "Custom amount and history"
+    }
+  }
+}

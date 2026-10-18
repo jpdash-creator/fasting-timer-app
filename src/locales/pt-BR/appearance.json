@@ -1,0 +1,36 @@
+{
+  "appearance": {
+    "title": "Aparência",
+    "accent": {
+      "label": "Cor de destaque",
+      "footer": "Verde-azulado é grátis. Mais cores de destaque e ícones do app no Fastline Pro."
+    },
+    "themes": {
+      "teal": "Verde-azulado",
+      "ocean": "Oceano",
+      "dusk": "Crepúsculo",
+      "sunrise": "Amanhecer"
+    },
+    "selected": "Selecionado",
+    "preview": {
+      "title": "Pré-visualização",
+      "fasting": "Em jejum",
+      "elapsed": "14h 20min",
+      "button": "Encerrar jejum",
+      "chip": "Meta atingida"
+    },
+    "icon": {
+      "label": "Ícone do app",
+      "footer": "Muda o ícone na tela inicial. Funciona no app instalado, não no Expo Go nem na web.",
+      "changed": "Ícone do app alterado para %{name}.",
+      "unsupportedWeb": "Os ícones do app só podem ser alterados nos apps Android e iOS.",
+      "unsupportedBuild": "Esta versão não consegue trocar o ícone. Instale o app completo do Fastline para usar.",
+      "failed": "Não foi possível alterar o ícone do app. Tente novamente."
+    },
+    "a11y": {
+      "themeOption": "Cor de destaque %{name}",
+      "iconOption": "Ícone do app %{name}",
+      "locked": "Recurso Pro. Abre a tela de upgrade."
+    }
+  }
+}

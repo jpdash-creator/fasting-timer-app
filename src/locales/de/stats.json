@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "title": "Statistik",
+    "tabs": {
+      "overview": "Übersicht",
+      "weight": "Gewicht",
+      "water": "Wasser"
+    },
+    "days": {
+      "one": "%{count} Tag",
+      "other": "%{count} Tage"
+    },
+    "streak": {
+      "current": "Aktuelle Serie",
+      "longest": "Längste Serie"
+    },
+    "totals": {
+      "fasts": "Fastenzeiten gesamt",
+      "hours": "Stunden gesamt",
+      "avg": "Durchschnittliche Dauer",
+      "rate": "Quote erreichter Ziele"
+    },
+    "empty": {
+      "title": "Schließe 2 Fastenzeiten ab, um die Statistik freizuschalten",
+      "body": "Deine Serien, Summen und Trends erscheinen hier.",
+      "cta": "Fasten starten"
+    },
+    "locked": {
+      "title": "Sieh das ganze Bild",
+      "body": "Pro ergänzt längste Serie, Summen, Diagramme und eine wöchentliche Auswertung."
+    },
+    "charts": {
+      "weeklyTitle": "Gefastete Stunden diese Woche (Std.)",
+      "weeklySummary": "%{total} Stunden in den letzten 7 Tagen, etwa %{avg} pro Tag. Längster Tag: %{day}.",
+      "weeklyNone": "Keine abgeschlossenen Fastenzeiten in den letzten 7 Tagen.",
+      "trendTitle": "30-Tage-Trend (Std. pro Tag)",
+      "trendSummary": "Tägliche Fastenstunden, 7-Tage-Durchschnitt: von %{from} bis %{to} Stunden.",
+      "weekdayTitle": "Fastenzeiten nach Wochentag (Anzahl)",
+      "weekdaySummary": "Die meisten Fastenzeiten enden am %{day} (%{count}).",
+      "weekdayNone": "Noch keine Fastenzeiten.",
+      "valFirst": "Erster",
+      "valLast": "Letzter",
+      "valMin": "Niedrigster",
+      "valMax": "Höchster"
+    },
+    "insight": {
+      "title": "Deine Woche",
+      "bestDay": "Du fühlst dich meist am besten am %{day}.",
+      "bestProtocol": "%{name} ist dein verlässlichstes Protokoll, mit %{pct}% erreichten Zielen.",
+      "moodLength": "Die Stimmung liegt im Schnitt bei %{long} nach längeren und bei %{short} nach kürzeren Fastenzeiten.",
+      "tip": {
+        "keepGoing": "Schöner Rhythmus. Behalte das Muster bei, das für dich funktioniert.",
+        "tryLonger": "Längeres Fasten hat sich zuletzt gut angefühlt. Du könntest an einem passenden Tag eine Stunde dranhängen.",
+        "tryShorter": "Die Ziele sind zuletzt entglitten. Ein etwas kürzeres Protokoll lässt sich vielleicht leichter durchhalten.",
+        "logMood": "Trage nach jedem Fasten deine Stimmung ein, um hier passende Vorschläge zu erhalten.",
+        "moreData": "Schließe diesen Monat noch ein paar Fastenzeiten ab, um persönliche Vorschläge zu erhalten."
+      },
+      "disclaimer": "Basiert auf deinen letzten 28 Tagen. Nur zur allgemeinen Information, kein Rat."
+    },
+    "badges": {
+      "title": "Abzeichen",
+      "earned": "erhalten",
+      "locked": "gesperrt, %{pct} Prozent",
+      "firstFast": "Erstes Fasten",
+      "streak3": "3-Tage-Serie",
+      "streak7": "7-Tage-Serie",
+      "streak30": "30-Tage-Serie",
+      "hours100": "100 Stunden",
+      "first20h": "Erstes 20-Std.-Fasten"
+    },
+    "weight": {
+      "current": "Aktuelles Gewicht",
+      "currentA11y": "Aktuelles Gewicht %{value} %{unit}",
+      "none": "Noch kein Gewicht eingetragen",
+      "empty": "Trage dein Gewicht ein, um deinen Trend zu starten.",
+      "lower": "Etwas niedrigeres Gewicht eintragen",
+      "higher": "Etwas höheres Gewicht eintragen",
+      "log": "Gewicht eintragen",
+      "down": "%{value} %{unit} weniger seit dem letzten Eintrag",
+      "up": "%{value} %{unit} mehr seit dem letzten Eintrag",
+      "noChange": "Keine Veränderung seit dem letzten Eintrag",
+      "range": "%{days} T",
+      "chartTitle": "Gewicht, letzte %{days} Tage (%{unit})",
+      "chartSummary": "%{count} Einträge über %{days} Tage, von %{from} bis %{to} %{unit}. Die grüne Linie ist der 7-Tage-Durchschnitt.",
+      "goalLine": "Zielgewicht %{goal} %{unit} als gestrichelte Linie dargestellt.",
+      "goalHint": "Lege in den Einstellungen ein Zielgewicht fest, um es im Diagramm zu sehen.",
+      "needTwo": "Trage in diesem Zeitraum mindestens zwei Einträge ein, um ein Diagramm zu sehen.",
+      "lockedTitle": "Gewichtstrends sind eine Pro-Funktion",
+      "lockedBody": "Kostenlos bleiben deine letzten 7 Einträge erhalten. Pro ergänzt Diagramme, einen 7-Tage-Durchschnitt und deine Ziellinie.",
+      "legendEntries": "Einträge",
+      "legendAverage": "7-Tage-Durchschnitt",
+      "legendGoal": "Ziel %{goal} %{unit}"
+    },
+    "water": {
+      "ringA11y": "%{total} von %{goal} %{unit} heute, %{pct} Prozent",
+      "ofGoal": "von %{goal} %{unit}",
+      "reached": "Ziel erreicht",
+      "addA11y": "%{amount} %{unit} hinzufügen",
+      "added": "%{amount} %{unit} hinzugefügt",
+      "custom": "Eigene Menge und Verlauf"
+    }
+  }
+}

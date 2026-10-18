@@ -1,0 +1,99 @@
+{
+  "onboarding": {
+    "progress": "Step %{current} of %{total}",
+    "back": "Back",
+    "continue": "Continue",
+    "welcome": {
+      "title": "Fasting, made simple",
+      "subtitle": "One tap to start. A calm timer, gentle reminders and clear progress. No account needed.",
+      "point1": "Start a fast in one tap and follow each stage",
+      "point2": "Gentle reminders when a fast starts, ends or your window closes",
+      "point3": "Streaks, weight and water trends, kept on your device",
+      "cta": "Get started",
+      "tagline": "Fastline"
+    },
+    "goal": {
+      "title": "What's your main goal?",
+      "subtitle": "This shapes your suggestions. You can change it anytime.",
+      "lose": "Lose weight",
+      "maintain": "Maintain my weight",
+      "focus": "Improve focus and energy",
+      "routine": "Build a routine"
+    },
+    "experience": {
+      "title": "How familiar is fasting?",
+      "subtitle": "We'll pick a comfortable starting point.",
+      "new": "New to fasting",
+      "newHint": "I've never fasted on purpose",
+      "some": "Some experience",
+      "someHint": "I've tried it a few times",
+      "experienced": "Experienced",
+      "experiencedHint": "I fast regularly"
+    },
+    "schedule": {
+      "title": "When do you usually eat?",
+      "subtitle": "We use this to suggest your eating window.",
+      "firstMeal": "First meal",
+      "lastMeal": "Last meal",
+      "pick": "Choose %{label} time, currently %{time}",
+      "window": "Your eating window is about %{hours} hours.",
+      "increase": "Later by 15 minutes",
+      "decrease": "Earlier by 15 minutes"
+    },
+    "safety": {
+      "title": "A quick safety check",
+      "subtitle": "Fasting isn't right for everyone. Please confirm:",
+      "adult": "I am 18 or older",
+      "pregnant": "I am not pregnant or breastfeeding",
+      "medical": "I don't have a medical condition that requires regular meals",
+      "warningTitle": "Fasting may not be suitable for you",
+      "warning": "Fasting may not be suitable for you. Please talk to a healthcare professional before using this app.",
+      "understand": "I understand",
+      "disclaimer": "Fastline is not a medical device and does not give medical advice."
+    },
+    "protocol": {
+      "title": "Choose your plan",
+      "subtitle": "We suggest one based on your answers. You can switch anytime.",
+      "recommended": "Recommended",
+      "free": "Free",
+      "needsPro": "Pro",
+      "proNote": "Plans marked Pro are included with Fastline Pro. You can preview them now.",
+      "fastEat": "%{fast}h fasting, %{eat}h eating",
+      "fastOnly": "%{fast}h fasting",
+      "descriptions": {
+        "12_12": "A gentle start. Easy to keep up.",
+        "14_10": "A small step up from 12:12.",
+        "16_8": "The most popular plan. Skip breakfast or an early dinner.",
+        "18_6": "A longer fast for experienced fasters.",
+        "20_4": "A short eating window. Advanced.",
+        "OMAD": "One meal a day. Advanced.",
+        "5_2": "Two 24 hour fasts a week.",
+        "36H": "A single extended fast. Advanced."
+      }
+    },
+    "reminders": {
+      "title": "Stay on track with reminders",
+      "subtitle": "Three gentle nudges. Nothing else.",
+      "r1": "When it's time to start your fast",
+      "r2": "When your fast is halfway done",
+      "r3": "When you reach your goal",
+      "enable": "Enable reminders",
+      "later": "Maybe later",
+      "enabledNote": "Reminders are on. Change them anytime in Settings.",
+      "deniedNote": "Notifications are off. You can turn them on in your device settings."
+    },
+    "summary": {
+      "title": "Your plan is ready",
+      "plan": "Your plan: %{protocol}",
+      "window": "Eating window %{from}–%{to}",
+      "first": "First fast starts tonight at %{time}",
+      "check1": "Plan chosen",
+      "check2": "Eating window set",
+      "check3": "Reminders ready",
+      "cta": "See my plan",
+      "ctaHard": "Unlock Fastline",
+      "a11y": "Your plan: %{protocol}. Eating window %{from} to %{to}. First fast starts tonight at %{time}.",
+      "unlockNote": "Unlock Fastline to start your first fast."
+    }
+  }
+}

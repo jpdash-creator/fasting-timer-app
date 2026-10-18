@@ -1,0 +1,23 @@
+{
+  "notifications": {
+    "title": "Fastline",
+    "fastStart": "Es hora de empezar tu ayuno %{protocol}. Toca para comenzar.",
+    "autoStart": "Está empezando un nuevo ayuno %{protocol}.",
+    "windowClosing": "Tu ventana de comida se cierra en %{minutes} minutos.",
+    "halfway": "Vas por la mitad. Faltan %{remaining}.",
+    "oneHour": "Queda una hora de tu ayuno.",
+    "goal": "Ayuno completado. Buen trabajo, %{hours}h logradas.",
+    "longFast": "Llevas %{hours}h en ayuno. Revisa cómo estás y para si te sientes mal.",
+    "streakRisk": "Tu racha de %{n} días está en riesgo. ¿Empiezas un ayuno corto esta noche?",
+    "channels": {
+      "fasting": "Ayuno",
+      "tips": "Consejos"
+    },
+    "banner": {
+      "title": "Las notificaciones están desactivadas",
+      "body": "Actívalas para recibir recordatorios de ayuno.",
+      "open": "Abrir Ajustes",
+      "enable": "Activar"
+    }
+  }
+}

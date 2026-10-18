@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "title": "Ajustes",
+    "pro": {
+      "activeTitle": "Fastline Pro",
+      "activeBadge": "Pro",
+      "activeSubtitle": "Todos os recursos estão desbloqueados.",
+      "renewsOn": "Renova em %{date}",
+      "endsOn": "Termina em %{date}",
+      "trialEndsOn": "O teste termina em %{date}",
+      "lifetime": "Vitalício",
+      "upgradeTitle": "Assinar o Pro",
+      "upgradeSubtitle": "Todos os protocolos, lembretes, estatísticas e exportação.",
+      "billingIssue": "Há um problema com a sua cobrança. Abra os ajustes da assinatura para resolver."
+    },
+    "sections": {
+      "fasting": "Jejum",
+      "preferences": "Preferências",
+      "reminders": "Lembretes",
+      "goals": "Metas",
+      "data": "Seus dados",
+      "subscription": "Assinatura",
+      "about": "Sobre",
+      "danger": "Zona de risco"
+    },
+    "protocol": {
+      "label": "Protocolo",
+      "hint": "Abre o seletor de protocolo"
+    },
+    "autoStart": {
+      "label": "Iniciar o próximo jejum automaticamente",
+      "hint": "Inicia seu próximo jejum quando a janela de alimentação termina."
+    },
+    "units": {
+      "weight": "Unidade de peso",
+      "volume": "Unidade de água",
+      "kg": "Quilogramas (kg)",
+      "lb": "Libras (lb)",
+      "ml": "Mililitros (ml)",
+      "oz": "Onças fluidas (oz)"
+    },
+    "theme": {
+      "label": "Tema",
+      "system": "Sistema",
+      "light": "Claro",
+      "dark": "Escuro"
+    },
+    "haptics": "Resposta tátil",
+    "language": {
+      "label": "Idioma",
+      "device": "Idioma do dispositivo",
+      "note": "Algumas telas ainda podem aparecer em inglês enquanto as traduções são concluídas.",
+      "rtlNote": "O árabe exige reiniciar o app para mudar a direção do layout."
+    },
+    "reminders": {
+      "fastStart": "Início do jejum",
+      "fastStartHint": "Quando sua janela de alimentação termina",
+      "fastEnd": "Jejum concluído",
+      "fastEndHint": "Quando você atinge sua meta",
+      "halfway": "Metade do caminho",
+      "halfwayHint": "No meio do seu jejum",
+      "oneHourLeft": "Falta uma hora",
+      "oneHourLeftHint": "Uma hora antes da sua meta",
+      "windowClosing": "Janela de alimentação fechando",
+      "windowClosingHint": "Antes do fim da sua janela de alimentação",
+      "offset": "Antecedência do aviso da janela",
+      "offsetValue": "%{minutes} min antes",
+      "offsetDecrease": "Diminuir antecedência do aviso",
+      "offsetIncrease": "Aumentar antecedência do aviso",
+      "quietHours": "Horário silencioso",
+      "quietHoursHint": "Silencia os lembretes até o fim do horário silencioso",
+      "quietFrom": "De",
+      "quietTo": "Até",
+      "timeInvalid": "Use o formato de 24 horas, como 22:00",
+      "timeLabel": "Horário de %{label}, %{time}"
+    },
+    "water": {
+      "goal": "Meta diária de água",
+      "decrease": "Diminuir meta de água",
+      "increase": "Aumentar meta de água"
+    },
+    "goalWeight": {
+      "label": "Peso desejado",
+      "notSet": "Não definido",
+      "set": "Definir peso desejado",
+      "clear": "Limpar peso desejado",
+      "decrease": "Diminuir peso desejado",
+      "increase": "Aumentar peso desejado"
+    },
+    "export": {
+      "label": "Exportar dados em CSV",
+      "hint": "Compartilhe seu histórico como planilha.",
+      "title": "Exportar CSV",
+      "message": "Escolha quais dados exportar. As datas usam o formato ISO 8601.",
+      "fasts": "Jejuns",
+      "weight": "Registros de peso",
+      "water": "Registros de água",
+      "empty": "Ainda não há nada para exportar.",
+      "done": "Exportação pronta.",
+      "saved": "Arquivo CSV baixado.",
+      "unavailable": "O compartilhamento não está disponível neste dispositivo.",
+      "failed": "Não foi possível exportar. Tente novamente."
+    },
+    "restore": {
+      "label": "Restaurar compras",
+      "working": "Restaurando…",
+      "found": "Compras restauradas. O Pro está ativo.",
+      "none": "Nenhuma compra ativa encontrada.",
+      "failed": "Não foi possível restaurar. Verifique sua conexão e tente novamente."
+    },
+    "manage": {
+      "label": "Gerenciar assinatura",
+      "failed": "Não foi possível abrir os ajustes da assinatura."
+    },
+    "legal": {
+      "privacy": "Política de privacidade",
+      "terms": "Termos de uso",
+      "support": "Falar com o suporte",
+      "supportSubject": "Suporte do Fastline",
+      "openFailed": "Não foi possível abrir o link."
+    },
+    "about": {
+      "version": "Versão %{version}",
+      "versionLabel": "Versão do app",
+      "mockOn": "Pro simulado ativado",
+      "mockOff": "Pro simulado desativado",
+      "accessibility": "Acessibilidade",
+      "accessibilityBody": "O Fastline é compatível com VoiceOver e TalkBack, tamanho de texto dinâmico de até 130%, cores de alto contraste e redução de movimento. Todo controle tem um rótulo e nenhuma informação depende apenas da cor. Conte-nos sobre qualquer barreira em jpdash.creator@gmail.com e vamos trabalhar para corrigi-la.",
+      "medical": "Aviso médico",
+      "privacyNote": "Seus dados de jejum, peso e água ficam neste dispositivo. Não é preciso ter conta."
+    },
+    "delete": {
+      "label": "Excluir todos os dados",
+      "hint": "Remove seus jejuns e registros de peso e água e redefine os ajustes. Sua compra é mantida.",
+      "title": "Excluir todos os dados?",
+      "message": "Isso remove permanentemente todos os jejuns e registros de peso e água e redefine seus ajustes. Sua compra do Pro é mantida. Não é possível desfazer.",
+      "confirm": "Excluir tudo",
+      "failed": "Algo deu errado ao excluir. Tente novamente."
+    },
+    "sheet": {
+      "close": "Fechar"
+    }
+  }
+}

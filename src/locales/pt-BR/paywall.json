@@ -1,0 +1,80 @@
+{
+  "paywall": {
+    "close": "Fechar",
+    "headline": "Alcance suas metas de jejum",
+    "headlineOnboarding": "Seu plano está pronto",
+    "subhead": "Desbloqueie tudo o que o Fastline pode fazer.",
+    "benefit1": "Todos os protocolos e jejuns criados por você",
+    "benefit2": "Lembretes alinhados à sua janela de alimentação",
+    "benefit3": "Resumos semanais, gráficos e exportação CSV",
+    "socialProof": "Avaliado com %{rating} na loja",
+    "plan": {
+      "annual": "Anual",
+      "monthly": "Mensal",
+      "weekly": "Semanal",
+      "trialBadge": "%{days} dias grátis",
+      "bestValue": "Melhor custo-benefício",
+      "perMonth": "%{price}/mês",
+      "per": {
+        "year": "ano",
+        "month": "mês",
+        "week": "semana",
+        "once": "pagamento único"
+      },
+      "billedYearly": "Cobrança de %{price} por ano",
+      "billedMonthly": "Cobrança de %{price} por mês",
+      "billedWeekly": "Cobrança de %{price} por semana",
+      "selected": "Selecionado"
+    },
+    "lifetime": "Ou desbloqueie para sempre, %{price} em pagamento único",
+    "cta": {
+      "trial": "Começar teste grátis de %{days} dias",
+      "annual": "Assinar por %{price}/ano",
+      "monthly": "Assinar por %{price}/mês",
+      "weekly": "Assinar por %{price}/semana",
+      "lifetime": "Desbloquear por %{price}",
+      "purchasing": "Processando…"
+    },
+    "legal": {
+      "trial": "%{days} dias grátis, depois %{price} por %{period}. Cancele quando quiser nos ajustes de %{store}.",
+      "sub": "%{price} por %{period}. Cancele quando quiser nos ajustes de %{store}.",
+      "lifetime": "Pagamento único de %{price}. Sem assinatura.",
+      "renew": "A assinatura é renovada automaticamente, a menos que seja cancelada pelo menos 24 horas antes do fim do período atual. Gerencie ou cancele nos ajustes da sua conta em %{store}.",
+      "trialConverts": "Se você iniciar um teste grátis, ele se converte em assinatura paga pelo preço acima, a menos que você cancele antes do fim.",
+      "terms": "Termos de Uso",
+      "privacy": "Política de Privacidade",
+      "restore": "Restaurar compras",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "store": "App Store ou Google Play"
+    },
+    "state": {
+      "loading": "Carregando planos…",
+      "unavailable": "Não foi possível carregar os planos. Verifique sua conexão e tente de novo.",
+      "retry": "Tentar de novo",
+      "pending": "Pagamento pendente. Vamos desbloquear o Pro automaticamente.",
+      "success": "Boas-vindas ao Fastline Pro",
+      "restored": "Compras restauradas",
+      "nothingToRestore": "Nenhuma compra anterior encontrada.",
+      "error": "Algo deu errado. Você não foi cobrado. Tente novamente.",
+      "alreadyOwned": "Você já tem o Pro. Restaurando…",
+      "mockNote": "Modo de teste: as compras são simuladas."
+    },
+    "hardNote": "O Fastline Pro é necessário para continuar.",
+    "verifyLapsed": { "title": "Não foi possível verificar sua assinatura", "body": "Reconecte-se à internet para restaurar o Pro." },
+    "billingIssue": {
+      "title": "Há um problema com o seu pagamento",
+      "body": "Atualize sua forma de pagamento para manter o Pro.",
+      "open": "Abrir assinaturas da loja"
+    },
+    "expired": {
+      "headline": "Que bom ver você de novo",
+      "sub": "Seu acesso Pro terminou. Escolha um plano para continuar."
+    },
+    "trigger": {
+      "gate": "Este recurso faz parte do Fastline Pro.",
+      "post_fast": "Bom trabalho no seu terceiro jejum. Vá além com o Pro.",
+      "settings": "Aproveite ao máximo cada jejum."
+    }
+  }
+}

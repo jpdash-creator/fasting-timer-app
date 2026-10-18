@@ -1,0 +1,20 @@
+{
+  "notifications": {
+    "title": "Fastline",
+    "fastStart": "Time to start your %{protocol} fast. Tap to begin.",
+    "autoStart": "A new %{protocol} fast is starting now.",
+    "windowClosing": "Your eating window closes in %{minutes} minutes.",
+    "halfway": "Halfway there. %{remaining} to go.",
+    "oneHour": "One hour left in your fast.",
+    "goal": "Fast complete. Great work, %{hours}h done.",
+    "longFast": "You've been fasting %{hours}h. Check in and stop if you feel unwell.",
+    "streakRisk": "Your %{n}-day streak is at risk. Start a short fast tonight?",
+    "channels": { "fasting": "Fasting", "tips": "Tips" },
+    "banner": {
+      "title": "Notifications are off",
+      "body": "Turn them on to get fast reminders.",
+      "open": "Open Settings",
+      "enable": "Enable"
+    }
+  }
+}

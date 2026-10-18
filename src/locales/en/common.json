@@ -1,0 +1,18 @@
+{
+  "common": {
+    "storageErrorTitle": "Could not save your data", "storageErrorBody": "Your latest changes are kept while the app is open but may be lost when it closes. Free up some storage space and try again.",
+    "save": "Save", "cancel": "Cancel", "delete": "Delete", "done": "Done", "continue": "Continue",
+    "back": "Back", "close": "Close", "undo": "Undo", "retry": "Retry", "edit": "Edit", "add": "Add",
+    "ok": "OK", "unlock": "Unlock", "pro": "Pro", "upgrade": "Upgrade to Pro", "loading": "Loading…",
+    "hours": "h", "minutes": "m"
+  },
+  "tabs": { "timer": "Timer", "history": "History", "stats": "Stats", "settings": "Settings", "a11yLabel": "Main navigation" },
+  "validation": {
+    "startFuture": "Start time can't be in the future.",
+    "endFuture": "End time can't be in the future.",
+    "startBeforeEnd": "Start must be before end.",
+    "tooLong": "A fast can't be longer than 7 days.",
+    "overlap": "Overlaps with your fast on %{date}."
+  },
+  "toast": { "checkDeviceTime": "Check your device time" }
+}

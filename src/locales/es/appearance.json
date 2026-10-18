@@ -1,0 +1,36 @@
+{
+  "appearance": {
+    "title": "Apariencia",
+    "accent": {
+      "label": "Color de acento",
+      "footer": "Teal es gratis. Más colores de acento e iconos de la app con Fastline Pro."
+    },
+    "themes": {
+      "teal": "Turquesa",
+      "ocean": "Océano",
+      "dusk": "Crepúsculo",
+      "sunrise": "Amanecer"
+    },
+    "selected": "Seleccionado",
+    "preview": {
+      "title": "Vista previa",
+      "fasting": "En ayuno",
+      "elapsed": "14 h 20 min",
+      "button": "Terminar ayuno",
+      "chip": "Objetivo cumplido"
+    },
+    "icon": {
+      "label": "Icono de la app",
+      "footer": "Cambia el icono de tu pantalla de inicio. Funciona en la app instalada, no en Expo Go ni en la web.",
+      "changed": "Icono de la app cambiado a %{name}.",
+      "unsupportedWeb": "Los iconos de la app solo se pueden cambiar en las apps de Android e iOS.",
+      "unsupportedBuild": "Esta versión no puede cambiar el icono. Instala la app completa de Fastline para usarlo.",
+      "failed": "No se pudo cambiar el icono de la app. Inténtalo de nuevo."
+    },
+    "a11y": {
+      "themeOption": "Color de acento %{name}",
+      "iconOption": "Icono de la app %{name}",
+      "locked": "Función Pro. Abre la pantalla de mejora."
+    }
+  }
+}

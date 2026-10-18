@@ -1,0 +1,99 @@
+{
+  "onboarding": {
+    "progress": "Schritt %{current} von %{total}",
+    "back": "Zurück",
+    "continue": "Weiter",
+    "welcome": {
+      "title": "Fasten, ganz einfach",
+      "subtitle": "Ein Tipp zum Starten. Ein ruhiger Timer, sanfte Erinnerungen und klarer Fortschritt. Kein Konto nötig.",
+      "point1": "Starte ein Fasten mit einem Tipp und verfolge jede Phase",
+      "point2": "Sanfte Erinnerungen, wenn ein Fasten beginnt, endet oder dein Zeitfenster schließt",
+      "point3": "Serien, Gewicht und Wasser, gespeichert auf deinem Gerät",
+      "cta": "Los geht's",
+      "tagline": "Fastline"
+    },
+    "goal": {
+      "title": "Was ist dein wichtigstes Ziel?",
+      "subtitle": "Das beeinflusst deine Vorschläge. Du kannst es jederzeit ändern.",
+      "lose": "Abnehmen",
+      "maintain": "Mein Gewicht halten",
+      "focus": "Konzentration und Energie verbessern",
+      "routine": "Eine Routine aufbauen"
+    },
+    "experience": {
+      "title": "Wie vertraut ist dir Fasten?",
+      "subtitle": "Wir wählen einen angenehmen Einstieg.",
+      "new": "Neu beim Fasten",
+      "newHint": "Ich habe noch nie bewusst gefastet",
+      "some": "Etwas Erfahrung",
+      "someHint": "Ich habe es ein paar Mal probiert",
+      "experienced": "Erfahren",
+      "experiencedHint": "Ich faste regelmäßig"
+    },
+    "schedule": {
+      "title": "Wann isst du normalerweise?",
+      "subtitle": "Damit schlagen wir dir ein Essensfenster vor.",
+      "firstMeal": "Erste Mahlzeit",
+      "lastMeal": "Letzte Mahlzeit",
+      "pick": "Zeit für %{label} wählen, aktuell %{time}",
+      "window": "Dein Essensfenster beträgt etwa %{hours} Stunden.",
+      "increase": "15 Minuten später",
+      "decrease": "15 Minuten früher"
+    },
+    "safety": {
+      "title": "Ein kurzer Sicherheitscheck",
+      "subtitle": "Fasten ist nicht für jeden geeignet. Bitte bestätige:",
+      "adult": "Ich bin 18 Jahre oder älter",
+      "pregnant": "Ich bin nicht schwanger und stille nicht",
+      "medical": "Ich habe keine Erkrankung, die regelmäßige Mahlzeiten erfordert",
+      "warningTitle": "Fasten ist für dich möglicherweise nicht geeignet",
+      "warning": "Fasten ist für dich möglicherweise nicht geeignet. Sprich bitte mit einer medizinischen Fachperson, bevor du diese App nutzt.",
+      "understand": "Verstanden",
+      "disclaimer": "Fastline ist kein Medizinprodukt und gibt keine medizinische Beratung."
+    },
+    "protocol": {
+      "title": "Wähle deinen Plan",
+      "subtitle": "Wir schlagen dir einen anhand deiner Antworten vor. Du kannst jederzeit wechseln.",
+      "recommended": "Empfohlen",
+      "free": "Kostenlos",
+      "needsPro": "Pro",
+      "proNote": "Mit Pro markierte Pläne sind in Fastline Pro enthalten. Du kannst sie dir jetzt ansehen.",
+      "fastEat": "%{fast} Std. Fasten, %{eat} Std. Essen",
+      "fastOnly": "%{fast} Std. Fasten",
+      "descriptions": {
+        "12_12": "Ein sanfter Einstieg. Leicht durchzuhalten.",
+        "14_10": "Ein kleiner Schritt über 12:12.",
+        "16_8": "Der beliebteste Plan. Frühstück auslassen oder früher zu Abend essen.",
+        "18_6": "Ein längeres Fasten für Erfahrene.",
+        "20_4": "Ein kurzes Essensfenster. Fortgeschritten.",
+        "OMAD": "Eine Mahlzeit am Tag. Fortgeschritten.",
+        "5_2": "Zwei 24-Stunden-Fastentage pro Woche.",
+        "36H": "Ein einzelnes verlängertes Fasten. Fortgeschritten."
+      }
+    },
+    "reminders": {
+      "title": "Bleib mit Erinnerungen dran",
+      "subtitle": "Drei sanfte Hinweise. Mehr nicht.",
+      "r1": "Wenn es Zeit ist, dein Fasten zu starten",
+      "r2": "Wenn dein Fasten zur Hälfte geschafft ist",
+      "r3": "Wenn du dein Ziel erreichst",
+      "enable": "Erinnerungen aktivieren",
+      "later": "Vielleicht später",
+      "enabledNote": "Erinnerungen sind an. Du kannst sie jederzeit in den Einstellungen ändern.",
+      "deniedNote": "Benachrichtigungen sind aus. Du kannst sie in den Geräteeinstellungen einschalten."
+    },
+    "summary": {
+      "title": "Dein Plan ist bereit",
+      "plan": "Dein Plan: %{protocol}",
+      "window": "Essensfenster %{from}–%{to}",
+      "first": "Dein erstes Fasten beginnt heute Abend um %{time}",
+      "check1": "Plan gewählt",
+      "check2": "Essensfenster festgelegt",
+      "check3": "Erinnerungen bereit",
+      "cta": "Meinen Plan ansehen",
+      "ctaHard": "Fastline freischalten",
+      "a11y": "Dein Plan: %{protocol}. Essensfenster von %{from} bis %{to}. Dein erstes Fasten beginnt heute Abend um %{time}.",
+      "unlockNote": "Schalte Fastline frei, um dein erstes Fasten zu starten."
+    }
+  }
+}

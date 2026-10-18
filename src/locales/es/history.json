@@ -1,0 +1,77 @@
+{
+  "history": {
+    "title": "Historial",
+    "add": "Añadir ayuno pasado",
+    "addShort": "Añadir ayuno pasado",
+    "empty": {
+      "title": "Tus ayunos aparecerán aquí",
+      "body": "Termina un ayuno, o añade uno que ya hiciste, y aparecerá en tu calendario.",
+      "cta": "Empezar un ayuno"
+    },
+    "search": "Buscar notas",
+    "clearSearch": "Borrar búsqueda",
+    "allProtocols": "Todos",
+    "week": {
+      "one": "Semana del %{date} · %{hours} h · %{count} ayuno",
+      "other": "Semana del %{date} · %{hours} h · %{count} ayunos"
+    },
+    "goalMet": "Objetivo cumplido",
+    "endedEarly": "Terminado antes",
+    "deleteFast": "Eliminar ayuno",
+    "deleted": "Ayuno eliminado",
+    "noMatch": "Ningún ayuno coincide con tus filtros.",
+    "row": {
+      "range": "%{start} → %{end}",
+      "a11y": "Ayuno %{protocol}, %{duration}, terminó %{day}. %{result}",
+      "hint": "Abre el editor. Desliza a la izquierda para eliminar."
+    },
+    "cal": {
+      "planned": "Día de ayuno previsto", "legendPlanned": "Día de ayuno previsto (5:2)",
+      "goalMet": "Ayuno completado, objetivo cumplido",
+      "fasted": "Ayuno completado, objetivo no cumplido",
+      "freeze": "Congelación de racha usada",
+      "legendA11y": "Leyenda del calendario. Punto con borde: ayuno completado. Punto relleno: objetivo cumplido. Copo de nieve: congelación de racha.",
+      "legendFast": "Ayuno",
+      "legendGoal": "Objetivo cumplido",
+      "legendFreeze": "Congelación",
+      "prevMonth": "Mes anterior",
+      "nextMonth": "Mes siguiente",
+      "filterHint": "Muestra solo los ayunos de este día"
+    },
+    "locked": {
+      "title": {
+        "one": "%{count} ayuno anterior oculto",
+        "other": "%{count} ayunos anteriores ocultos"
+      },
+      "body": "La versión gratuita incluye los últimos 7 días. Pro conserva todo tu historial.",
+      "cta": "Desbloquear historial"
+    },
+    "editor": {
+      "titleNew": "Añadir ayuno pasado",
+      "titleEdit": "Editar ayuno",
+      "titleRunning": "Editar hora de inicio",
+      "start": "Inicio",
+      "end": "Fin",
+      "duration": "Duración",
+      "safetyNote": "Es un ayuno muy largo. Para y come si te sientes mal, mareado o a punto de desmayarte, y habla con un profesional de la salud antes de ayunar tanto tiempo.",
+      "protocol": "Protocolo",
+      "mood": "¿Cómo te sentiste?",
+      "moods": {
+        "1": "Duro",
+        "2": "Difícil",
+        "3": "Normal",
+        "4": "Bien",
+        "5": "Genial"
+      },
+      "note": "Nota",
+      "notePlaceholder": "¿Algo que valga la pena recordar?",
+      "delete": "Eliminar este ayuno",
+      "deleteTitle": "¿Eliminar este ayuno?",
+      "deleteBody": "Se quitará de tu historial y tus estadísticas."
+    },
+    "filter": {
+      "day": "Mostrando %{date}",
+      "clearDay": "Mostrar todos los días"
+    }
+  }
+}

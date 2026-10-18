@@ -1,0 +1,181 @@
+{
+  "timer": {
+    "start": "Start fasting",
+    "endFast": "End fast",
+    "startEarly": "Start early",
+    "protocolChip": "%{name} protocol",
+    "changeProtocol": "Change protocol",
+    "ready": "Ready when you are",
+    "ringGoalShort": "%{h}h",
+    "ringReady": "Ready",
+    "ringThenEating": "then %{h}h eating",
+    "readyHint": "Your %{hours}-hour fast starts when you tap the button.",
+    "fasting": "Fasting",
+    "elapsed": "elapsed",
+    "remaining": "%{time} remaining",
+    "overGoal": "+%{time} over goal",
+    "goalReachedTitle": "Goal reached",
+    "goalReachedBody": "You can end now or keep going. Listen to your body.",
+    "goalAt": "Goal at %{time}",
+    "goalRow": "Goal",
+    "eatingOpensAt": "Eating window opens at %{time}",
+    "editStart": "Edit start time",
+    "editStartValue": "Started %{time}",
+    "eatingWindow": "Eating window",
+    "eatingLeft": "left to eat",
+    "nextFastAt": "Next fast starts at %{time}",
+    "eatingDone": "Eating window complete",
+    "autoStartNote": "Your next fast will start automatically.",
+    "percentDone": "%{pct}% of goal",
+    "skewToast": "Check your device time",
+    "skewDetail": "Your clock looks earlier than this fast's start.",
+    "ring": {
+      "idle": "No fast running. Target %{target}.",
+      "fasting": "Fasting, %{elapsed} elapsed, %{remaining} remaining",
+      "over": "Fasting, %{elapsed} elapsed, goal reached, %{over} over goal",
+      "eating": "Eating window, %{remaining} remaining"
+    },
+    "spoken": {
+      "hours": {
+        "one": "%{count} hour",
+        "other": "%{count} hours"
+      },
+      "minutes": {
+        "one": "%{count} minute",
+        "other": "%{count} minutes"
+      }
+    },
+    "stageChip": "%{stage}, tap to learn more",
+    "quick": {
+      "water": "Water",
+      "addWater": "Add %{amount}",
+      "moreWater": "More",
+      "moreWaterLabel": "Log a different amount of water",
+      "waterAdded": "Water logged",
+      "mood": "How are you feeling?",
+      "moodSet": "Mood %{n} of 5"
+    },
+    "moods": {
+      "1": "Rough",
+      "2": "Low",
+      "3": "Okay",
+      "4": "Good",
+      "5": "Great"
+    },
+    "startSheet": {
+      "title": "Start your fast",
+      "now": "Start now",
+      "earlier": "Started earlier…",
+      "pickPrompt": "When did you start?",
+      "confirm": "Start fast",
+      "tooFarBack": "You can go back up to 48 hours.",
+      "willBeAt": "Fast began %{time}",
+      "alreadyRunning": "A fast is already running. End the current fast first."
+    },
+    "fiveTwo": { "fastDay": "Today is a fasting day. Your target is %{hours} h.", "eatDay": "Today is a normal eating day. Your next fasting day is %{day}." },
+    "endSheet": {
+      "staleNote": "This fast has been running for more than 7 days. Fasts can last at most 7 days, so choose when it actually ended.",
+      "title": "End this fast?",
+      "body": "You've fasted for %{elapsed}. Your goal was %{goal}.",
+      "bodyMet": "You've fasted for %{elapsed}. You reached your %{goal} goal.",
+      "now": "End now",
+      "earlier": "Ended earlier…",
+      "pickPrompt": "When did you finish?",
+      "confirm": "End fast",
+      "keepGoing": "Keep fasting",
+      "willBeAt": "Fast ended %{time}",
+      "tooEarly": "The end time must be after the start time."
+    },
+    "time": {
+      "agoShort": "%{n}h ago",
+      "agoMin": "%{n}m ago",
+      "pickExact": "Choose a time",
+      "pickDate": "Choose a date",
+      "currentValue": "Selected: %{time}",
+      "setTime": "Set time",
+      "dateTimeA11y": "Date and time picker"
+    },
+    "safety": {
+      "title24": "24 hours of fasting",
+      "title48": "48 hours of fasting",
+      "title72": "72 hours of fasting",
+      "body24": "You've been fasting 24 hours. Stop and eat if you feel unwell, dizzy or faint. Extended fasts should be discussed with a healthcare professional.",
+      "body48": "You've been fasting 48 hours. Stop and eat if you feel unwell, dizzy or faint. Extended fasts should be discussed with a healthcare professional.",
+      "body72": "You've been fasting over 72 hours. This is a very long fast and carries real health risks. Continue only with medical guidance. You can end now at any time.",
+      "read": "I've read this",
+      "understand": "I understand the risks",
+      "endInstead": "End my fast"
+    },
+    "picker": {
+      "title": "Fasting protocol",
+      "fastEat": "%{fast}h fast · %{eat}h eating",
+      "fastOnly": "%{fast}h fast",
+      "selected": "Selected",
+      "locked": "Pro",
+      "lockedLabel": "%{name}, requires Pro",
+      "customHeader": "Your protocols",
+      "createCustom": "Create custom protocol",
+      "customPro": "Pro",
+      "presets": "Presets",
+      "fiveTwoNote": "Two 24-hour fasts per week",
+      "close": "Close",
+      "delete": "Delete %{name}",
+      "switchTitle": "Change target for this fast?",
+      "switchBody": "Your running fast keeps its start time. The goal changes from %{from} to %{to}.",
+      "switchConfirm": "Change target",
+      "switchCancel": "Keep current",
+      "applied": "Protocol updated"
+    },
+    "custom": {
+      "title": "Custom protocol",
+      "name": "Name",
+      "namePlaceholder": "e.g. Weekend reset",
+      "defaultName": "Custom %{h}h",
+      "hours": "Fasting hours",
+      "hoursValue": "%{h} hours",
+      "decrease": "Decrease fasting hours",
+      "increase": "Increase fasting hours",
+      "eatingDerived": "Eating window: %{h} hours",
+      "colour": "Colour",
+      "colourOption": "Colour %{n}",
+      "save": "Save protocol",
+      "range": "Choose between 1 and 72 hours."
+    },
+    "stageInfo": {
+      "title": "Fasting stages",
+      "current": "You are here",
+      "reached": "Reached",
+      "upcoming": "Starts at %{h} h",
+      "fromHour": "from %{h} h",
+      "none": "Start a fast to see where you are.",
+      "evidenceTitle": "About the evidence",
+      "evidence": "Stage timings are rough, typical ranges. They are not a prediction for you, and some effects are better studied than others.",
+      "elapsedNow": "%{time} into your fast"
+    },
+    "summary": {
+      "title": "Fast complete",
+      "duration": "Duration",
+      "goalMet": "Goal reached",
+      "goalNotMet": "Ended early",
+      "goalNotMetBody": "Every fast counts. Your body still got the rest, and you can build from here.",
+      "goalMetBody": "Nicely done. You stayed with your plan.",
+      "stagesReached": "Stages reached",
+      "mood": "How did it feel?",
+      "note": "Note",
+      "notePlaceholder": "Anything you want to remember (optional)",
+      "save": "Save",
+      "share": "Share",
+      "streak": "%{n}-day streak",
+      "notFound": "This fast could not be found.",
+      "protocolLine": "%{name} protocol"
+    },
+    "a11y": {
+      "close": "Close",
+      "sheetBackdrop": "Dismiss"
+    },
+    "banner": {
+      "notifDenied": "Notifications are off",
+      "openSettings": "Open Settings to get fast reminders"
+    }
+  }
+}

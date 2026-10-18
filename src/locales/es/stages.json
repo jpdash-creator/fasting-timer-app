@@ -1,0 +1,25 @@
+{
+  "stages": {
+    "fed": {
+      "label": "Estado de alimentación",
+      "description": "Tu cuerpo está digiriendo y usando la energía de tu última comida. El azúcar en sangre sube y luego se estabiliza."
+    },
+    "early": {
+      "label": "Inicio del ayuno",
+      "description": "La digestión se va calmando. Tu cuerpo recurre cada vez más al glucógeno almacenado para obtener energía."
+    },
+    "fatburn": {
+      "label": "Quema de grasa",
+      "description": "Las reservas de glucógeno bajan y el cuerpo usa más grasa almacenada como combustible. Muchas personas notan menos oleadas de hambre a partir de este punto."
+    },
+    "ketosis": {
+      "label": "Puede comenzar la cetosis",
+      "description": "La producción de cetonas suele aumentar a medida que continúa el ayuno. El momento varía mucho entre personas y depende de tu última comida y de tu actividad."
+    },
+    "deep": {
+      "label": "Ayuno profundo",
+      "description": "Se estudian los ayunos más largos por el reciclaje celular (autofagia), pero la evidencia en humanos aún es limitada. Escucha a tu cuerpo y para si te sientes mal."
+    }
+  },
+  "disclaimer": "Solo información general, no es un consejo médico. Las respuestas individuales varían. Consulta a un profesional de la salud antes de ayunar si tienes una condición médica, tomas medicación, estás embarazada, en periodo de lactancia, eres menor de 18 años o tienes antecedentes de trastornos de la conducta alimentaria."
+}

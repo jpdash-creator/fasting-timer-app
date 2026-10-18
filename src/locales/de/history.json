@@ -1,0 +1,77 @@
+{
+  "history": {
+    "title": "Verlauf",
+    "add": "Vergangenes Fasten hinzufügen",
+    "addShort": "Vergangenes Fasten hinzufügen",
+    "empty": {
+      "title": "Deine Fastenzeiten erscheinen hier",
+      "body": "Beende ein Fasten oder füge eines hinzu, das du schon gemacht hast, und es erscheint in deinem Kalender.",
+      "cta": "Fasten starten"
+    },
+    "search": "Notizen durchsuchen",
+    "clearSearch": "Suche löschen",
+    "allProtocols": "Alle",
+    "week": {
+      "one": "Woche vom %{date} · %{hours} Std. · %{count} Fastenzeit",
+      "other": "Woche vom %{date} · %{hours} Std. · %{count} Fastenzeiten"
+    },
+    "goalMet": "Ziel erreicht",
+    "endedEarly": "Früher beendet",
+    "deleteFast": "Fasten löschen",
+    "deleted": "Fasten gelöscht",
+    "noMatch": "Keine Fastenzeiten passen zu deinen Filtern.",
+    "row": {
+      "range": "%{start} → %{end}",
+      "a11y": "%{protocol}-Fasten, %{duration}, beendet %{day}. %{result}",
+      "hint": "Öffnet den Editor. Zum Löschen nach links wischen."
+    },
+    "cal": {
+      "planned": "Geplanter Fastentag", "legendPlanned": "Geplanter Fastentag (5:2)",
+      "goalMet": "Fasten abgeschlossen, Ziel erreicht",
+      "fasted": "Fasten abgeschlossen, Ziel nicht erreicht",
+      "freeze": "Serien-Freeze verwendet",
+      "legendA11y": "Kalenderlegende. Umrandeter Punkt: Fasten abgeschlossen. Gefüllter Punkt: Ziel erreicht. Schneeflocke: Serien-Freeze.",
+      "legendFast": "Fasten",
+      "legendGoal": "Ziel erreicht",
+      "legendFreeze": "Freeze",
+      "prevMonth": "Vorheriger Monat",
+      "nextMonth": "Nächster Monat",
+      "filterHint": "Zeigt nur Fastenzeiten dieses Tages"
+    },
+    "locked": {
+      "title": {
+        "one": "%{count} älteres Fasten ausgeblendet",
+        "other": "%{count} ältere Fastenzeiten ausgeblendet"
+      },
+      "body": "Kostenlos sind die letzten 7 Tage enthalten. Pro behält deinen gesamten Verlauf.",
+      "cta": "Verlauf freischalten"
+    },
+    "editor": {
+      "titleNew": "Vergangenes Fasten hinzufügen",
+      "titleEdit": "Fasten bearbeiten",
+      "titleRunning": "Startzeit bearbeiten",
+      "start": "Start",
+      "end": "Ende",
+      "duration": "Dauer",
+      "safetyNote": "Das ist ein sehr langes Fasten. Hör auf und iss etwas, wenn du dich unwohl, schwindelig oder schwach fühlst, und sprich mit einer medizinischen Fachperson, bevor du so lange fastest.",
+      "protocol": "Protokoll",
+      "mood": "Wie hat es sich angefühlt?",
+      "moods": {
+        "1": "Schwer",
+        "2": "Hart",
+        "3": "Okay",
+        "4": "Gut",
+        "5": "Super"
+      },
+      "note": "Notiz",
+      "notePlaceholder": "Etwas, woran du dich erinnern möchtest?",
+      "delete": "Dieses Fasten löschen",
+      "deleteTitle": "Dieses Fasten löschen?",
+      "deleteBody": "Das entfernt es aus deinem Verlauf und deiner Statistik."
+    },
+    "filter": {
+      "day": "Angezeigt: %{date}",
+      "clearDay": "Alle Tage anzeigen"
+    }
+  }
+}

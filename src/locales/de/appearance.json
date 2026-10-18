@@ -1,0 +1,36 @@
+{
+  "appearance": {
+    "title": "Darstellung",
+    "accent": {
+      "label": "Akzentfarbe",
+      "footer": "Petrol ist kostenlos. Weitere Akzentfarben und App-Symbole gibt es mit Fastline Pro."
+    },
+    "themes": {
+      "teal": "Petrol",
+      "ocean": "Ozean",
+      "dusk": "Dämmerung",
+      "sunrise": "Sonnenaufgang"
+    },
+    "selected": "Ausgewählt",
+    "preview": {
+      "title": "Vorschau",
+      "fasting": "Fastet",
+      "elapsed": "14 Std. 20 Min.",
+      "button": "Fasten beenden",
+      "chip": "Ziel erreicht"
+    },
+    "icon": {
+      "label": "App-Symbol",
+      "footer": "Ändert das Symbol auf deinem Startbildschirm. Das funktioniert in der installierten App, nicht in Expo Go oder im Web.",
+      "changed": "App-Symbol auf %{name} geändert.",
+      "unsupportedWeb": "App-Symbole lassen sich nur in den Android- und iOS-Apps ändern.",
+      "unsupportedBuild": "Diese Version kann das App-Symbol nicht wechseln. Installiere die vollständige Fastline-App.",
+      "failed": "Das App-Symbol konnte nicht geändert werden. Bitte versuche es erneut."
+    },
+    "a11y": {
+      "themeOption": "Akzentfarbe %{name}",
+      "iconOption": "App-Symbol %{name}",
+      "locked": "Pro-Funktion. Öffnet das Upgrade."
+    }
+  }
+}

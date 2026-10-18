@@ -1,0 +1,19 @@
+title: Fastline
+description: Intermittent fasting timer and tracker
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-optional-front-matter
+exclude:
+  - node_modules
+  - src
+  - assets
+  - scripts
+  - docs
+  - README.md
+  - AGENTS.md
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+  - app.json
+  - eas.json
+  - expo-env.d.ts

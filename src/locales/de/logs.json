@@ -1,0 +1,31 @@
+{
+  "logs": {
+    "when": "Wann",
+    "freeLimit": "Zeigt deine letzten %{count}. Pro behält alles.",
+    "weight": {
+      "title": "Gewicht eintragen",
+      "inputLabel": "Gewicht in %{unit}",
+      "invalid": "Gib ein Gewicht in %{unit} ein.",
+      "hint": "Eine Dezimalstelle genügt.",
+      "notePlaceholder": "Notiz (optional)",
+      "recent": "Letzte Einträge",
+      "deleted": "Eintrag gelöscht",
+      "deleteA11y": "Eintrag %{value} %{unit} löschen",
+      "note": "Notiz"
+    },
+    "water": {
+      "title": "Wasser",
+      "custom": "Eigene Menge",
+      "inputLabel": "Menge in %{unit}",
+      "invalid": "Gib eine Menge bis 5000 ml ein (etwa 169 oz).",
+      "added": "%{amount} %{unit} hinzugefügt",
+      "deleted": "Eintrag gelöscht",
+      "goal": "Tagesziel",
+      "goalLower": "Tagesziel um 250 ml senken",
+      "goalRaise": "Tagesziel um 250 ml erhöhen",
+      "today": "Heute",
+      "none": "Heute noch nichts eingetragen.",
+      "deleteA11y": "%{amount} %{unit} um %{time} gelöscht"
+    }
+  }
+}

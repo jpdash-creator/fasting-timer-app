@@ -1,0 +1,72 @@
+{
+  "paywall": {
+    "close": "Close",
+    "headline": "Reach your fasting goals",
+    "headlineOnboarding": "Your plan is ready",
+    "subhead": "Unlock everything Fastline can do.",
+    "benefit1": "Every protocol, plus fasts you design yourself",
+    "benefit2": "Reminders timed to your own eating window",
+    "benefit3": "Weekly insights, charts and CSV export",
+    "socialProof": "Rated %{rating} on the store",
+    "plan": {
+      "annual": "Annual",
+      "monthly": "Monthly",
+      "weekly": "Weekly",
+      "trialBadge": "%{days}-day free trial",
+      "bestValue": "Best value",
+      "perMonth": "%{price}/month",
+      "per": { "year": "year", "month": "month", "week": "week", "once": "one time" },
+      "billedYearly": "Billed %{price} per year",
+      "billedMonthly": "Billed %{price} per month",
+      "billedWeekly": "Billed %{price} per week",
+      "selected": "Selected"
+    },
+    "lifetime": "Or unlock for life, %{price} one time",
+    "cta": {
+      "trial": "Start %{days}-day free trial",
+      "annual": "Subscribe for %{price}/year",
+      "monthly": "Subscribe for %{price}/month",
+      "weekly": "Subscribe for %{price}/week",
+      "lifetime": "Unlock for %{price}",
+      "purchasing": "Processing…"
+    },
+    "legal": {
+      "trial": "%{days} days free, then %{price} per %{period}. Cancel anytime in %{store} settings.",
+      "sub": "%{price} per %{period}. Cancel anytime in %{store} settings.",
+      "lifetime": "%{price} one-time payment. No subscription.",
+      "renew": "Subscription renews automatically unless cancelled at least 24 hours before the end of the current period. Manage or cancel in %{store} account settings.",
+      "trialConverts": "If you start a free trial, it converts to a paid subscription at the price above unless you cancel before it ends.",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "restore": "Restore purchases",
+      "appStore": "App Store",
+      "googlePlay": "Google Play",
+      "store": "the store"
+    },
+    "state": {
+      "loading": "Loading plans…",
+      "unavailable": "Couldn't load plans. Check your connection and retry.",
+      "retry": "Retry",
+      "pending": "Payment pending. We'll unlock Pro automatically.",
+      "success": "Welcome to Fastline Pro",
+      "restored": "Purchases restored",
+      "nothingToRestore": "No previous purchases found.",
+      "error": "Something went wrong. You weren't charged. Please try again.",
+      "alreadyOwned": "You already own Pro. Restoring…",
+      "mockNote": "Test mode: purchases are simulated."
+    },
+    "hardNote": "Fastline Pro is required to continue.",
+    "verifyLapsed": { "title": "Couldn't verify your subscription", "body": "Reconnect to the internet to restore Pro." },
+    "billingIssue": {
+      "title": "There's a problem with your payment",
+      "body": "Update your payment method to keep Pro.",
+      "open": "Open store subscriptions"
+    },
+    "expired": { "headline": "Welcome back", "sub": "Your Pro access has ended. Pick a plan to continue." },
+    "trigger": {
+      "gate": "This feature is part of Fastline Pro.",
+      "post_fast": "Nice work on your third fast. Go further with Pro.",
+      "settings": "Get the most from every fast."
+    }
+  }
+}

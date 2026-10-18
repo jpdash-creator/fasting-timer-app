@@ -1,0 +1,10 @@
+{
+  "stages": {
+    "fed": { "label": "Fed state", "description": "Your body is digesting and using the energy from your last meal. Blood sugar rises, then settles." },
+    "early": { "label": "Early fast", "description": "Digestion winds down. Your body increasingly draws on stored glycogen for energy." },
+    "fatburn": { "label": "Fat burning", "description": "Glycogen stores run lower and the body uses more stored fat for fuel. Many people notice fewer hunger waves after this point." },
+    "ketosis": { "label": "Ketosis may begin", "description": "Ketone production tends to rise as fasting continues. Timing varies a lot between people and depends on your last meal and activity." },
+    "deep": { "label": "Deep fast", "description": "Longer fasts are studied for cellular recycling (autophagy), but human evidence is still limited. Listen to your body and stop if you feel unwell." }
+  },
+  "disclaimer": "General information only, not medical advice. Individual responses vary. Consult a healthcare professional before fasting if you have a medical condition, take medication, are pregnant, breastfeeding, under 18, or have a history of disordered eating."
+}

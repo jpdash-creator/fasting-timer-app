@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "title": "Estatísticas",
+    "tabs": {
+      "overview": "Visão geral",
+      "weight": "Peso",
+      "water": "Água"
+    },
+    "days": {
+      "one": "%{count} dia",
+      "other": "%{count} dias"
+    },
+    "streak": {
+      "current": "Sequência atual",
+      "longest": "Maior sequência"
+    },
+    "totals": {
+      "fasts": "Total de jejuns",
+      "hours": "Total de horas",
+      "avg": "Duração média",
+      "rate": "Taxa de metas cumpridas"
+    },
+    "empty": {
+      "title": "Conclua 2 jejuns para liberar as estatísticas",
+      "body": "Suas sequências, totais e tendências vão aparecer aqui.",
+      "cta": "Começar um jejum"
+    },
+    "locked": {
+      "title": "Veja o quadro completo",
+      "body": "O Pro adiciona maior sequência, totais, gráficos e um resumo semanal."
+    },
+    "charts": {
+      "weeklyTitle": "Horas de jejum nesta semana (h)",
+      "weeklySummary": "%{total} horas nos últimos 7 dias, cerca de %{avg} por dia. Dia mais longo: %{day}.",
+      "weeklyNone": "Nenhum jejum concluído nos últimos 7 dias.",
+      "trendTitle": "Tendência de 30 dias (h por dia)",
+      "trendSummary": "Horas diárias de jejum, média de 7 dias: de %{from} a %{to} horas.",
+      "weekdayTitle": "Jejuns por dia da semana (quantidade)",
+      "weekdaySummary": "A maioria dos jejuns termina em %{day} (%{count}).",
+      "weekdayNone": "Ainda não há jejuns.",
+      "valFirst": "Primeiro",
+      "valLast": "Mais recente",
+      "valMin": "Mais baixo",
+      "valMax": "Mais alto"
+    },
+    "insight": {
+      "title": "Sua semana",
+      "bestDay": "Você costuma se sentir melhor em %{day}.",
+      "bestProtocol": "%{name} é o seu protocolo mais confiável, com %{pct}% das metas cumpridas.",
+      "moodLength": "O humor médio é %{long} após jejuns mais longos e %{short} após os mais curtos.",
+      "tip": {
+        "keepGoing": "Bom ritmo. Mantenha o padrão que está funcionando para você.",
+        "tryLonger": "Jejuns mais longos têm sido positivos ultimamente. Você pode tentar acrescentar uma hora em um dia que combine com você.",
+        "tryShorter": "As metas têm escapado. Um protocolo um pouco mais curto pode ser mais fácil de manter.",
+        "logMood": "Registre seu humor após cada jejum para receber sugestões sob medida aqui.",
+        "moreData": "Conclua mais alguns jejuns neste mês para receber sugestões personalizadas."
+      },
+      "disclaimer": "Com base nos seus últimos 28 dias. Apenas para conhecimento geral, não é orientação."
+    },
+    "badges": {
+      "title": "Conquistas",
+      "earned": "conquistada",
+      "locked": "bloqueada, %{pct} por cento",
+      "firstFast": "Primeiro jejum",
+      "streak3": "Sequência de 3 dias",
+      "streak7": "Sequência de 7 dias",
+      "streak30": "Sequência de 30 dias",
+      "hours100": "100 horas",
+      "first20h": "Primeiro jejum de 20 h"
+    },
+    "weight": {
+      "current": "Peso atual",
+      "currentA11y": "Peso atual %{value} %{unit}",
+      "none": "Nenhum peso registrado ainda",
+      "empty": "Registre seu peso para iniciar sua tendência.",
+      "lower": "Registrar um peso um pouco menor",
+      "higher": "Registrar um peso um pouco maior",
+      "log": "Registrar peso",
+      "down": "Menos %{value} %{unit} desde o último registro",
+      "up": "Mais %{value} %{unit} desde o último registro",
+      "noChange": "Sem alteração desde o último registro",
+      "range": "%{days}d",
+      "chartTitle": "Peso, últimos %{days} dias (%{unit})",
+      "chartSummary": "%{count} registros em %{days} dias, de %{from} a %{to} %{unit}. A linha verde é a média de 7 dias.",
+      "goalLine": "Peso desejado de %{goal} %{unit} mostrado como linha tracejada.",
+      "goalHint": "Defina um peso desejado em Ajustes para vê-lo no gráfico.",
+      "needTwo": "Registre pelo menos dois valores neste período para ver um gráfico.",
+      "lockedTitle": "As tendências de peso são um recurso Pro",
+      "lockedBody": "O plano gratuito guarda seus últimos 7 registros. O Pro adiciona gráficos, média de 7 dias e sua linha de meta.",
+      "legendEntries": "Registros",
+      "legendAverage": "Média de 7 dias",
+      "legendGoal": "Meta %{goal} %{unit}"
+    },
+    "water": {
+      "ringA11y": "%{total} de %{goal} %{unit} hoje, %{pct} por cento",
+      "ofGoal": "de %{goal} %{unit}",
+      "reached": "Meta atingida",
+      "addA11y": "Adicionar %{amount} %{unit}",
+      "added": "%{amount} %{unit} adicionados",
+      "custom": "Quantidade personalizada e histórico"
+    }
+  }
+}

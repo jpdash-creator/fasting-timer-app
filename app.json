@@ -1,0 +1,93 @@
+{
+  "expo": {
+    "name": "Fastline",
+    "slug": "fastline",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fastline.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#26705F",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.fastline.app",
+      "permissions": [
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-localization",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAFAF7",
+          "dark": {
+            "image": "./assets/splash-icon-dark.png",
+            "backgroundColor": "#0F1412"
+          }
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      [
+        "expo-notifications",
+        {
+          "color": "#2E7D6B"
+        }
+      ],
+      "expo-iap",
+      [
+        "expo-alternate-app-icons",
+        [
+          {
+            "name": "Ocean",
+            "ios": "./assets/icons/ocean-icon.png",
+            "android": {
+              "foregroundImage": "./assets/icons/ocean-foreground.png",
+              "backgroundColor": "#235f91"
+            }
+          },
+          {
+            "name": "Dusk",
+            "ios": "./assets/icons/dusk-icon.png",
+            "android": {
+              "foregroundImage": "./assets/icons/dusk-foreground.png",
+              "backgroundColor": "#574ca1"
+            }
+          },
+          {
+            "name": "Sunrise",
+            "ios": "./assets/icons/sunrise-icon.png",
+            "android": {
+              "foregroundImage": "./assets/icons/sunrise-foreground.png",
+              "backgroundColor": "#b54c27"
+            }
+          }
+        ]
+      ],
+      "expo-font"
+    ],
+    "scheme": "fastline",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

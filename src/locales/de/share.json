@@ -1,0 +1,28 @@
+{
+  "share": {
+    "title": "Teile dein Fasten",
+    "headline": "Fasten abgeschlossen",
+    "headlineInProgress": "Fasten läuft",
+    "hoursUnit": "Stunden",
+    "protocol": "Protokoll",
+    "goalMet": "Ziel erreicht",
+    "goalNotMet": "%{percent}% des Ziels",
+    "streakCount": {
+      "one": "%{count} Tag in Folge",
+      "other": "%{count} Tage in Folge"
+    },
+    "streakNone": "Starte deine Serie",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "Einfaches Intervallfasten",
+    "watermark": "Erstellt mit Fastline",
+    "button": "Teilen",
+    "sharing": "Wird vorbereitet…",
+    "removeWatermark": "Wasserzeichen mit Pro entfernen",
+    "notFound": "Wir konnten dieses Fasten nicht finden.",
+    "unavailable": "Teilen ist auf diesem Gerät nicht verfügbar.",
+    "failed": "Das Bild konnte nicht erstellt werden. Bitte versuche es erneut.",
+    "cardLabel": "Teilen-Karte: %{duration} Fasten, %{protocol}, %{streak}",
+    "message": "Ich habe gerade ein %{duration}-Fasten mit Fastline abgeschlossen."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "common": {
+    "storageErrorTitle": "Não foi possível salvar seus dados", "storageErrorBody": "Suas alterações mais recentes são mantidas enquanto o app estiver aberto, mas podem ser perdidas ao fechá-lo. Libere espaço de armazenamento e tente novamente.",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "done": "Concluído",
+    "continue": "Continuar",
+    "back": "Voltar",
+    "close": "Fechar",
+    "undo": "Desfazer",
+    "retry": "Tentar de novo",
+    "edit": "Editar",
+    "add": "Adicionar",
+    "ok": "OK",
+    "unlock": "Desbloquear",
+    "pro": "Pro",
+    "upgrade": "Assinar o Pro",
+    "loading": "Carregando…",
+    "hours": "h",
+    "minutes": "min"
+  },
+  "tabs": {
+    "timer": "Timer",
+    "history": "Histórico",
+    "stats": "Estatísticas",
+    "settings": "Ajustes", "a11yLabel": "Navegação principal" },
+  "validation": {
+    "startFuture": "O horário de início não pode estar no futuro.",
+    "endFuture": "O horário de término não pode estar no futuro.",
+    "startBeforeEnd": "O início deve ser antes do término.",
+    "tooLong": "Um jejum não pode durar mais de 7 dias.",
+    "overlap": "Sobrepõe seu jejum de %{date}."
+  },
+  "toast": {
+    "checkDeviceTime": "Confira a hora do seu dispositivo"
+  }
+}

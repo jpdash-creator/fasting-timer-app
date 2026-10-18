@@ -1,0 +1,25 @@
+{
+  "stages": {
+    "fed": {
+      "label": "Estado alimentado",
+      "description": "Seu corpo está digerindo e usando a energia da sua última refeição. O açúcar no sangue sobe e depois se estabiliza."
+    },
+    "early": {
+      "label": "Início do jejum",
+      "description": "A digestão vai diminuindo. Seu corpo recorre cada vez mais ao glicogênio armazenado para obter energia."
+    },
+    "fatburn": {
+      "label": "Queima de gordura",
+      "description": "As reservas de glicogênio diminuem e o corpo passa a usar mais gordura armazenada como combustível. Muita gente nota menos ondas de fome a partir deste ponto."
+    },
+    "ketosis": {
+      "label": "A cetose pode começar",
+      "description": "A produção de cetonas tende a aumentar conforme o jejum continua. O momento varia muito de pessoa para pessoa e depende da sua última refeição e da sua atividade."
+    },
+    "deep": {
+      "label": "Jejum profundo",
+      "description": "Jejuns mais longos são estudados pela reciclagem celular (autofagia), mas as evidências em humanos ainda são limitadas. Ouça seu corpo e pare se sentir mal-estar."
+    }
+  },
+  "disclaimer": "Apenas informação geral, não é orientação médica. As respostas individuais variam. Consulte um profissional de saúde antes de jejuar se você tem alguma condição médica, usa medicação, está grávida, amamentando, tem menos de 18 anos ou histórico de transtorno alimentar."
+}

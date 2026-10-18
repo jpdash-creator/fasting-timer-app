@@ -1,0 +1,28 @@
+{
+  "share": {
+    "title": "Share your fast",
+    "headline": "Fast complete",
+    "headlineInProgress": "Fasting",
+    "hoursUnit": "hours",
+    "protocol": "Protocol",
+    "goalMet": "Goal reached",
+    "goalNotMet": "%{percent}% of goal",
+    "streakCount": {
+      "one": "%{count} day streak",
+      "other": "%{count} day streak"
+    },
+    "streakNone": "Start your streak",
+    "dateLine": "%{date}",
+    "brand": "Fastline",
+    "tagline": "Simple intermittent fasting",
+    "watermark": "Made with Fastline",
+    "button": "Share",
+    "sharing": "Preparing…",
+    "removeWatermark": "Remove watermark with Pro",
+    "notFound": "We couldn't find that fast.",
+    "unavailable": "Sharing is not available on this device.",
+    "failed": "Couldn't create the image. Please try again.",
+    "cardLabel": "Share card: %{duration} fast, %{protocol}, %{streak}",
+    "message": "I just completed a %{duration} fast with Fastline."
+  }
+}

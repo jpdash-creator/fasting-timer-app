@@ -1,0 +1,38 @@
+{
+  "common": {
+    "storageErrorTitle": "Deine Daten konnten nicht gespeichert werden", "storageErrorBody": "Deine letzten Änderungen bleiben erhalten, solange die App geöffnet ist, können aber beim Schließen verloren gehen. Gib etwas Speicherplatz frei und versuche es erneut.",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "done": "Fertig",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "close": "Schließen",
+    "undo": "Rückgängig",
+    "retry": "Erneut versuchen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "ok": "OK",
+    "unlock": "Freischalten",
+    "pro": "Pro",
+    "upgrade": "Auf Pro upgraden",
+    "loading": "Lädt…",
+    "hours": "Std.",
+    "minutes": "Min."
+  },
+  "tabs": {
+    "timer": "Timer",
+    "history": "Verlauf",
+    "stats": "Statistik",
+    "settings": "Einstellungen", "a11yLabel": "Hauptnavigation" },
+  "validation": {
+    "startFuture": "Die Startzeit darf nicht in der Zukunft liegen.",
+    "endFuture": "Die Endzeit darf nicht in der Zukunft liegen.",
+    "startBeforeEnd": "Der Start muss vor dem Ende liegen.",
+    "tooLong": "Ein Fasten darf nicht länger als 7 Tage dauern.",
+    "overlap": "Überschneidet sich mit deinem Fasten am %{date}."
+  },
+  "toast": {
+    "checkDeviceTime": "Prüfe die Uhrzeit deines Geräts"
+  }
+}
