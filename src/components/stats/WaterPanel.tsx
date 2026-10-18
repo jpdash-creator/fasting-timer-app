@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Pressable, Text, View } from 'react-native';
-import { useRouter } from 'expo-router';
+import { useRouter } from '../../router';
 import { Card, PrimaryButton, haptic } from '../ui';
 import { ProgressRing } from '../timer/ProgressRing';
 import { hit, radius, space, type, useTheme } from '../../theme';

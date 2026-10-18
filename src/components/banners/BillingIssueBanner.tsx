@@ -1,6 +1,6 @@
 import React from 'react';
 import { Linking, Pressable, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { radius, space, type, useTheme } from '../../theme';
 import { t } from '../../lib/i18n';
 import { usePurchaseStore } from '../../stores/purchaseStore';

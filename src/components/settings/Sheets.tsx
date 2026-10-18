@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { hit, space, type, useTheme } from '../../theme';
 import { Sheet } from '../timer/Sheet';
 import { haptic, PrimaryButton } from '../ui';

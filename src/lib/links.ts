@@ -1,16 +1,17 @@
 import { Platform } from 'react-native';
+import { Config } from '../platform/config';
 
 /**
  * Legal / support links. fastline.app is NOT owned by the publisher, so the placeholder URLs below
- * must never be opened. Host the policy (e.g. GitHub Pages) and set EXPO_PUBLIC_PRIVACY_URL (and
- * optionally EXPO_PUBLIC_TERMS_URL / EXPO_PUBLIC_SUPPORT_EMAIL) before store submission.
+ * must never be opened. Host the policy (e.g. GitHub Pages) and set PRIVACY_URL (and
+ * optionally TERMS_URL / SUPPORT_EMAIL) in .env.production before store submission.
  */
 export const APPLE_EULA_URL = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
 
 const clean = (v: string | undefined): string => (v ?? '').trim();
-const envPrivacy = clean(process.env.EXPO_PUBLIC_PRIVACY_URL);
-const envTerms = clean(process.env.EXPO_PUBLIC_TERMS_URL);
-const envSupport = clean(process.env.EXPO_PUBLIC_SUPPORT_EMAIL);
+const envPrivacy = clean(Config.PRIVACY_URL);
+const envTerms = clean(Config.TERMS_URL);
+const envSupport = clean(Config.SUPPORT_EMAIL);
 
 const PLACEHOLDER_PRIVACY = 'https://fastline.app/privacy';
 const PLACEHOLDER_TERMS = 'https://fastline.app/terms';

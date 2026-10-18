@@ -1,0 +1,17 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+    </style>
+
+    <!-- Launch theme (androidx.core:core-splashscreen). MainActivity calls installSplashScreen() before
+         super.onCreate, which swaps this for postSplashScreenTheme once the first frame is drawn.
+         Colours: values/splash_colors.xml (#FAFAF7) and values-night/splash_colors.xml (#0F1412);
+         icon: drawable[-night]-*dpi/splash_icon.png (regenerate with `node scripts/make-assets.js splash`). -->
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+</resources>

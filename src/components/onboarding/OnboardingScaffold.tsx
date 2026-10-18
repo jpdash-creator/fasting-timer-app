@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons, type IconName } from '../../platform/icons';
+import { useRouter } from '../../router';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { Body, PrimaryButton, Screen, Title } from '../ui';
 import { hit, icon as iconSize, layout, radius as radii, space, type, useTheme } from '../../theme';
@@ -87,7 +87,7 @@ export function OnboardingScaffold({
 
 export function OptionCard({ label, hint, selected, onPress, icon, badge }: {
   label: string; hint?: string; selected: boolean; onPress: () => void;
-  icon?: keyof typeof Ionicons.glyphMap; badge?: string;
+  icon?: IconName; badge?: string;
 }) {
   const { colors, radius } = useTheme();
   return (

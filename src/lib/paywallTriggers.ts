@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { useRouter } from 'expo-router';
+import { useRouter } from '../router';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { storage } from '../stores/storage';

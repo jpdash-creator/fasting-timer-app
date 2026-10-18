@@ -1,8 +1,8 @@
 import React, { useMemo, useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { LineChart } from 'react-native-gifted-charts';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useRouter } from '../../router';
 import { format } from 'date-fns';
 import { Card, PrimaryButton, Separator, haptic } from '../ui';
 import { CHART_H, ChartCard, ReadoutBubble, ValueList, useChartWidth } from './ChartCard';

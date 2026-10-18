@@ -1,4 +1,4 @@
-import { useRouter } from 'expo-router';
+import { useRouter } from '../router';
 import { useIsPro } from '../stores/purchaseStore';
 import { useSettingsStore } from '../stores/settingsStore';
 

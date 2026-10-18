@@ -1,12 +1,12 @@
-# axe-core accessibility audit (Expo web build)
+# axe-core accessibility audit (react-native-web + Vite build)
 
 Covers the web build only (react-native-web DOM). It does NOT cover native VoiceOver/TalkBack; test those by hand.
 
 ## Setup
 1. `npm i -D axe-core` (already a devDependency).
-2. Start the dev server yourself: `npx expo start --web --port 8081`. NOTE: Metro's file watcher can miss edits on some setups (seen on Windows, including OneDrive-synced folders); if a change does not show up, restart Metro with `--clear`.
+2. Start the dev server yourself: `npm run web` (Vite, `vite --host --port 8081`, strict port; config in `vite.config.mts`, entry `web/main.tsx`). Vite HMR/watch is reliable, but the first load after a cold start (or after changing `vite.config.mts` / installing a package) re-optimizes dependencies: wait for the "ready" line and one full page load. If a stale optimized dependency is suspected, run `npx vite --force`. For a production-like check use `npm run web:build && npm run web:preview` (same port 8081, output in `dist-web/`).
 3. Use the Playwright MCP (`browser_run_code_unsafe`). Its `filename` must live under the MCP allowed roots (the folder that contains this project, e.g. `Apps/.playwright-mcp/`), so copy `scripts/axe-harness.js` there, or install it once on the page (`page.__H = <harness>`) and run `page.__CFG = {ROOT, ONLY, THEMES, LANG, DETAIL, INC, SHOT, W, H}; return page.__H(page)` (`ROOT` = absolute path of this project, used to find `node_modules/axe-core`; `ONLY` = regex of scenario names, `LANG` = `''`/`'ar'`/..., `DETAIL` prints violation nodes, `INC` prints incomplete nodes, `SHOT` = directory for per-scenario screenshots, `W`/`H` = viewport, e.g. 320x640). About 20 scenario runs fit in one call (7 s each), so run it in chunks, e.g. `ONLY='^(ob-|paywall)'`.
-4. The harness retries navigation for up to 2 min, so a Metro restart (after editing source) does not abort a run, but wait ~30 s after an edit before trusting results.
+4. The harness retries navigation for up to 2 min, so a dev-server restart (after editing source) does not abort a run, but wait ~30 s after an edit before trusting results.
 
 ## What the harness does (per scenario x theme)
 - viewport 390x844, `emulateMedia({colorScheme})`, reducedMotion no-preference.
@@ -16,16 +16,16 @@ Covers the web build only (react-native-web DOM). It does NOT cover native Voice
   - `fw.logs` = `{state:{weights,water},version:1}`, `fw.purchase` (`isPro`/`mockPro` for Pro), `fw.paywallMeta`.
 - Injects `node_modules/axe-core/axe.min.js` via `page.addScriptTag({path})` and runs
   `axe.run({include:[document],exclude:[['#error-toast']]}, {runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21a','wcag21aa','wcag22aa','best-practice']}})`.
-  `#error-toast` is the Expo dev-only error overlay, not app UI.
+  `#error-toast` is a dev-only error overlay (Metro/Expo era; harmless if absent), not app UI.
 - Prints `scenario|theme route V=<violation node count> ids | inc <incomplete rule:count>`.
 
 ## Reaching screens
-Direct routes (expo-router groups are not in the URL): onboarding `/welcome /goal /experience /schedule /safety /protocol /reminders /plan-summary` (needs `onboardingDone:false`), `/paywall?trigger=settings`, tabs `/ /history /stats /settings`, modals `/stage-info /protocol-picker /fast-editor[?id=f1] /fast-summary?id=f1 /log-weight /log-water /share-card?fastId=f1`.
+Direct routes (React Navigation linking config in `src/` defines the URLs; route groups are not in the URL): onboarding `/welcome /goal /experience /schedule /safety /protocol /reminders /plan-summary` (needs `onboardingDone:false`), `/paywall?trigger=settings`, tabs `/ /history /stats /settings`, modals `/stage-info /protocol-picker /fast-editor[?id=f1] /fast-summary?id=f1 /log-weight /log-water /share-card?fastId=f1`.
 Interactive states use an `act` click after load: Start sheet, End sheet, Stats Weight/Water tabs, Settings sheets (Language, Weight unit, Export, Delete all data).
 RTL: set `LANG = 'ar'` and re-run (the layout sets `<html lang dir>`).
 
 ## Manual checks (not automatable by axe)
-- Keyboard only: Tab reaches every control in visual order, focus ring visible (global `:focus-visible` style injected in `src/app/_layout.tsx`), Escape closes sheets/modals (RN Modal `onRequestClose`).
+- Keyboard only: Tab reaches every control in visual order, focus ring visible (global `:focus-visible` style injected by the app root (`src/App.tsx`)), Escape closes sheets/modals (RN Modal `onRequestClose`).
 - `prefers-reduced-motion`: `emulateMedia({reducedMotion:'reduce'})`; confetti/ring animations should stop.
 - Review every axe `incomplete` item (mostly `color-contrast` on gradients/overlapping text and `aria-prohibited-attr` on labelled generic Views).
 
@@ -54,7 +54,7 @@ Remaining `incomplete` items (axe could not decide; reviewed by hand):
 - `label-content-name-mismatch` (1-12): icon-only buttons whose visible text is an icon-font glyph; the accessible name is the translated label.
 
 ## Manual checks done
-- Keyboard only (Tab / Shift+Tab / Enter / Space / Arrows / Escape): Tab order follows visual order; every focused control shows the 3 px accent outline. Appearance group: each accent chip and icon is a tab stop, Enter and Space select (Space on role radio/tab/checkbox is handled by a global web key handler in `_layout.tsx`, react-native-web only handles Enter), locked chips open the paywall, the icon picker shows "App icons can only be changed in the Android and iOS apps." on web. Banners: Retry is reachable by Tab and activates with Enter. All bottom sheets take focus, keep Tab inside and close on Escape; the 24 h safety sheet intentionally stays open on Escape.
+- Keyboard only (Tab / Shift+Tab / Enter / Space / Arrows / Escape): Tab order follows visual order; every focused control shows the 3 px accent outline. Appearance group: each accent chip and icon is a tab stop, Enter and Space select (Space on role radio/tab/checkbox is handled by a global web key handler in the app root, react-native-web only handles Enter), locked chips open the paywall, the icon picker shows "App icons can only be changed in the Android and iOS apps." on web. Banners: Retry is reachable by Tab and activates with Enter. All bottom sheets take focus, keep Tab inside and close on Escape; the 24 h safety sheet intentionally stays open on Escape.
 - History calendar: roving tab stop (one tab stop per month instead of one per marked day, was ~14-30), Arrow keys / Home / End move between marked days, Enter toggles the day filter.
 - `prefers-reduced-motion`: honoured in code via `useReduceMotion()`.
 - Visual: light+dark screenshots of every palette on Timer (fasting, over goal, idle), Stats, History, Settings, Share card; German 390 and 320, Hindi and Arabic checked for the new strings and banners. The Share card stays teal on purpose; "goal reached" success colour stays green in every palette on purpose.

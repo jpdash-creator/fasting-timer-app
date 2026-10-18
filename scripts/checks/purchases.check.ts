@@ -7,7 +7,7 @@ import { PurchaseCancelledError, PurchasePendingError, type PlanPackage } from '
 import type { PurchaseState } from '../../src/types';
 
 const NOW = at(2026, 6, 10, 12, 0);
-const A = (x: unknown) => x as never; // mocks do not carry the full expo-iap shapes
+const A = (x: unknown) => x as never; // mocks do not carry the full react-native-iap shapes
 
 /* ------------------------------------------------------------------ fixtures */
 const phase = (billingPeriod: string, micros: string, formattedPrice: string, cycles = 0) => ({

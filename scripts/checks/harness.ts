@@ -28,7 +28,9 @@ const STUBS: Record<string, unknown> = {
     I18nManager: { isRTL: false },
   },
   '@react-native-async-storage/async-storage': { __esModule: true, default: asyncStorageStub },
-  'expo-localization': { getLocales: () => [{ languageTag: 'en' }] },
+  // Empty native config: src/platform/config.ts falls back to process.env.
+  'react-native-config': { __esModule: true, default: {} },
+  'react-native-localize': { getLocales: () => [{ languageTag: 'en', languageCode: 'en', isRTL: false }] },
 };
 
 export function installStubs() {

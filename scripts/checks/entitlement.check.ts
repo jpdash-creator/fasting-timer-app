@@ -36,19 +36,19 @@ check('mockPro is honoured only when mock Pro is allowed (dev build / forced moc
   assert.equal(isEntitled(s, NOW, true), true);
   const g = globalThis as { __DEV__?: boolean };
   const prevDev = g.__DEV__;
-  const prevEnv = process.env.EXPO_PUBLIC_USE_MOCK_PURCHASES;
+  const prevEnv = process.env.USE_MOCK_PURCHASES;
   try {
     g.__DEV__ = false;
-    delete process.env.EXPO_PUBLIC_USE_MOCK_PURCHASES;
+    delete process.env.USE_MOCK_PURCHASES;
     assert.equal(mockProAllowed(), false);
     g.__DEV__ = true;
     assert.equal(mockProAllowed(), true);
     g.__DEV__ = false;
-    process.env.EXPO_PUBLIC_USE_MOCK_PURCHASES = '1';
+    process.env.USE_MOCK_PURCHASES = '1';
     assert.equal(mockProAllowed(), true);
   } finally {
     g.__DEV__ = prevDev;
-    if (prevEnv === undefined) delete process.env.EXPO_PUBLIC_USE_MOCK_PURCHASES; else process.env.EXPO_PUBLIC_USE_MOCK_PURCHASES = prevEnv;
+    if (prevEnv === undefined) delete process.env.USE_MOCK_PURCHASES; else process.env.USE_MOCK_PURCHASES = prevEnv;
   }
 });
 

@@ -1,12 +1,12 @@
 import { I18n } from 'i18n-js';
-import { getLocales } from 'expo-localization';
+import { deviceLanguageTag } from '../platform/locale';
 import { translations } from '../locales';
 
 export const i18n = new I18n(translations);
 i18n.enableFallback = true;
 i18n.defaultLocale = 'en';
 
-const deviceLang = () => getLocales()[0]?.languageTag ?? 'en';
+const deviceLang = () => deviceLanguageTag();
 i18n.locale = deviceLang();
 
 export const RTL_LANGS = ['ar'];

@@ -54,7 +54,7 @@ We do not sell or share personal data, because we do not receive any.
 
 ## 4. Purchases and payments
 
-Fastline Pro is sold as subscriptions or a one-time purchase through the Apple App Store or Google Play, using the store's in-app purchase system (through the open-source expo-iap library, which talks directly to the store on your device).
+Fastline Pro is sold as subscriptions or a one-time purchase through the Apple App Store or Google Play, using the store's in-app purchase system (through the open-source react-native-iap library, which talks directly to the store on your device).
 
 - Payment is processed entirely by Apple or Google. We receive no card, billing or bank details.
 - The app reads your purchase status from the store on your device to unlock Pro. It does not send that information to us.

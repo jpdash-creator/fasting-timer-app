@@ -23,16 +23,17 @@ Open each in a private window to confirm before store submission.
 
 ## 3. Environment variables
 
-Read in `src/lib/links.ts`. `EXPO_PUBLIC_*` values are bundled into the app, so never put secrets in them.
+Read in `src/lib/links.ts` via `react-native-config`. Values are bundled into the app, so never put secrets in them. They live in committed, non-secret env files at the repo root: `.env.production` (release builds), `.env.development` (debug builds) and `.env` (default).
 
 | Variable | Value |
 |---|---|
-| `EXPO_PUBLIC_PRIVACY_URL` | `https://jpdash-creator.github.io/fasting-timer-app/POLICY` |
-| `EXPO_PUBLIC_TERMS_URL` | `https://jpdash-creator.github.io/fasting-timer-app/TERMS` |
-| `EXPO_PUBLIC_SUPPORT_EMAIL` | `jpdash.creator@gmail.com` |
-| `EXPO_PUBLIC_USE_MOCK_PURCHASES` | `1` for development/preview builds only (already set in `eas.json`); never in `production` |
+| `PRIVACY_URL` | `https://jpdash-creator.github.io/fasting-timer-app/POLICY` |
+| `TERMS_URL` | `https://jpdash-creator.github.io/fasting-timer-app/TERMS` |
+| `SUPPORT_EMAIL` | `jpdash.creator@gmail.com` |
+| `USE_MOCK_PURCHASES` | `1` in `.env.development` only; never in `.env.production` |
+| `PAYWALL_MODE` | optional `hard`; default `soft` |
 
-**Done:** the three values are set in the `production` profile's `env` block in `eas.json`, so `eas build --profile production` bundles them. They are not secret, so `eas.json` is the right place; there are no private API keys in this project. Development and preview builds do not set them, so those builds show the in-app draft policy reader instead of the hosted pages.
+**Done:** the three URL/email values are set in `.env.production`, so `gradlew assembleRelease` / Xcode Release bundle them. Debug builds do not set them, so they show the in-app draft policy reader instead of the hosted pages. Override locally with `ENVFILE=.env.something` (see `docs/MIGRATION.md`).
 
 ## 4. Branch protection (suggested)
 
@@ -46,8 +47,8 @@ For a solo project, skip "require approvals" so you can still merge your own PRs
 
 ## 5. Not committed on purpose
 
-`.gitignore` excludes `.expo/`, `dist/`, logs, `.env*`, keystores and store credentials, plus three machine-specific files containing local paths: `scripts/dev-supervise.ps1`, `scripts/axe-harness.js`, `docs/RESUME.md`. Keep them locally.
+`.gitignore` excludes `dist/`, logs, `.env.local`, keystores and store credentials, plus three machine-specific files containing local paths: `scripts/dev-supervise.ps1`, `scripts/axe-harness.js`, `docs/RESUME.md`. Keep them locally.
 
 ## 6. License
 
-`LICENSE` is currently the Expo template MIT file (copyright 650 Industries). Replace it with your own notice before publishing, for example "Copyright (c) 2026 J. P. Dash. All rights reserved." for a closed-source commercial app.
+`LICENSE` is the proprietary "all rights reserved" notice (copyright J. P. Dash). Review it before publishing.

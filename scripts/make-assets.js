@@ -2,6 +2,10 @@
 // Mark = a ring with a gap. The long arc is the fast; the gap is the eating window (amber).
 // Usage: node scripts/make-assets.js            (renders candidates + chosen direction)
 // Needs devDependencies: @resvg/resvg-js (SVG rasteriser), pngjs (alpha strip for opaque PNGs).
+// Also writes the native launcher/notification/splash-dark assets into android/ and ios/ (bare React Native):
+//   android/app/src/main/res/{mipmap-*,mipmap-anydpi-v26,drawable-*,values-night,drawable-night-*}
+//   ios/Fastline/Images.xcassets/{AppIcon,Ocean,Dusk,Sunrise}.appiconset + Colors.xcassets/SplashBackground, Images.xcassets/SplashLogo (light + dark)
+// `node scripts/make-assets.js splash` regenerates only the native splash assets.
 const { Resvg } = require('@resvg/resvg-js');
 const { PNG } = require('pngjs');
 const fs = require('fs');
@@ -189,8 +193,8 @@ function storeAssets(v) {
 
 // ---- themed launcher icons (Pro "Themes & app icon") ----------------------
 // One variant per accent theme, same B mark, per-theme gradient. Mirrors iconGradients in
-// src/lib/themePalettes.ts. Names are what expo-alternate-app-icons registers in app.json
-// (teal = the default icon, shipped as the app icon and also emitted here for the in-app picker preview).
+// src/lib/themePalettes.ts. Names are what react-native-change-icon registers
+// (Ocean/Dusk/Sunrise; teal = the default icon, shipped as the app icon and also emitted here for the in-app picker preview).
 const THEME_ICONS = {
   teal: [T.tealTop, T.tealBot],
   ocean: ['#2F7FBF', '#173F63'],
@@ -208,10 +212,132 @@ function themedIcons(v) {
     w(ICONS, name + '-foreground.png', png(v, L.fg));
     out[name] = mid(grad[0], grad[1]);
   }
-  console.log('android adaptive backgroundColor per theme:', JSON.stringify(out));
+  console.log('mid-gradient colour per theme:', JSON.stringify(out));
 }
 
+// ---- native (bare React Native) assets -------------------------------------
+const RES = path.join(ROOT, 'android', 'app', 'src', 'main', 'res');
+const XCASSETS = path.join(ROOT, 'ios', 'Fastline', 'Images.xcassets');
+const DENS = { mdpi: 1, hdpi: 1.5, xhdpi: 2, xxhdpi: 3, xxxhdpi: 4 };
+const ensure = (d) => { fs.mkdirSync(d, { recursive: true }); return d; };
+const clipped = (inner, shape) => {
+  const id = 'cl' + uid++;
+  const clip = shape === 'circle' ? '<circle cx="512" cy="512" r="512"/>' : '<rect width="1024" height="1024" rx="228"/>';
+  return `<clipPath id="${id}">${clip}</clipPath><g clip-path="url(#${id})">${inner}</g>`;
+};
+const ADAPTIVE_XML = (bg) => `<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/${bg}"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+    <monochrome android:drawable="@mipmap/ic_launcher_monochrome"/>
+</adaptive-icon>
+`;
+
+function androidIcons(v) {
+  // Shared adaptive layers (foreground mark + monochrome). The background differs per theme.
+  const variants = { '': THEME_ICONS.teal, _ocean: THEME_ICONS.ocean, _dusk: THEME_ICONS.dusk, _sunrise: THEME_ICONS.sunrise };
+  for (const [dn, d] of Object.entries(DENS)) {
+    const dir = ensure(path.join(RES, 'mipmap-' + dn));
+    w(dir, 'ic_launcher_foreground.png', png(v, L.fg, Math.round(108 * d)));
+    w(dir, 'ic_launcher_monochrome.png', png(v, L.mono, Math.round(108 * d)));
+    for (const [suffix, grad] of Object.entries(variants)) {
+      const icon = field(v, grad) + mark(v, { ...PAL[v], s: 1.12 });
+      w(dir, `ic_launcher${suffix}_background.png`, stripAlpha(raster(svgDoc(1024, 1024, field(v, grad)), Math.round(108 * d))));
+      w(dir, `ic_launcher${suffix}.png`, raster(svgDoc(1024, 1024, clipped(icon, 'square')), Math.round(48 * d)));
+      w(dir, `ic_launcher${suffix}_round.png`, raster(svgDoc(1024, 1024, clipped(icon, 'circle')), Math.round(48 * d)));
+    }
+  }
+  const any = ensure(path.join(RES, 'mipmap-anydpi-v26'));
+  for (const suffix of Object.keys(variants)) {
+    w(any, `ic_launcher${suffix}.xml`, Buffer.from(ADAPTIVE_XML(`ic_launcher${suffix}_background`)));
+    w(any, `ic_launcher${suffix}_round.xml`, Buffer.from(ADAPTIVE_XML(`ic_launcher${suffix}_background`)));
+  }
+  // Notification small icon (white silhouette on transparent; Android uses alpha only). 24dp.
+  const stat = mark('A', { fast: '#fff', eat: '#fff', shadow: false, s: 1.35 });
+  for (const [dn, d] of Object.entries(DENS)) {
+    w(ensure(path.join(RES, 'drawable-' + dn)), 'ic_stat_notification.png', raster(svgDoc(1024, 1024, stat), Math.round(24 * d)));
+  }
+}
+
+// iOS icon sets: [pointSize, scale, idiom]
+const IOS_SIZES = [
+  [20, 2, 'iphone'], [20, 3, 'iphone'], [29, 2, 'iphone'], [29, 3, 'iphone'], [40, 2, 'iphone'], [40, 3, 'iphone'],
+  [60, 2, 'iphone'], [60, 3, 'iphone'],
+  [20, 1, 'ipad'], [20, 2, 'ipad'], [29, 1, 'ipad'], [29, 2, 'ipad'], [40, 1, 'ipad'], [40, 2, 'ipad'],
+  [76, 1, 'ipad'], [76, 2, 'ipad'], [83.5, 2, 'ipad'],
+];
+function iosSet(v, name, grad) {
+  const dir = ensure(path.join(XCASSETS, name + '.appiconset'));
+  const svg = svgDoc(1024, 1024, field(v, grad) + mark(v, { ...PAL[v], s: 1.12 }));
+  const images = [];
+  const written = new Set();
+  const emit = (px, file) => { if (!written.has(file)) { written.add(file); w(dir, file, stripAlpha(raster(svg, px))); } };
+  for (const [pt, sc, idiom] of IOS_SIZES) {
+    const px = Math.round(pt * sc), file = `icon-${px}.png`;
+    emit(px, file);
+    images.push({ filename: file, idiom, scale: sc + 'x', size: `${pt}x${pt}` });
+  }
+  emit(1024, 'icon-1024.png');
+  images.push({ filename: 'icon-1024.png', idiom: 'ios-marketing', scale: '1x', size: '1024x1024' });
+  fs.writeFileSync(path.join(dir, 'Contents.json'), JSON.stringify({ images, info: { author: 'xcode', version: 1 } }, null, 2) + '\n');
+}
+function iosIcons(v) {
+  iosSet(v, 'AppIcon', THEME_ICONS.teal);
+  for (const n of ['Ocean', 'Dusk', 'Sunrise']) iosSet(v, n, THEME_ICONS[n.toLowerCase()]);
+}
+
+// Splash assets (light + dark). Android: values[-night]/splash_colors.xml + drawable[-night]-*dpi/splash_icon.png,
+// consumed by Theme.SplashScreen (androidx.core:core-splashscreen) in styles.xml. iOS: SplashBackground.colorset
+// and SplashLogo.imageset (dark appearance included), consumed by LaunchScreen.storyboard.
+function splashAssets(v) {
+  const BG_L = T.bgLight, BG_D = T.bgDark;
+  const lightSvg = svgDoc(1024, 1024, L.splashLight(v));
+  const darkSvg = svgDoc(1024, 1024, L.splashDark(v));
+  const colorsXml = (bg) => Buffer.from(`<resources>\n    <color name="splash_background">${bg.toLowerCase()}</color>\n</resources>\n`);
+  w(ensure(path.join(RES, 'values')), 'splash_colors.xml', colorsXml(BG_L));
+  w(ensure(path.join(RES, 'values-night')), 'splash_colors.xml', colorsXml(BG_D));
+  // 288dp icon canvas with a 160dp logo centred (the splash window crops the icon to a circle).
+  for (const [dn, d] of Object.entries(DENS)) {
+    const canvas = Math.round(288 * d), logo = Math.round(160 * d);
+    for (const [dir, svg] of [['drawable-', lightSvg], ['drawable-night-', darkSvg]]) {
+      const mk = new PNG({ width: canvas, height: canvas });
+      const lg = PNG.sync.read(raster(svg, logo));
+      PNG.bitblt(lg, mk, 0, 0, logo, logo, Math.round((canvas - logo) / 2), Math.round((canvas - logo) / 2));
+      w(ensure(path.join(RES, dir + dn)), 'splash_icon.png', PNG.sync.write(mk));
+    }
+  }
+  // iOS
+  const hex = (h) => { const n = parseInt(h.slice(1), 16); const f = (x) => (x / 255).toFixed(6); return { red: f((n >> 16) & 255), green: f((n >> 8) & 255), blue: f(n & 255), alpha: '1.000' }; };
+  const dark = [{ appearance: 'luminosity', value: 'dark' }];
+  const colorDir = ensure(path.join(ROOT, 'ios', 'Fastline', 'Colors.xcassets', 'SplashBackground.colorset'));
+  fs.writeFileSync(path.join(colorDir, 'Contents.json'), JSON.stringify({
+    colors: [
+      { idiom: 'universal', color: { 'color-space': 'srgb', components: hex(BG_L) } },
+      { idiom: 'universal', appearances: dark, color: { 'color-space': 'srgb', components: hex(BG_D) } },
+    ], info: { author: 'xcode', version: 1 } }, null, 2) + '\n');
+  const imDir = ensure(path.join(XCASSETS, 'SplashLogo.imageset'));
+  const images = [];
+  for (const sc of [1, 2, 3]) {
+    const f = `logo${sc > 1 ? '@' + sc + 'x' : ''}.png`;
+    w(imDir, f, raster(lightSvg, 160 * sc));
+    images.push({ idiom: 'universal', filename: f, scale: sc + 'x' });
+  }
+  for (const sc of [1, 2, 3]) {
+    const f = `logo-dark${sc > 1 ? '@' + sc + 'x' : ''}.png`;
+    w(imDir, f, raster(darkSvg, 160 * sc));
+    images.push({ idiom: 'universal', appearances: dark, filename: f, scale: sc + 'x' });
+  }
+  fs.writeFileSync(path.join(imDir, 'Contents.json'), JSON.stringify({ images, info: { author: 'xcode', version: 1 } }, null, 2) + '\n');
+}
+
+if (process.argv[2] === 'splash') {
+  splashAssets(CHOSEN); // `node scripts/make-assets.js splash` regenerates only the native splash assets
+  process.exit(0);
+}
 contactSheet();
 appAssets(CHOSEN);
 storeAssets(CHOSEN);
 themedIcons(CHOSEN);
+androidIcons(CHOSEN);
+iosIcons(CHOSEN);
+splashAssets(CHOSEN);

@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { useRouter } from 'expo-router';
+import { useRouter } from '../../router';
 import { OnboardingScaffold, OptionCard } from '../../components/onboarding/OnboardingScaffold';
 import { planWindow, useOnboardingDraft } from '../../components/onboarding/draft';
 import { Caption } from '../../components/ui';

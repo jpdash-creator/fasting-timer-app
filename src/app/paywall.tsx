@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { ActivityIndicator, BackHandler, Image, Pressable, ScrollView, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { ActivityIndicator, BackHandler, Image, Platform, Pressable, ScrollView, Text, View } from 'react-native';
+import { Ionicons } from '../platform/icons';
+import { useLocalSearchParams, useRouter } from '../router';
 import Animated, { FadeIn, FadeInDown } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { haptic, PrimaryButton, Toast } from '../components/ui';
@@ -9,6 +9,7 @@ import { BenefitRow, PlanCard } from '../components/paywall/PlanCard';
 import { LegalBlock } from '../components/paywall/LegalBlock';
 import { BillingIssueBanner } from '../components/banners';
 import { hit, icon as iconSize, layout, space, type, useTheme } from '../theme';
+import appIconImage from '../../assets/icon.png';
 import { t } from '../lib/i18n';
 import { track } from '../lib/analytics';
 import {
@@ -61,6 +62,7 @@ export default function Paywall() {
 
   // Android back must not bypass the delayed close button.
   useEffect(() => {
+    if (Platform.OS !== 'android') return;
     const sub = BackHandler.addEventListener('hardwareBackPress', () => !closeVisible);
     return () => sub.remove();
   }, [closeVisible]);
@@ -207,7 +209,7 @@ export default function Paywall() {
       <ScrollView contentContainerStyle={{ paddingHorizontal: layout.screenX, paddingBottom: layout.scrollBottom / 2, gap: layout.sectionGap }} showsVerticalScrollIndicator={false}>
         <Animated.View entering={FadeInDown.duration(450)} style={{ alignItems: 'center', gap: space.md }}>
           <Image
-            source={require('../../assets/icon.png')} accessibilityIgnoresInvertColors
+            source={appIconImage} accessibilityIgnoresInvertColors
             style={{ width: 72, height: 72, borderRadius: radius.card }} accessibilityElementsHidden importantForAccessibility="no"
           />
           <Text accessibilityRole="header" style={[type.title, { color: colors.text, textAlign: 'center' }]}>{headline}</Text>

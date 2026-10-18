@@ -1,67 +1,102 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # dependencies
 node_modules/
 
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
+# OSX
+.DS_Store
+*.pem
 
-# Native
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+**/.xcode.env.local
+ios/tmp.xcconfig
+
+# Android / IntelliJ
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/app/.cxx/
+.gradle/
+.idea
+local.properties
+*.iml
+*.hprof
+.cxx/
 .kotlin/
-*.orig.*
+*.apk
+*.aab
+
+# Signing material and store credentials (NEVER commit). debug.keystore is the public RN template key.
+*.keystore
+!debug.keystore
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-# generated native folders
-/ios
-/android
-
-# logs and scratch
-*.log
-metro.log
-.tmp/
-tmp/
-
-# env and secrets
-.env
-.env.*
-!.env.example
-*.keystore
 *.pfx
 credentials.json
 google-services.json
 GoogleService-Info.plist
 service-account*.json
 *-service-account.json
+# Release signing values may live in a per-developer gradle.properties
+android/keystore.properties
 
-# Android/iOS generated
-.gradle/
-Pods/
+# CocoaPods / Ruby
+**/Pods/
+/vendor/bundle/
+ios/Podfile.lock.bak
+
+# Bundles
+*.jsbundle
+*.bundle.map
+
+# Metro
+.metro-health-check*
+
+# Web build (Vite)
+dist/
+web-build/
+
+# debug / logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+metro.log
+.tmp/
+tmp/
+
+# testing
+/coverage
+
+# env: .env, .env.development and .env.production are committed on purpose (non-secret, bundled into the app).
+# Anything local/secret goes in *.local, which is ignored.
+.env.local
+.env.*.local
+
+# typescript
+*.tsbuildinfo
 
 # Machine-specific dev tooling and personal notes (contain local absolute paths)
 scripts/dev-supervise.ps1
 docs/RESUME.md
+
+# web (vite) build output
+dist-web/

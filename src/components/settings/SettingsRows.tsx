@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Platform, Pressable, Text, TextInput, View } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { hit, icon as iconSize, radius, space, type, useTheme } from '../../theme';
 import { haptic, Row } from '../ui';
 import { t } from '../../lib/i18n';

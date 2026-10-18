@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { I18nManager, Platform, Pressable, Text, View } from 'react-native';
 import { Calendar } from 'react-native-calendars';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { format } from 'date-fns';
 import { hit, icon, radius, space, type, useTheme } from '../../theme';
 import { t } from '../../lib/i18n';

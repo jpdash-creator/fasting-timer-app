@@ -9,7 +9,7 @@ installStubs();
 if (!process.env.VERBOSE) console.warn = () => {};
 
 const FILES = [
-  'timer', 'streaks', 'stats', 'notifications', 'autostart', 'csv', 'entitlement', 'stores', 'purchases', 'legacy', 'theme-contrast', 'appearance-i18n', 'theme-contrast',
+  'timer', 'streaks', 'stats', 'notifications', 'autostart', 'csv', 'entitlement', 'stores', 'purchases', 'legacy', 'theme-contrast', 'appearance-i18n', 'theme-contrast', 'navigation',
 ];
 
 async function main() {

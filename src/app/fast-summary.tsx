@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../platform/icons';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from '../router';
 import { usePostFastPaywall } from '../lib/paywallTriggers';
 import { Body, Caption, Card, PrimaryButton, Screen, haptic } from '../components/ui';
 import { ModalHeader, MoodPicker, type Mood } from '../components/timer/ModalHeader';

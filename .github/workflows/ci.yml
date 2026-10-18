@@ -14,6 +14,7 @@ permissions:
 
 jobs:
   check:
+    name: Typecheck, checks, web build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,12 +23,51 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Type-check
+      - name: Type-check (native)
         run: npx tsc --noEmit
-      - name: Project checks (if defined)
-        run: |
-          if node -e "process.exit(require('./package.json').scripts?.check ? 0 : 1)"; then
-            npm run check
-          else
-            echo "No 'check' script defined; skipping."
-          fi
+      - name: Type-check (web)
+        run: npx tsc -p tsconfig.web.json
+      - name: Lint
+        run: npx eslint . --quiet
+      - name: Project checks
+        run: npm run check
+      - name: License audit (production dependencies)
+        run: npm run license-audit
+      - name: Web build
+        run: npm run web:build
+
+  android:
+    name: Android debug build
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: android-actions/setup-android@v3
+        with:
+          packages: >-
+            platform-tools
+            platforms;android-37.0
+            build-tools;37.0.0
+            ndk;27.1.12297006
+            cmake;3.22.1
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: ${{ github.ref != 'refs/heads/main' }}
+      - run: npm ci
+      # arm64 only keeps the CI build short; release builds use all four ABIs.
+      - name: assembleDebug
+        working-directory: android
+        run: ./gradlew assembleDebug -PreactNativeArchitectures=arm64-v8a --stacktrace
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fastline-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 7

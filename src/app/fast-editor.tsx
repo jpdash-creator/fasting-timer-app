@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Alert, KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
-import { Ionicons } from '@expo/vector-icons';
+import { useLocalSearchParams, useRouter } from '../router';
+import { Ionicons } from '../platform/icons';
 import { Body, Caption, Card, PrimaryButton, Screen, Separator, haptic } from '../components/ui';
 import { ModalHeader } from '../components/timer/ModalHeader';
 import { DateTimeField } from '../components/logs/DateTimeField';
