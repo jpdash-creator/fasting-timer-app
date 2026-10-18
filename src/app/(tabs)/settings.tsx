@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
-import { useRouter } from 'expo-router';
-import Constants from 'expo-constants';
-import { Ionicons } from '@expo/vector-icons';
+import { useRouter } from '../../router';
+import { getAppVersion } from '../../platform/deviceInfo';
+import { Ionicons } from '../../platform/icons';
 import { hit, icon as iconSize, layout, radius, space, type, useTheme } from '../../theme';
 import { Body, Caption, Screen, Title, Toast, haptic } from '../../components/ui';
 import { SettingsGroup } from '../../components/settings/SettingsGroup';
@@ -73,7 +73,7 @@ export default function SettingsScreen() {
 
   const { reminders, units } = settings;
   const protocol = getProtocol(settings.activeProtocolId, settings);
-  const version = Constants.expoConfig?.version ?? '1.0.0';
+  const version = getAppVersion();
   // Mock-Pro toggle is a developer affordance only; never reachable in release builds.
   const canMockPro = __DEV__;
 

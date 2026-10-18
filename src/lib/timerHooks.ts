@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { AccessibilityInfo } from 'react-native';
-import { useFocusEffect } from 'expo-router';
+import { useFocusEffect } from '../router';
 
 /**
  * BR-01: a 1 Hz clock that only runs while the screen is focused and `enabled`.

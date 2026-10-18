@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, Text, View, useWindowDimensions } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useFocusEffect, useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useFocusEffect, useRouter } from '../../router';
 import { Body, Caption, Card, PrimaryButton, Row, Screen, Separator, Title, Toast, haptic } from '../../components/ui';
 import { ProgressRing } from '../../components/timer/ProgressRing';
 import { Confetti } from '../../components/timer/Confetti';

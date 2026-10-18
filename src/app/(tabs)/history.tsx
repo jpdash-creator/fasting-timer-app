@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { FlashList } from '@shopify/flash-list';
-import { Ionicons } from '@expo/vector-icons';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useLocalSearchParams, useRouter } from '../../router';
 import { format } from 'date-fns';
 import { Caption, PrimaryButton, Screen, Separator, Title } from '../../components/ui';
 import { FastRow } from '../../components/history/FastRow';

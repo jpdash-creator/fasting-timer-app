@@ -2,6 +2,8 @@
  * Pure entitlement derivation (FR-25, spec 16.8). No React / native imports so it can be unit-checked
  * with `npx tsx`. Single definition shared by useIsPro, notifications and auto-start.
  */
+import { Config } from '../platform/config';
+
 export const WEEK_MS = 7 * 24 * 3_600_000;
 
 export interface EntitlementInput {
@@ -14,7 +16,7 @@ export interface EntitlementInput {
 /** Mock Pro is a developer affordance: honoured only in dev builds or when mock purchases are forced. */
 export function mockProAllowed(): boolean {
   const dev = typeof __DEV__ !== 'undefined' && __DEV__;
-  const forced = typeof process !== 'undefined' && process.env?.EXPO_PUBLIC_USE_MOCK_PURCHASES === '1';
+  const forced = Config.USE_MOCK_PURCHASES === '1';
   return dev || forced;
 }
 

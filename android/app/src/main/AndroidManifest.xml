@@ -1,0 +1,118 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Android 13+ runtime notification permission (requested from JS via notifee.requestPermission()). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- Android 12+: exact alarms for notifee trigger notifications. User-grantable special access
+         (notifee.getNotificationSettings().android.alarm / notifee.openAlarmPermissionSettings()).
+         USE_EXACT_ALARM is deliberately NOT declared: Play restricts it to alarm/calendar apps.
+         notifee's own manifest already merges the boot receivers (reschedule after reboot) and
+         RECEIVE_BOOT_COMPLETED. -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <!-- Play Billing: com.android.vending.BILLING is merged from the billing library by react-native-iap. -->
+
+    <!-- Strip permissions that libraries add but Fastline does not need (Play data-safety / review). -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" tools:node="remove" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="remove" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" tools:node="remove" />
+
+    <queries>
+      <!-- react-native-share / Linking.canOpenURL for mailto: (support email) and https: -->
+      <intent>
+        <action android:name="android.intent.action.SENDTO" />
+        <data android:scheme="mailto" />
+      </intent>
+      <intent>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="https" />
+      </intent>
+    </queries>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:usesCleartextTraffic="${usesCleartextTraffic}"
+      android:localeConfig="@xml/locale_config"
+      android:supportsRtl="true">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true"
+        android:theme="@style/SplashTheme">
+        <!-- No LAUNCHER filter here: the launcher entry is the MainActivityDefault alias below
+             (react-native-change-icon swaps which alias is enabled). -->
+        <!-- fastline://timer, fastline://paywall, fastline://history?date=YYYY-MM-DD -->
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+          <data android:scheme="fastline" />
+        </intent-filter>
+      </activity>
+
+      <!-- Launcher entries for react-native-change-icon. Names MUST be ".MainActivity<IconName>". -->
+      <activity-alias
+        android:name=".MainActivityDefault"
+        android:enabled="true"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+      <activity-alias
+        android:name=".MainActivityOcean"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher_ocean"
+        android:roundIcon="@mipmap/ic_launcher_ocean_round"
+        android:label="@string/app_name"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+      <activity-alias
+        android:name=".MainActivityDusk"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher_dusk"
+        android:roundIcon="@mipmap/ic_launcher_dusk_round"
+        android:label="@string/app_name"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+      <activity-alias
+        android:name=".MainActivitySunrise"
+        android:enabled="false"
+        android:exported="true"
+        android:icon="@mipmap/ic_launcher_sunrise"
+        android:roundIcon="@mipmap/ic_launcher_sunrise_round"
+        android:label="@string/app_name"
+        android:targetActivity=".MainActivity">
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity-alias>
+    </application>
+</manifest>

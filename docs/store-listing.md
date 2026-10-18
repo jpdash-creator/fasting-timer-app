@@ -11,7 +11,7 @@ Working copy from spec section 19. Verify the name is available on both stores b
 | Play short description | Simple intermittent fasting timer with reminders, streaks and stats. | 80 chars |
 | Category | Health & Fitness | |
 | Support URL / email | https://fastline.app, jpdash.creator@gmail.com (placeholders) | |
-| Privacy policy URL | must be a URL you host (e.g. GitHub Pages) and also set as EXPO_PUBLIC_PRIVACY_URL; fastline.app is not owned | |
+| Privacy policy URL | must be a URL you host (e.g. GitHub Pages) and also set as PRIVACY_URL in .env.production; fastline.app is not owned | |
 
 ## iOS keywords (100 chars)
 

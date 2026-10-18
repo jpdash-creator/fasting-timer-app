@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { Platform, Pressable, Text, View, useWindowDimensions } from 'react-native';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from '../router';
 import { captureRef } from 'react-native-view-shot';
-import * as Sharing from 'expo-sharing';
+import { canShareFiles, sharePng } from '../platform/shareImage';
 import { format } from 'date-fns';
 import { Body, Caption, PrimaryButton, Screen, haptic } from '../components/ui';
 import { ShareCard, CARD_H, CARD_W } from '../components/share/ShareCard';
@@ -40,7 +40,7 @@ export default function ShareCardScreen() {
     setBusy(true);
     setError(null);
     try {
-      if (Platform.OS === 'web' || !(await Sharing.isAvailableAsync())) {
+      if (Platform.OS === 'web' || !(await canShareFiles())) {
         setError(t('share.unavailable'));
         return;
       }
@@ -48,7 +48,7 @@ export default function ShareCardScreen() {
         format: 'png', quality: 1, result: 'tmpfile', width: CARD_W, height: CARD_H,
       });
       haptic('success');
-      await Sharing.shareAsync(uri, { mimeType: 'image/png', UTI: 'public.png', dialogTitle: t('share.title') });
+      await sharePng(uri, t('share.title'));
     } catch {
       setError(t('share.failed'));
     } finally {

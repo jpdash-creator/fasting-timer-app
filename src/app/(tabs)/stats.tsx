@@ -1,7 +1,7 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useRouter } from '../../router';
 import { PrimaryButton, Screen, Title } from '../../components/ui';
 import { BadgesRow, InsightCard, LockedCard, SegmentedControl, StreakCard, TotalsGrid } from '../../components/stats/Widgets';
 import { TrendChart, WeekdayChart, WeeklyHoursChart } from '../../components/stats/OverviewCharts';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useRouter } from 'expo-router';
+import { useRouter } from '../../router';
 import { OnboardingScaffold } from '../../components/onboarding/OnboardingScaffold';
 import { TimeField } from '../../components/onboarding/TimeField';
 import { windowHours } from '../../components/onboarding/draft';

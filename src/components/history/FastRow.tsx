@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Platform, Pressable, Text, View } from 'react-native';
 import ReanimatedSwipeable, { type SwipeableMethods } from 'react-native-gesture-handler/ReanimatedSwipeable';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { format, isSameDay } from 'date-fns';
 import { hit, icon, radius, space, type, useTheme } from '../../theme';
 import { t } from '../../lib/i18n';

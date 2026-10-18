@@ -1,20 +1,13 @@
 import React from 'react';
 import { Platform, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
-import * as Haptics from 'expo-haptics';
+import { triggerHaptic } from '../platform/haptics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { hit, radius, space, type, useTheme } from '../theme';
 import { useSettingsStore } from '../stores/settingsStore';
 
 export function haptic(kind: 'light' | 'success' | 'warning' = 'light') {
   if (!useSettingsStore.getState().settings.haptics) return;
-  // Web: navigator.vibrate is blocked (console error) until the user has interacted with the page.
-  if (Platform.OS === 'web' && typeof navigator !== 'undefined' && !(navigator as { userActivation?: { hasBeenActive?: boolean } }).userActivation?.hasBeenActive) return;
-  try {
-    if (kind === 'light') Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    else Haptics.notificationAsync(
-      kind === 'success' ? Haptics.NotificationFeedbackType.Success : Haptics.NotificationFeedbackType.Warning,
-    );
-  } catch {}
+  triggerHaptic(kind);
 }
 
 export function Screen({ children, style, edges }: {

@@ -1,4 +1,4 @@
-import type * as IapModule from 'expo-iap';
+import type * as IapModule from 'react-native-iap';
 import { addDays, addMonths, addYears } from 'date-fns';
 import type { PurchaseState } from '../../types';
 import {
@@ -11,11 +11,11 @@ import {
 } from './PurchasesService';
 
 /**
- * Direct App Store / Google Play billing logic on top of expo-iap. No backend, no third party.
+ * Direct App Store / Google Play billing logic on top of react-native-iap 17 (OpenIAP / Nitro). No backend, no third party.
  *
- * This file has no react-native / store imports: the platform, the expo-iap module and the entitlement
+ * This file has no react-native / store imports: the platform, the react-native-iap module and the entitlement
  * cache are injected (see StorePurchasesService.ts), so the whole thing is unit-checked with
- * `npx tsx scripts/checks/run.ts` against mocked expo-iap shapes.
+ * `npx tsx scripts/checks/run.ts` against mocked react-native-iap shapes.
  *
  * Rules enforced here:
  *  - Pro is never granted for a purchase whose transaction was not finished/acknowledged.

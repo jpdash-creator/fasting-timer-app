@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Image, Pressable, Text, View, type ImageSourcePropType } from 'react-native';
 import Svg, { Circle } from 'react-native-svg';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { hit, icon as iconSize, radius, space, type, useTheme } from '../../theme';
 import { haptic } from '../ui';
 import { SettingsGroup } from './SettingsGroup';
@@ -12,12 +12,16 @@ import { ACCENT_THEMES, getPalette, type AccentTheme } from '../../lib/themePale
 import { getCurrentIconTheme, setAppIconTheme } from '../../lib/appIcon';
 import { useSettingsStore } from '../../stores/settingsStore';
 import { useIsPro } from '../../stores/purchaseStore';
+import tealIcon from '../../../assets/icons/teal-icon.png';
+import oceanIcon from '../../../assets/icons/ocean-icon.png';
+import duskIcon from '../../../assets/icons/dusk-icon.png';
+import sunriseIcon from '../../../assets/icons/sunrise-icon.png';
 
 const ICON_IMAGES: Record<AccentTheme, ImageSourcePropType> = {
-  teal: require('../../../assets/icons/teal-icon.png'),
-  ocean: require('../../../assets/icons/ocean-icon.png'),
-  dusk: require('../../../assets/icons/dusk-icon.png'),
-  sunrise: require('../../../assets/icons/sunrise-icon.png'),
+  teal: tealIcon,
+  ocean: oceanIcon,
+  dusk: duskIcon,
+  sunrise: sunriseIcon,
 };
 const ICON_SIZE = 60;
 

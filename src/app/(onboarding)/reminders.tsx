@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useRouter } from '../../router';
 import { OnboardingScaffold } from '../../components/onboarding/OnboardingScaffold';
 import { PrimaryButton, Caption } from '../../components/ui';
 import { hit, icon as iconSize, space, type, useTheme } from '../../theme';

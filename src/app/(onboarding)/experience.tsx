@@ -1,5 +1,5 @@
 import React from 'react';
-import { useRouter } from 'expo-router';
+import { useRouter } from '../../router';
 import { OnboardingScaffold, OptionCard } from '../../components/onboarding/OnboardingScaffold';
 import { useOnboardingDraft } from '../../components/onboarding/draft';
 import { useSettingsStore } from '../../stores/settingsStore';

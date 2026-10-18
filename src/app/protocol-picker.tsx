@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Platform, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons } from '../platform/icons';
+import { useRouter } from '../router';
 import { Body, Caption, PrimaryButton, Screen, Title, haptic } from '../components/ui';
 import { ModalHeader } from '../components/timer/ModalHeader';
 import { Sheet } from '../components/timer/Sheet';

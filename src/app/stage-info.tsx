@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../platform/icons';
 import { Body, Caption, Card, Screen } from '../components/ui';
 import { ModalHeader } from '../components/timer/ModalHeader';
 import { icon, layout, radius, space, type, useTheme } from '../theme';

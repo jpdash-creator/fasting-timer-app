@@ -149,6 +149,9 @@ for (const sc of S.filter((s) => re.test(s.name))) for (const th of THEMES) {
     if (sc.act) { await sc.act(page); await page.waitForTimeout(1800); }
     if (sc.after) { await page.locator(sc.after).first().scrollIntoViewIfNeeded().catch(() => {}); await page.waitForTimeout(300); }
     if (sc.bottom) { await page.mouse.move(200, 400); await page.mouse.wheel(0, 4000); await page.waitForTimeout(500); }
+    // Headless Chromium produces no frame after the last paint, so a CSS entering animation (reanimated FadeInDown, visibility:hidden
+    // until it starts) can stay "pending" and its content stays visibility:hidden (false scrollable-region-focusable). A pointer move wakes the compositor.
+    await page.mouse.move(2, 2); await page.mouse.move(60, 5); await page.waitForTimeout(700);
     if (SHOT) await page.screenshot({ path: `${SHOT}/${sc.name}-${th}${LANG ? '-' + LANG : ''}.png` });
     const r = await axeRun();
     const total = r.v.reduce((a, b) => a + b.n, 0);

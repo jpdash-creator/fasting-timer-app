@@ -1,13 +1,14 @@
 import type { Settings } from '../types';
+import { Config } from '../platform/config';
 import { isAccentTheme } from './themePalettes';
 
 /**
- * Spec 4.1 PAYWALL_MODE. Default 'soft'. Override per build with EXPO_PUBLIC_PAYWALL_MODE=hard|soft
- * (EAS env). It is a build/remote flag, not a user setting, so it is re-applied on every launch
+ * Spec 4.1 PAYWALL_MODE. Default 'soft'. Override per build with PAYWALL_MODE=hard|soft
+ * (.env.production via react-native-config). It is a build/remote flag, not a user setting, so it is re-applied on every launch
  * instead of being read back from storage.
  */
 export const PAYWALL_MODE: Settings['paywallMode'] =
-  process.env.EXPO_PUBLIC_PAYWALL_MODE === 'hard' ? 'hard' : 'soft';
+  Config.PAYWALL_MODE === 'hard' ? 'hard' : 'soft';
 
 export const defaultSettings: Settings = {
   onboardingDone: false,

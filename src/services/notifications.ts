@@ -1,19 +1,29 @@
 import { AppState, Platform } from 'react-native';
-import * as Notifications from 'expo-notifications';
-import { router } from 'expo-router';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import notifee, {
+  AlarmType, AndroidImportance, AndroidNotificationSetting, AuthorizationStatus, TriggerType,
+  type TimestampTrigger,
+} from '@notifee/react-native';
 import { useFastStore } from '../stores/fastStore';
 import { useSettingsStore } from '../stores/settingsStore';
 import { isProNow } from '../stores/purchaseStore';
-import { planNotifications, type NotifId, type PlannedNotification } from '../lib/notificationPlan';
+import { MAX_SCHEDULED, planNotifications, type NotifId, type PlannedNotification } from '../lib/notificationPlan';
 import { t } from '../lib/i18n';
 import { track } from '../lib/analytics';
 import { maybeAutoStartNextFast } from '../lib/timerAutoStart';
+import { handleNotificationEvent, handleNotificationPress } from './notificationEvents';
 
 export type PermissionStatus = 'granted' | 'denied' | 'undetermined' | 'unavailable';
 
-const isWeb = Platform.OS === 'web';
+const isWeb = Platform.OS === 'web'; // native file; defensive (the web build resolves notifications.web.ts)
 export const CHANNEL_FASTING = 'fasting';
 export const CHANNEL_TIPS = 'tips';
+const SMALL_ICON = 'ic_stat_notification';
+const ACCENT = '#2E7D6B';
+/** Notifee documents a 50 timestamp-trigger ceiling on Android; iOS keeps 64 (MAX_SCHEDULED). */
+const MAX_ANDROID = 50;
+/** Android cannot tell "never asked" from "denied"; remember that we have prompted. */
+const ASKED_KEY = 'fastline.notifications.asked';
 
 export type { NotifId };
 
@@ -22,26 +32,50 @@ export type { NotifId };
 export async function ensureChannels(): Promise<void> {
   if (isWeb || Platform.OS !== 'android') return;
   try {
-    await Notifications.setNotificationChannelAsync(CHANNEL_FASTING, {
+    await notifee.createChannel({
+      id: CHANNEL_FASTING,
       name: t('notifications.channels.fasting'),
-      importance: Notifications.AndroidImportance.HIGH,
+      importance: AndroidImportance.HIGH,
     });
-    await Notifications.setNotificationChannelAsync(CHANNEL_TIPS, {
+    await notifee.createChannel({
+      id: CHANNEL_TIPS,
       name: t('notifications.channels.tips'),
-      importance: Notifications.AndroidImportance.DEFAULT,
+      importance: AndroidImportance.DEFAULT,
     });
   } catch {}
+}
+
+async function wasAsked(): Promise<boolean> {
+  try { return (await AsyncStorage.getItem(ASKED_KEY)) === '1'; } catch { return false; }
+}
+
+function mapStatus(s: AuthorizationStatus, asked: boolean): PermissionStatus {
+  if (s === AuthorizationStatus.AUTHORIZED || s === AuthorizationStatus.PROVISIONAL) return 'granted';
+  if (s === AuthorizationStatus.NOT_DETERMINED) return 'undetermined';
+  // DENIED. On Android 13+ that is also the state before the first prompt.
+  return Platform.OS === 'android' && !asked ? 'undetermined' : 'denied';
 }
 
 export async function getPermissionStatus(): Promise<PermissionStatus> {
   if (isWeb) return 'unavailable';
   try {
-    const res = await Notifications.getPermissionsAsync();
-    if (res.granted) return 'granted';
-    return res.status === 'undetermined' ? 'undetermined' : 'denied';
+    const settings = await notifee.getNotificationSettings();
+    return mapStatus(settings.authorizationStatus, await wasAsked());
   } catch {
     return 'unavailable';
   }
+}
+
+/**
+ * Android 12+: exact alarms are a special access the user grants in system settings. Without it notifee
+ * still schedules, but the trigger may fire late. Opens that screen (once per request) when it is off.
+ */
+async function offerExactAlarmAccess(): Promise<void> {
+  if (Platform.OS !== 'android') return;
+  try {
+    const s = await notifee.getNotificationSettings();
+    if (s.android.alarm === AndroidNotificationSetting.DISABLED) await notifee.openAlarmPermissionSettings();
+  } catch {}
 }
 
 /** Shows the system prompt (if not yet decided). Reschedules when granted. */
@@ -49,10 +83,14 @@ export async function requestPermission(): Promise<PermissionStatus> {
   if (isWeb) return 'unavailable';
   try {
     await ensureChannels(); // Android 13+: channel must exist before the prompt
-    const res = await Notifications.requestPermissionsAsync();
-    const status: PermissionStatus = res.granted ? 'granted' : res.status === 'undetermined' ? 'undetermined' : 'denied';
+    const res = await notifee.requestPermission();
+    try { await AsyncStorage.setItem(ASKED_KEY, '1'); } catch {}
+    const status = mapStatus(res.authorizationStatus, true);
     track('reminder_permission', { granted: status === 'granted' });
-    if (status === 'granted') void rescheduleAll();
+    if (status === 'granted') {
+      void rescheduleAll();
+      await offerExactAlarmAccess();
+    }
     return status;
   } catch {
     return 'unavailable';
@@ -77,22 +115,32 @@ async function run(): Promise<void> {
   try {
     if ((await getPermissionStatus()) !== 'granted') return;
     await ensureChannels();
-    await Notifications.cancelAllScheduledNotificationsAsync();
-    for (const n of planNow()) {
-      await Notifications.scheduleNotificationAsync({
-        identifier: `${n.id}_${n.at}`,
-        content: {
+    await notifee.cancelTriggerNotifications();
+    const cap = Platform.OS === 'android' ? MAX_ANDROID : MAX_SCHEDULED;
+    const now = Date.now();
+    const planned = planNow(now).filter((n) => n.at > now + 1000).slice(0, cap);
+    for (const n of planned) {
+      const trigger: TimestampTrigger = {
+        type: TriggerType.TIMESTAMP,
+        timestamp: n.at,
+        alarmManager: { type: AlarmType.SET_EXACT_AND_ALLOW_WHILE_IDLE },
+      };
+      await notifee.createTriggerNotification(
+        {
+          id: `${n.id}_${n.at}`,
           title: t('notifications.title'),
           body: t(n.key, n.params),
-          sound: true,
           data: { id: n.id, route: '/' },
+          android: {
+            channelId: CHANNEL_FASTING,
+            smallIcon: SMALL_ICON,
+            color: ACCENT,
+            pressAction: { id: 'default' },
+          },
+          ios: { sound: 'default' },
         },
-        trigger: {
-          type: Notifications.SchedulableTriggerInputTypes.DATE,
-          date: new Date(n.at),
-          channelId: CHANNEL_FASTING,
-        },
-      });
+        trigger,
+      );
     }
   } catch (e) {
     if (__DEV__) console.warn('[notifications] reschedule failed', e);
@@ -108,41 +156,28 @@ export function rescheduleAll(): Promise<void> {
 
 export async function cancelAll(): Promise<void> {
   if (isWeb) return;
-  try { await Notifications.cancelAllScheduledNotificationsAsync(); } catch {}
+  try { await notifee.cancelTriggerNotifications(); } catch {}
 }
 
-/* ---------- handlers (mounted once from _layout) ---------- */
+/* ---------- handlers (mounted once from the app root) ---------- */
 
 let handlerSet = false;
 export function initNotifications(): void {
   if (isWeb || handlerSet) return;
   handlerSet = true;
-  Notifications.setNotificationHandler({
-    handleNotification: async () => ({
-      shouldShowBanner: true, shouldShowList: true, shouldPlaySound: true, shouldSetBadge: false,
-    }),
-  });
+  // Foreground display needs no handler: notifee shows trigger notifications itself.
   void ensureChannels();
   // BR-08: create the auto-started fast on launch and whenever the app returns to the foreground.
   maybeAutoStartNextFast();
   AppState.addEventListener('change', (st) => { if (st === 'active') maybeAutoStartNextFast(); });
 }
 
-const handledResponses = new Set<string>();
-function handleResponse(res: Notifications.NotificationResponse | null) {
-  if (!res) return;
-  const key = res.notification.request.identifier + ':' + res.notification.date;
-  if (handledResponses.has(key)) return;
-  handledResponses.add(key);
-  const data = res.notification.request.content.data as { id?: string } | undefined;
-  track('notification_opened', { id: data?.id });
-  try { router.navigate('/'); } catch {}
-}
-
 /** Subscribe to taps on notifications (warm + cold start). Returns an unsubscribe fn. */
 export function subscribeToNotificationResponses(): () => void {
   if (isWeb) return () => {};
-  const sub = Notifications.addNotificationResponseReceivedListener(handleResponse);
-  Notifications.getLastNotificationResponseAsync().then(handleResponse).catch(() => {});
-  return () => sub.remove();
+  const unsub = notifee.onForegroundEvent((event) => { void handleNotificationEvent(event); });
+  notifee.getInitialNotification()
+    .then((initial) => { if (initial) handleNotificationPress(initial.notification); })
+    .catch(() => {});
+  return unsub;
 }

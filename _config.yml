@@ -15,5 +15,3 @@ exclude:
   - package-lock.json
   - tsconfig.json
   - app.json
-  - eas.json
-  - expo-env.d.ts

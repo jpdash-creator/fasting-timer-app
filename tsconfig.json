@@ -1,12 +1,28 @@
 {
-  "extends": "expo/tsconfig.base",
+  "extends": "@react-native/typescript-config",
   "compilerOptions": {
-    "strict": true
+    "strict": true,
+    "jsx": "react-native",
+    "types": [],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable"
+    ]
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/Pods",
+    "android",
+    "ios",
+    "dist",
+    "web-build",
+    "web",
+    "vite.config.mts",
+    "dist-web"
   ]
 }

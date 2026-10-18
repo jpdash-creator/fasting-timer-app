@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { Body, PrimaryButton, Title } from '../ui';
 import { Sheet } from './Sheet';
 import { hit, icon, radius, useTheme } from '../../theme';

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '../../platform/icons';
 import { PrimaryButton } from '../ui';
 import { icon, radius, space, type, useTheme } from '../../theme';
 import { t } from '../../lib/i18n';
 
 /**
- * Blurred-style preview of older history for free users. expo-blur is not installed, so the
+ * Blurred-style preview of older history for free users. blur is not available, so the
  * preview rows are decorative placeholders under a semi-opaque overlay (and hidden from a11y).
  */
 export function LockedHistory({ hiddenCount, onUnlock }: { hiddenCount: number; onUnlock: () => void }) {

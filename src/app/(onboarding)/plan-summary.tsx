@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Text, View } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
-import { useRouter } from 'expo-router';
+import { Ionicons } from '../../platform/icons';
+import { useRouter } from '../../router';
 import Animated, {
   FadeInDown, useAnimatedStyle, useSharedValue, withDelay, withSpring, withTiming,
 } from 'react-native-reanimated';

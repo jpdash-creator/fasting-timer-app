@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Text, View } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+import { LinearGradient } from '../../platform/LinearGradient';
 import Svg, { Path } from 'react-native-svg';
 import { t } from '../../lib/i18n';
 import { lightColors, radius } from '../../theme';
