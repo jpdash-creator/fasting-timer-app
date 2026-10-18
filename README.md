@@ -3,7 +3,7 @@
 Intermittent fasting timer and tracker. Expo SDK 58, React Native 0.88, TypeScript (strict), Expo Router. Fully offline: no account, no backend. Data stays on the device.
 
 > Closed-source commercial app (iOS and Android). This repo holds the app source plus the public [privacy policy](POLICY.md) and [terms of use](TERMS.md), published with GitHub Pages. Repo and Pages setup: [docs/GITHUB-SETUP.md](docs/GITHUB-SETUP.md).
-<!-- Badges: add the CI badge after the first push: ![CI](https://github.com/jpdash-creator-org/<repo>/actions/workflows/ci.yml/badge.svg) -->
+<!-- Badges: add the CI badge after the first push: ![CI](https://github.com/jpdash-creator/fasting-timer-app/actions/workflows/ci.yml/badge.svg) -->
 
 ## Setup
 
@@ -189,18 +189,18 @@ Pure modules the checks depend on: `src/lib/notificationPlan.ts` (spec section 1
 
 ## Before release
 
-- **Fill the placeholders** in `POLICY.md` and `TERMS.md`: developer name, contact email and governing law (already set to J. P. Dash, jpdash.creator@gmail.com and India / Bengaluru, Karnataka). Have both reviewed by a qualified lawyer.
+- **Placeholders are filled** in `POLICY.md` and `TERMS.md` (J. P. Dash, jpdash.creator@gmail.com, India / Bengaluru, Karnataka). Have both reviewed by a qualified lawyer.
 - **Host the policy with GitHub Pages (required by both stores).** The repo root holds `POLICY.md`, `TERMS.md`, `index.md` and `_config.yml`. Enable Pages: repo Settings -> Pages -> Deploy from branch `main` / `(root)`. The pages are then served at:
   ```
-  https://jpdash-creator-org.github.io/<repo>/POLICY
-  https://jpdash-creator-org.github.io/<repo>/TERMS
+  https://jpdash-creator.github.io/fasting-timer-app/POLICY
+  https://jpdash-creator.github.io/fasting-timer-app/TERMS
   ```
-- Set these before building (EAS env / `.env`) and enter the same privacy URL in App Store Connect and Play Console:
+- These are already set in the `production` profile of `eas.json` (`eas build --profile production`). For local or other builds set them in the environment, and enter the same privacy URL in App Store Connect and Play Console:
   ```
-  EXPO_PUBLIC_PRIVACY_URL=https://jpdash-creator-org.github.io/<repo>/POLICY
-  EXPO_PUBLIC_TERMS_URL=https://jpdash-creator-org.github.io/<repo>/TERMS   # optional; iOS defaults to Apple's standard EULA
-  EXPO_PUBLIC_SUPPORT_EMAIL=<your support email>
+  EXPO_PUBLIC_PRIVACY_URL=https://jpdash-creator.github.io/fasting-timer-app/POLICY
+  EXPO_PUBLIC_TERMS_URL=https://jpdash-creator.github.io/fasting-timer-app/TERMS   # optional; iOS defaults to Apple's standard EULA
+  EXPO_PUBLIC_SUPPORT_EMAIL=jpdash.creator@gmail.com
   ```
-  Until `EXPO_PUBLIC_PRIVACY_URL` is set, Settings and the paywall show the bundled text in-app instead of a web page, which is not acceptable for store review. `src/lib/links.ts` holds the defaults. After editing `POLICY.md` or `TERMS.md`, run `node scripts/gen-legal-text.mjs` to refresh `src/lib/legalText.ts`. The accessibility paragraph in the locale files also mentions `jpdash.creator@gmail.com`; update it if you change the mailbox. `docs/privacy-policy.md` and `docs/terms.md` are pointers to the root files.
+  In builds without `EXPO_PUBLIC_PRIVACY_URL` (development and preview), Settings and the paywall show the bundled text in-app instead of a web page, which is not acceptable for store review. `src/lib/links.ts` holds the defaults. After editing `POLICY.md` or `TERMS.md`, run `node scripts/gen-legal-text.mjs` to refresh `src/lib/legalText.ts`. The accessibility paragraph in the locale files also mentions `jpdash.creator@gmail.com`; update it if you change the mailbox. `docs/privacy-policy.md` and `docs/terms.md` are pointers to the root files.
 - Verify the "Fastline" name on both stores and in trademark databases.
 - Translations for es, pt-BR, de, hi and ar are planned for v1.1; all keys fall back to English.

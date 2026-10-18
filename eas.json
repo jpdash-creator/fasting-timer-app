@@ -17,7 +17,12 @@
     },
     "production": {
       "autoIncrement": true,
-      "android": { "buildType": "app-bundle" }
+      "android": { "buildType": "app-bundle" },
+      "env": {
+        "EXPO_PUBLIC_PRIVACY_URL": "https://jpdash-creator.github.io/fasting-timer-app/POLICY",
+        "EXPO_PUBLIC_TERMS_URL": "https://jpdash-creator.github.io/fasting-timer-app/TERMS",
+        "EXPO_PUBLIC_SUPPORT_EMAIL": "jpdash.creator@gmail.com"
+      }
     }
   },
   "submit": { "production": {} }

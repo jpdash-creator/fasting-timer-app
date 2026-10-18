@@ -54,5 +54,6 @@
     "typecheck": "tsc --noEmit",
     "check": "npx --yes tsx scripts/checks/run.ts"
   },
-  "private": true
+  "private": true,
+  "license": "UNLICENSED"
 }

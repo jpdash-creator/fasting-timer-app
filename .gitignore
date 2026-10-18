@@ -64,5 +64,4 @@ Pods/
 
 # Machine-specific dev tooling and personal notes (contain local absolute paths)
 scripts/dev-supervise.ps1
-scripts/axe-harness.js
 docs/RESUME.md

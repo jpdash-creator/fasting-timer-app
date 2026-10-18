@@ -1,17 +1,11 @@
 # GitHub setup (Fastline)
 
-Nothing has been pushed yet. The local repo is ready; do these steps in order. Replace `<repo>` with the chosen repository name (for example `fastline`).
+The repository is `https://github.com/jpdash-creator/fasting-timer-app` (public, branch `main`, owned by the `jpdash-creator` account). Remaining steps are below.
 
-## 1. Create the repository
+## 1. Repository (done)
 
-1. Sign in as the account that belongs to `jpdash-creator-org`.
-2. Create a new repository under `jpdash-creator-org`, named `<repo>`. Do not add a README, .gitignore or license (they already exist locally).
-3. Visibility: **Public** is required for free GitHub Pages on an organisation (private repo Pages needs a paid plan). The app is closed source, so if you want private source, host the policy pages from a separate public repo instead. Choose before step 2.
-4. Link and push from the project folder:
-   ```bash
-   git remote add origin https://github.com/jpdash-creator-org/<repo>.git
-   git push -u origin main
-   ```
+- Visibility is **Public**, which free GitHub Pages requires. The app is closed source in spirit (see `LICENSE`: all rights reserved), but the code is publicly readable while the repo is public. If you later want private source, move the policy pages to a separate public repo and update the URLs below.
+- Remote: `origin` = `https://github.com/jpdash-creator/fasting-timer-app.git`.
 
 ## 2. Enable Pages (branch deploy, no workflow needed)
 
@@ -21,9 +15,9 @@ The root `_config.yml` uses the minimal theme and the `jekyll-optional-front-mat
 
 Final URLs (allow a minute or two after the first build):
 
-- Privacy policy: `https://jpdash-creator-org.github.io/<repo>/POLICY`
-- Terms of use: `https://jpdash-creator-org.github.io/<repo>/TERMS`
-- Landing page: `https://jpdash-creator-org.github.io/<repo>/`
+- Privacy policy: `https://jpdash-creator.github.io/fasting-timer-app/POLICY`
+- Terms of use: `https://jpdash-creator.github.io/fasting-timer-app/TERMS`
+- Landing page: `https://jpdash-creator.github.io/fasting-timer-app/`
 
 Open each in a private window to confirm before store submission.
 
@@ -33,12 +27,12 @@ Read in `src/lib/links.ts`. `EXPO_PUBLIC_*` values are bundled into the app, so 
 
 | Variable | Value |
 |---|---|
-| `EXPO_PUBLIC_PRIVACY_URL` | `https://jpdash-creator-org.github.io/<repo>/POLICY` |
-| `EXPO_PUBLIC_TERMS_URL` | `https://jpdash-creator-org.github.io/<repo>/TERMS` |
+| `EXPO_PUBLIC_PRIVACY_URL` | `https://jpdash-creator.github.io/fasting-timer-app/POLICY` |
+| `EXPO_PUBLIC_TERMS_URL` | `https://jpdash-creator.github.io/fasting-timer-app/TERMS` |
 | `EXPO_PUBLIC_SUPPORT_EMAIL` | `jpdash.creator@gmail.com` |
 | `EXPO_PUBLIC_USE_MOCK_PURCHASES` | `1` for development/preview builds only (already set in `eas.json`); never in `production` |
 
-Set the three URL/email values for the production profile with EAS environment variables (Expo dashboard > Project > Environment variables, visibility "Plain text" or "Sensitive"; or `eas env:create`), or add them to the `production` profile's `env` block in `eas.json`. They are not secret, so `eas.json` is acceptable. There are no private API keys in this project.
+**Done:** the three values are set in the `production` profile's `env` block in `eas.json`, so `eas build --profile production` bundles them. They are not secret, so `eas.json` is the right place; there are no private API keys in this project. Development and preview builds do not set them, so those builds show the in-app draft policy reader instead of the hosted pages.
 
 ## 4. Branch protection (suggested)
 
