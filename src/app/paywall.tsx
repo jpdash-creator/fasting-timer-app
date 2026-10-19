@@ -168,7 +168,7 @@ export default function Paywall() {
     } finally {
       setBusy(false);
     }
-  }, [busy, succeed, onRestore]);
+  }, [busy, succeed]);
 
   // A purchase that completed out-of-band (e.g. Android pending approval) unlocks the flow.
   const isPro = usePurchaseStore((s) => s.isPro);

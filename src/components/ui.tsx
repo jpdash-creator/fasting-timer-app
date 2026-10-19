@@ -1,5 +1,5 @@
 import React from 'react';
-import { Platform, Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
+import { Pressable, StyleSheet, Text, View, type StyleProp, type TextStyle, type ViewStyle } from 'react-native';
 import { triggerHaptic } from '../platform/haptics';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { hit, radius, space, type, useTheme } from '../theme';

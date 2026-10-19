@@ -44,7 +44,7 @@ export function WeightPanel() {
     if (rangeEntries.length < 2) {
       return <Text style={[type.body, { color: colors.textSecondary }]}>{t('stats.weight.needTwo')}</Text>;
     }
-    const pts = rangeEntries.map((e, i) => ({
+    const pts = rangeEntries.map((e) => ({
       value: Number(kgToDisplay(e.kg, unit).toFixed(1)),
       label: '',
       date: format(e.at, 'MMM d'),

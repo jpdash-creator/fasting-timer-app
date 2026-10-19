@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, Platform, Pressable, ScrollView, Text, View } from 'react-native';
+import { Modal, Platform, ScrollView, Text, View } from 'react-native';
 import { layout, radius, space, type, useTheme } from '../../theme';
 import { PrimaryButton } from '../ui';
 import { t } from '../../lib/i18n';

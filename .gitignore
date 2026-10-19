@@ -100,3 +100,6 @@ docs/RESUME.md
 
 # web (vite) build output
 dist-web/
+
+# Playwright MCP scratch (scripts, downloads)
+.playwright-mcp/
